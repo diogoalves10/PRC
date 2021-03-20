@@ -1,0 +1,3861 @@
+{
+  "alunos": [
+    {
+      "id": 0,
+      "primeiroNome": "Ortiz",
+      "ultimoNome": "Spence",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "primeiroNome": "Becky",
+      "ultimoNome": "Hester",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "primeiroNome": "Sheila",
+      "ultimoNome": "Mcmillan",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "primeiroNome": "Whitley",
+      "ultimoNome": "Douglas",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "primeiroNome": "Chelsea",
+      "ultimoNome": "Jimenez",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "primeiroNome": "Clarissa",
+      "ultimoNome": "Carey",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "primeiroNome": "Berg",
+      "ultimoNome": "Pennington",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "primeiroNome": "Shelly",
+      "ultimoNome": "Small",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "primeiroNome": "Dorthy",
+      "ultimoNome": "Dejesus",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "primeiroNome": "Kelly",
+      "ultimoNome": "Rowland",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "primeiroNome": "Wheeler",
+      "ultimoNome": "Skinner",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "primeiroNome": "Trisha",
+      "ultimoNome": "Bush",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "primeiroNome": "Mai",
+      "ultimoNome": "Johnson",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "primeiroNome": "Finley",
+      "ultimoNome": "Dunlap",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "primeiroNome": "Belinda",
+      "ultimoNome": "Houston",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "primeiroNome": "Landry",
+      "ultimoNome": "Herman",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "primeiroNome": "Hammond",
+      "ultimoNome": "Brooks",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "primeiroNome": "Irma",
+      "ultimoNome": "Blackwell",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "primeiroNome": "Carrillo",
+      "ultimoNome": "Potter",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "primeiroNome": "Denise",
+      "ultimoNome": "Gray",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "primeiroNome": "Georgia",
+      "ultimoNome": "Golden",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "primeiroNome": "Molly",
+      "ultimoNome": "Page",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "primeiroNome": "Carson",
+      "ultimoNome": "York",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "primeiroNome": "Hooper",
+      "ultimoNome": "Mcclain",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "primeiroNome": "Robles",
+      "ultimoNome": "Hamilton",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "primeiroNome": "Drake",
+      "ultimoNome": "Stephens",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "primeiroNome": "Kenya",
+      "ultimoNome": "Trevino",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "primeiroNome": "Donaldson",
+      "ultimoNome": "Reynolds",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "primeiroNome": "Meagan",
+      "ultimoNome": "Carney",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "primeiroNome": "Todd",
+      "ultimoNome": "Arnold",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "primeiroNome": "Jacquelyn",
+      "ultimoNome": "Fields",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "primeiroNome": "Roxie",
+      "ultimoNome": "Hutchinson",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "primeiroNome": "Claudette",
+      "ultimoNome": "Edwards",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "primeiroNome": "Flynn",
+      "ultimoNome": "Clements",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "primeiroNome": "Dorsey",
+      "ultimoNome": "Acosta",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "primeiroNome": "Sharron",
+      "ultimoNome": "Stanley",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "primeiroNome": "Matthews",
+      "ultimoNome": "Pacheco",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "primeiroNome": "Clare",
+      "ultimoNome": "Boyd",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "primeiroNome": "Gilmore",
+      "ultimoNome": "Green",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "primeiroNome": "Lillian",
+      "ultimoNome": "Travis",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "primeiroNome": "Branch",
+      "ultimoNome": "Mack",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "primeiroNome": "Dale",
+      "ultimoNome": "Horne",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "primeiroNome": "Patterson",
+      "ultimoNome": "Nieves",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "primeiroNome": "Emily",
+      "ultimoNome": "Justice",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "primeiroNome": "Nancy",
+      "ultimoNome": "Ryan",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "primeiroNome": "Louisa",
+      "ultimoNome": "Ramirez",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "primeiroNome": "Mitchell",
+      "ultimoNome": "Erickson",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "primeiroNome": "Mabel",
+      "ultimoNome": "Dixon",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "primeiroNome": "Jeannie",
+      "ultimoNome": "Beach",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "primeiroNome": "Ladonna",
+      "ultimoNome": "Cook",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "primeiroNome": "Perkins",
+      "ultimoNome": "Schroeder",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "primeiroNome": "Mckay",
+      "ultimoNome": "Foreman",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "primeiroNome": "Earlene",
+      "ultimoNome": "Serrano",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "primeiroNome": "Misty",
+      "ultimoNome": "Rojas",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "primeiroNome": "Gay",
+      "ultimoNome": "Bryan",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "primeiroNome": "Beach",
+      "ultimoNome": "Cantrell",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "primeiroNome": "Webster",
+      "ultimoNome": "Combs",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "primeiroNome": "Prince",
+      "ultimoNome": "Hodge",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "primeiroNome": "Dawn",
+      "ultimoNome": "Roy",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "primeiroNome": "Bender",
+      "ultimoNome": "Norton",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "primeiroNome": "Russo",
+      "ultimoNome": "Pope",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "primeiroNome": "Bentley",
+      "ultimoNome": "Luna",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "primeiroNome": "Cherry",
+      "ultimoNome": "Carr",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "primeiroNome": "Elba",
+      "ultimoNome": "Coffey",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "primeiroNome": "Pollard",
+      "ultimoNome": "Kirk",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "primeiroNome": "Chen",
+      "ultimoNome": "Campos",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "primeiroNome": "Kemp",
+      "ultimoNome": "Santana",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "primeiroNome": "Atkinson",
+      "ultimoNome": "Collins",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "primeiroNome": "Castro",
+      "ultimoNome": "Bruce",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "primeiroNome": "Joann",
+      "ultimoNome": "English",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "primeiroNome": "Tran",
+      "ultimoNome": "Ellis",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "primeiroNome": "Spears",
+      "ultimoNome": "Dyer",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "primeiroNome": "Jodi",
+      "ultimoNome": "Macias",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "primeiroNome": "Avery",
+      "ultimoNome": "Mcfadden",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "primeiroNome": "Betsy",
+      "ultimoNome": "Morales",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "primeiroNome": "Naomi",
+      "ultimoNome": "Hendrix",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "primeiroNome": "Eunice",
+      "ultimoNome": "Bowen",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "primeiroNome": "Catalina",
+      "ultimoNome": "Decker",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 78,
+      "primeiroNome": "Keller",
+      "ultimoNome": "Solomon",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "primeiroNome": "Kitty",
+      "ultimoNome": "Mason",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "primeiroNome": "Lou",
+      "ultimoNome": "Wallace",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 81,
+      "primeiroNome": "Bertie",
+      "ultimoNome": "Barber",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 82,
+      "primeiroNome": "Benjamin",
+      "ultimoNome": "Valencia",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 83,
+      "primeiroNome": "Franco",
+      "ultimoNome": "Ingram",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 84,
+      "primeiroNome": "Delores",
+      "ultimoNome": "Conley",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 85,
+      "primeiroNome": "Rosa",
+      "ultimoNome": "Mercado",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 86,
+      "primeiroNome": "Ida",
+      "ultimoNome": "Kirkland",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 87,
+      "primeiroNome": "Rosella",
+      "ultimoNome": "Sears",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "primeiroNome": "Herrera",
+      "ultimoNome": "Brennan",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 89,
+      "primeiroNome": "Cummings",
+      "ultimoNome": "Leon",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 90,
+      "primeiroNome": "Lancaster",
+      "ultimoNome": "Goff",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 91,
+      "primeiroNome": "Clay",
+      "ultimoNome": "Walton",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 92,
+      "primeiroNome": "Garcia",
+      "ultimoNome": "Day",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 93,
+      "primeiroNome": "Sheri",
+      "ultimoNome": "Ross",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 94,
+      "primeiroNome": "Sandy",
+      "ultimoNome": "Fisher",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 95,
+      "primeiroNome": "Leona",
+      "ultimoNome": "Hendricks",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 96,
+      "primeiroNome": "Bryan",
+      "ultimoNome": "Rowe",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 97,
+      "primeiroNome": "Duffy",
+      "ultimoNome": "Rosales",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 98,
+      "primeiroNome": "Farmer",
+      "ultimoNome": "Mayo",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 99,
+      "primeiroNome": "Cameron",
+      "ultimoNome": "Petersen",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 100,
+      "primeiroNome": "Hatfield",
+      "ultimoNome": "Dalton",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 101,
+      "primeiroNome": "Keri",
+      "ultimoNome": "Conrad",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 102,
+      "primeiroNome": "Head",
+      "ultimoNome": "Burke",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 103,
+      "primeiroNome": "Wiley",
+      "ultimoNome": "Duke",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 104,
+      "primeiroNome": "Elvia",
+      "ultimoNome": "Hawkins",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 105,
+      "primeiroNome": "Shaffer",
+      "ultimoNome": "Hurley",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 106,
+      "primeiroNome": "Fay",
+      "ultimoNome": "Mccray",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 107,
+      "primeiroNome": "Katina",
+      "ultimoNome": "Goodwin",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 108,
+      "primeiroNome": "Deleon",
+      "ultimoNome": "Dunn",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 109,
+      "primeiroNome": "Rosalyn",
+      "ultimoNome": "Curtis",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 110,
+      "primeiroNome": "Dillard",
+      "ultimoNome": "Head",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 111,
+      "primeiroNome": "Goldie",
+      "ultimoNome": "Crane",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 112,
+      "primeiroNome": "Jasmine",
+      "ultimoNome": "Mcfadden",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 113,
+      "primeiroNome": "Herring",
+      "ultimoNome": "Lamb",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 114,
+      "primeiroNome": "Marva",
+      "ultimoNome": "Norris",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 115,
+      "primeiroNome": "Trevino",
+      "ultimoNome": "Mcgowan",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 116,
+      "primeiroNome": "Aguilar",
+      "ultimoNome": "Kidd",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 117,
+      "primeiroNome": "Carrillo",
+      "ultimoNome": "Macdonald",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 118,
+      "primeiroNome": "Russell",
+      "ultimoNome": "Garza",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 119,
+      "primeiroNome": "Emma",
+      "ultimoNome": "Howell",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 120,
+      "primeiroNome": "Meghan",
+      "ultimoNome": "Valdez",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 121,
+      "primeiroNome": "Audra",
+      "ultimoNome": "Joseph",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 122,
+      "primeiroNome": "Mosley",
+      "ultimoNome": "Barr",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 123,
+      "primeiroNome": "Matthews",
+      "ultimoNome": "Best",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 124,
+      "primeiroNome": "Kathrine",
+      "ultimoNome": "Lambert",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 125,
+      "primeiroNome": "Ida",
+      "ultimoNome": "Huber",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 126,
+      "primeiroNome": "Alston",
+      "ultimoNome": "Cantu",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 127,
+      "primeiroNome": "Julie",
+      "ultimoNome": "Hall",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 128,
+      "primeiroNome": "Mitzi",
+      "ultimoNome": "Yang",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 129,
+      "primeiroNome": "Desiree",
+      "ultimoNome": "Vance",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 130,
+      "primeiroNome": "Caitlin",
+      "ultimoNome": "Santos",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 131,
+      "primeiroNome": "Mandy",
+      "ultimoNome": "Morton",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 132,
+      "primeiroNome": "Sybil",
+      "ultimoNome": "Parrish",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 133,
+      "primeiroNome": "Karina",
+      "ultimoNome": "Ballard",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 134,
+      "primeiroNome": "Katrina",
+      "ultimoNome": "Brennan",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 135,
+      "primeiroNome": "Amy",
+      "ultimoNome": "Rowland",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 136,
+      "primeiroNome": "Pat",
+      "ultimoNome": "Bryant",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 137,
+      "primeiroNome": "Nash",
+      "ultimoNome": "Oneill",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 138,
+      "primeiroNome": "Lesley",
+      "ultimoNome": "Burt",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 139,
+      "primeiroNome": "Sondra",
+      "ultimoNome": "Cunningham",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 140,
+      "primeiroNome": "Ross",
+      "ultimoNome": "Morrow",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 141,
+      "primeiroNome": "Clarke",
+      "ultimoNome": "Craig",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 142,
+      "primeiroNome": "Berry",
+      "ultimoNome": "Reilly",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 143,
+      "primeiroNome": "Raymond",
+      "ultimoNome": "Benton",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 144,
+      "primeiroNome": "Snow",
+      "ultimoNome": "Owens",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 145,
+      "primeiroNome": "Avis",
+      "ultimoNome": "Dejesus",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 146,
+      "primeiroNome": "Rollins",
+      "ultimoNome": "Gates",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 147,
+      "primeiroNome": "Durham",
+      "ultimoNome": "Higgins",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 148,
+      "primeiroNome": "Rowena",
+      "ultimoNome": "Mullen",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 149,
+      "primeiroNome": "Rosetta",
+      "ultimoNome": "Benjamin",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 150,
+      "primeiroNome": "Harding",
+      "ultimoNome": "Duncan",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 151,
+      "primeiroNome": "Melton",
+      "ultimoNome": "Mathews",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 152,
+      "primeiroNome": "Reed",
+      "ultimoNome": "Compton",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 153,
+      "primeiroNome": "Blanche",
+      "ultimoNome": "Schneider",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 154,
+      "primeiroNome": "Avery",
+      "ultimoNome": "Cherry",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 155,
+      "primeiroNome": "Beasley",
+      "ultimoNome": "Woodard",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 156,
+      "primeiroNome": "Gwen",
+      "ultimoNome": "Hubbard",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 157,
+      "primeiroNome": "Alissa",
+      "ultimoNome": "Kline",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 158,
+      "primeiroNome": "Graciela",
+      "ultimoNome": "Gardner",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 159,
+      "primeiroNome": "Horne",
+      "ultimoNome": "Atkins",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 160,
+      "primeiroNome": "Cristina",
+      "ultimoNome": "Valencia",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 161,
+      "primeiroNome": "Castaneda",
+      "ultimoNome": "Frazier",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 162,
+      "primeiroNome": "Marcia",
+      "ultimoNome": "Pope",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 163,
+      "primeiroNome": "Rosemarie",
+      "ultimoNome": "Mcfarland",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 164,
+      "primeiroNome": "Kathy",
+      "ultimoNome": "Fuller",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 165,
+      "primeiroNome": "Laurel",
+      "ultimoNome": "Weiss",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 166,
+      "primeiroNome": "Marquez",
+      "ultimoNome": "Ferrell",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 167,
+      "primeiroNome": "Christine",
+      "ultimoNome": "Downs",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 168,
+      "primeiroNome": "Winnie",
+      "ultimoNome": "Walton",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 169,
+      "primeiroNome": "Jami",
+      "ultimoNome": "Callahan",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 170,
+      "primeiroNome": "Castillo",
+      "ultimoNome": "Myers",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 171,
+      "primeiroNome": "Hood",
+      "ultimoNome": "Barber",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 172,
+      "primeiroNome": "Kathryn",
+      "ultimoNome": "Spence",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 173,
+      "primeiroNome": "Cantu",
+      "ultimoNome": "Vaughan",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 174,
+      "primeiroNome": "Kristy",
+      "ultimoNome": "Alvarez",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 175,
+      "primeiroNome": "Trina",
+      "ultimoNome": "Mcclain",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 176,
+      "primeiroNome": "June",
+      "ultimoNome": "Hanson",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 177,
+      "primeiroNome": "Mcclain",
+      "ultimoNome": "Odonnell",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 178,
+      "primeiroNome": "Francine",
+      "ultimoNome": "Sharpe",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 179,
+      "primeiroNome": "Randolph",
+      "ultimoNome": "Andrews",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 180,
+      "primeiroNome": "Vanessa",
+      "ultimoNome": "Jarvis",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 181,
+      "primeiroNome": "Barnett",
+      "ultimoNome": "Campos",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 182,
+      "primeiroNome": "Mable",
+      "ultimoNome": "Barnes",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 183,
+      "primeiroNome": "Franks",
+      "ultimoNome": "Curry",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 184,
+      "primeiroNome": "Fischer",
+      "ultimoNome": "Henderson",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 185,
+      "primeiroNome": "Maynard",
+      "ultimoNome": "Whitley",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 186,
+      "primeiroNome": "Rose",
+      "ultimoNome": "Burks",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 187,
+      "primeiroNome": "Doris",
+      "ultimoNome": "Levine",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 188,
+      "primeiroNome": "Lessie",
+      "ultimoNome": "Barrera",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 189,
+      "primeiroNome": "Dejesus",
+      "ultimoNome": "Alford",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 190,
+      "primeiroNome": "Luann",
+      "ultimoNome": "Buckner",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 191,
+      "primeiroNome": "Boyer",
+      "ultimoNome": "Harmon",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 192,
+      "primeiroNome": "Peters",
+      "ultimoNome": "Rodgers",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 193,
+      "primeiroNome": "Burt",
+      "ultimoNome": "Tyler",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 194,
+      "primeiroNome": "Kellie",
+      "ultimoNome": "Castillo",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 195,
+      "primeiroNome": "Patrice",
+      "ultimoNome": "Foley",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 196,
+      "primeiroNome": "Kris",
+      "ultimoNome": "Barry",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 197,
+      "primeiroNome": "Hayes",
+      "ultimoNome": "Case",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 198,
+      "primeiroNome": "Norton",
+      "ultimoNome": "Vinson",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    },
+    {
+      "id": 199,
+      "primeiroNome": "Vance",
+      "ultimoNome": "Dawson",
+      "ucs": [
+        {
+          "id": "prc"
+        },
+        {
+          "id": "spln"
+        },
+        {
+          "id": "aer"
+        },
+        {
+          "id": "vr"
+        }
+      ]
+    }
+  ],
+    "docentes": [
+      {
+        "id": "jj",
+        "nome": {
+          "primeiro": "José",
+          "último": "João"
+        },
+        "ensina": "spln"
+      },
+      {
+        "id": "jcr",
+        "nome": {
+          "primeiro": "José",
+          "último": "Ramalho"
+        },
+        "ensina": "prc"
+      },
+      {
+        "id": "costa",
+        "nome": {
+          "primeiro": "António",
+          "último": "Costa"
+        },
+        "ensina": "aer"
+      },
+      {
+        "id": "macedo",
+        "nome": {
+          "primeiro": "António",
+          "último": "Macedo"
+        },
+        "ensina": "vr"
+      }
+    ],
+    "unidadesCurriculares": [
+      {
+        "id": "spln",
+        "designação": "Scripting no Processamento de Linguagem Natural",
+        "anoLectivo": "2020/2021"
+      },
+      {
+        "id": "prc",
+        "designação": "Processamento e Representação de Conhecimento",
+        "anoLectivo": "2020/2021"
+      },
+      {
+        "id": "aer",
+        "designação": "Arquiteturas Emergentes de Rede",
+        "anoLectivo": "2020/2021"
+      },
+      {
+        "id": "vr",
+        "designação": "Virtualização de Redes",
+        "anoLectivo": "2020/2021"
+      }
+    ]
+  }
+

@@ -1,0 +1,151 @@
+@prefix : <http://www.di.uminho.pt/prc2021/uc-inf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.di.uminho.pt/prc2021/uc-inf> .
+
+<http://www.di.uminho.pt/prc2021/uc-inf> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.di.uminho.pt/prc2021/uc#ensina
+<http://www.di.uminho.pt/prc2021/uc#ensina> rdf:type owl:ObjectProperty ;
+                                            owl:inverseOf <http://www.di.uminho.pt/prc2021/uc#éEnsinadaPor> ;
+                                            rdfs:domain <http://www.di.uminho.pt/prc2021/uc#Professor> ;
+                                            rdfs:range <http://www.di.uminho.pt/prc2021/uc#UnidadeCurricular> .
+
+
+###  http://www.di.uminho.pt/prc2021/uc#frequenta
+<http://www.di.uminho.pt/prc2021/uc#frequenta> rdf:type owl:ObjectProperty ;
+                                               owl:inverseOf <http://www.di.uminho.pt/prc2021/uc#éFrequentadaPor> ;
+                                               rdfs:domain <http://www.di.uminho.pt/prc2021/uc#Aluno> ;
+                                               rdfs:range <http://www.di.uminho.pt/prc2021/uc#UnidadeCurricular> .
+
+
+###  http://www.di.uminho.pt/prc2021/uc#éAlunoDe
+<http://www.di.uminho.pt/prc2021/uc#éAlunoDe> rdf:type owl:ObjectProperty ;
+                                              owl:inverseOf <http://www.di.uminho.pt/prc2021/uc#éProfessorDe> .
+
+
+###  http://www.di.uminho.pt/prc2021/uc#éEnsinadaPor
+<http://www.di.uminho.pt/prc2021/uc#éEnsinadaPor> rdf:type owl:ObjectProperty .
+
+
+###  http://www.di.uminho.pt/prc2021/uc#éFrequentadaPor
+<http://www.di.uminho.pt/prc2021/uc#éFrequentadaPor> rdf:type owl:ObjectProperty .
+
+
+###  http://www.di.uminho.pt/prc2021/uc#éProfessorDe
+<http://www.di.uminho.pt/prc2021/uc#éProfessorDe> rdf:type owl:ObjectProperty ;
+                                                  owl:propertyChainAxiom ( <http://www.di.uminho.pt/prc2021/uc#ensina>
+                                                                           <http://www.di.uminho.pt/prc2021/uc#éFrequentadaPor>
+                                                                         ) .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.di.uminho.pt/prc2021/uc#anoLetivo
+<http://www.di.uminho.pt/prc2021/uc#anoLetivo> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.di.uminho.pt/prc2021/uc#designação
+<http://www.di.uminho.pt/prc2021/uc#designação> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.di.uminho.pt/prc2021/uc#nome
+<http://www.di.uminho.pt/prc2021/uc#nome> rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.di.uminho.pt/prc2021/uc#Aluno
+<http://www.di.uminho.pt/prc2021/uc#Aluno> rdf:type owl:Class ;
+                                           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://www.di.uminho.pt/prc2021/uc#frequenta> ;
+                                                             owl:someValuesFrom <http://www.di.uminho.pt/prc2021/uc#UnidadeCurricular>
+                                                           ] .
+
+
+###  http://www.di.uminho.pt/prc2021/uc#Professor
+<http://www.di.uminho.pt/prc2021/uc#Professor> rdf:type owl:Class ;
+                                               rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <http://www.di.uminho.pt/prc2021/uc#ensina> ;
+                                                                 owl:someValuesFrom <http://www.di.uminho.pt/prc2021/uc#UnidadeCurricular>
+                                                               ] .
+
+
+###  http://www.di.uminho.pt/prc2021/uc#UnidadeCurricular
+<http://www.di.uminho.pt/prc2021/uc#UnidadeCurricular> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.di.uminho.pt/prc2021/uc#PRC2021
+<http://www.di.uminho.pt/prc2021/uc#PRC2021> rdf:type owl:NamedIndividual ,
+                                                      <http://www.di.uminho.pt/prc2021/uc#UnidadeCurricular> ;
+                                             <http://www.di.uminho.pt/prc2021/uc#éEnsinadaPor> <http://www.di.uminho.pt/prc2021/uc#jcr> ;
+                                             <http://www.di.uminho.pt/prc2021/uc#éFrequentadaPor> <http://www.di.uminho.pt/prc2021/uc#alindo> ,
+                                                                                                  <http://www.di.uminho.pt/prc2021/uc#raimundo> ;
+                                             <http://www.di.uminho.pt/prc2021/uc#anoLetivo> "2020/2021" ;
+                                             <http://www.di.uminho.pt/prc2021/uc#designação> "Processamento e Representação de Conhecimento" .
+
+
+###  http://www.di.uminho.pt/prc2021/uc#SPLN2021
+<http://www.di.uminho.pt/prc2021/uc#SPLN2021> rdf:type owl:NamedIndividual ,
+                                                       <http://www.di.uminho.pt/prc2021/uc#UnidadeCurricular> ;
+                                              <http://www.di.uminho.pt/prc2021/uc#éEnsinadaPor> <http://www.di.uminho.pt/prc2021/uc#jj> ;
+                                              <http://www.di.uminho.pt/prc2021/uc#éFrequentadaPor> <http://www.di.uminho.pt/prc2021/uc#alindo> ,
+                                                                                                   <http://www.di.uminho.pt/prc2021/uc#raimundo> ;
+                                              <http://www.di.uminho.pt/prc2021/uc#anoLetivo> "2020/2021" ;
+                                              <http://www.di.uminho.pt/prc2021/uc#designação> "Scripting" .
+
+
+###  http://www.di.uminho.pt/prc2021/uc#alindo
+<http://www.di.uminho.pt/prc2021/uc#alindo> rdf:type owl:NamedIndividual ,
+                                                     <http://www.di.uminho.pt/prc2021/uc#Aluno> ;
+                                            <http://www.di.uminho.pt/prc2021/uc#frequenta> <http://www.di.uminho.pt/prc2021/uc#PRC2021> ,
+                                                                                           <http://www.di.uminho.pt/prc2021/uc#SPLN2021> ;
+                                            <http://www.di.uminho.pt/prc2021/uc#éAlunoDe> <http://www.di.uminho.pt/prc2021/uc#jcr> ,
+                                                                                          <http://www.di.uminho.pt/prc2021/uc#jj> ;
+                                            <http://www.di.uminho.pt/prc2021/uc#nome> "António Lindo" .
+
+
+###  http://www.di.uminho.pt/prc2021/uc#jcr
+<http://www.di.uminho.pt/prc2021/uc#jcr> rdf:type owl:NamedIndividual ,
+                                                  <http://www.di.uminho.pt/prc2021/uc#Professor> ;
+                                         <http://www.di.uminho.pt/prc2021/uc#ensina> <http://www.di.uminho.pt/prc2021/uc#PRC2021> ;
+                                         <http://www.di.uminho.pt/prc2021/uc#éProfessorDe> <http://www.di.uminho.pt/prc2021/uc#alindo> ,
+                                                                                           <http://www.di.uminho.pt/prc2021/uc#raimundo> ;
+                                         <http://www.di.uminho.pt/prc2021/uc#nome> "José Carlos Ramalho" .
+
+
+###  http://www.di.uminho.pt/prc2021/uc#jj
+<http://www.di.uminho.pt/prc2021/uc#jj> rdf:type owl:NamedIndividual ,
+                                                 <http://www.di.uminho.pt/prc2021/uc#Professor> ;
+                                        <http://www.di.uminho.pt/prc2021/uc#ensina> <http://www.di.uminho.pt/prc2021/uc#SPLN2021> ;
+                                        <http://www.di.uminho.pt/prc2021/uc#éProfessorDe> <http://www.di.uminho.pt/prc2021/uc#alindo> ,
+                                                                                          <http://www.di.uminho.pt/prc2021/uc#raimundo> ;
+                                        <http://www.di.uminho.pt/prc2021/uc#nome> "José João" .
+
+
+###  http://www.di.uminho.pt/prc2021/uc#raimundo
+<http://www.di.uminho.pt/prc2021/uc#raimundo> rdf:type owl:NamedIndividual ,
+                                                       <http://www.di.uminho.pt/prc2021/uc#Aluno> ;
+                                              <http://www.di.uminho.pt/prc2021/uc#frequenta> <http://www.di.uminho.pt/prc2021/uc#PRC2021> ,
+                                                                                             <http://www.di.uminho.pt/prc2021/uc#SPLN2021> ;
+                                              <http://www.di.uminho.pt/prc2021/uc#éAlunoDe> <http://www.di.uminho.pt/prc2021/uc#jcr> ,
+                                                                                            <http://www.di.uminho.pt/prc2021/uc#jj> ;
+                                              <http://www.di.uminho.pt/prc2021/uc#nome> "Raimundo Neto" .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
