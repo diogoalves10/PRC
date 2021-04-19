@@ -1,0 +1,173 @@
+@prefix : <http://www.di.uminho.pt/prc2021/condominios-inf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.di.uminho.pt/prc2021/condominios-inf> .
+
+<http://www.di.uminho.pt/prc2021/condominios-inf> rdf:type owl:Ontology ;
+                                                   owl:versionIRI <http://www.di.uminho.pt/prc2021/condominios-inf-v1> .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.di.uminho.pt/prc2021/condominios#pagou
+<http://www.di.uminho.pt/prc2021/condominios#pagou> rdf:type owl:ObjectProperty ;
+                                                    rdfs:domain [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty <http://www.di.uminho.pt/prc2021/condominios#pagou> ;
+                                                                  owl:someValuesFrom <http://www.di.uminho.pt/prc2021/condominios#Fração>
+                                                                ] ;
+                                                    rdfs:range [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <http://www.di.uminho.pt/prc2021/condominios#pagou> ;
+                                                                 owl:someValuesFrom <http://www.di.uminho.pt/prc2021/condominios#pagamento>
+                                                               ] .
+
+
+###  http://www.di.uminho.pt/prc2021/condominios#éDonoDe
+<http://www.di.uminho.pt/prc2021/condominios#éDonoDe> rdf:type owl:ObjectProperty ;
+                                                      rdfs:domain [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty <http://www.di.uminho.pt/prc2021/condominios#éDonoDe> ;
+                                                                    owl:someValuesFrom <http://www.di.uminho.pt/prc2021/condominios#Dono>
+                                                                  ] ;
+                                                      rdfs:range [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://www.di.uminho.pt/prc2021/condominios#éDonoDe> ;
+                                                                   owl:someValuesFrom <http://www.di.uminho.pt/prc2021/condominios#Fração>
+                                                                 ] .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.di.uminho.pt/prc2021/condominios#data
+<http://www.di.uminho.pt/prc2021/condominios#data> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.di.uminho.pt/prc2021/condominios#descrição
+<http://www.di.uminho.pt/prc2021/condominios#descrição> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.di.uminho.pt/prc2021/condominios#entidade
+<http://www.di.uminho.pt/prc2021/condominios#entidade> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.di.uminho.pt/prc2021/condominios#fração
+<http://www.di.uminho.pt/prc2021/condominios#fração> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.di.uminho.pt/prc2021/condominios#mensalidade
+<http://www.di.uminho.pt/prc2021/condominios#mensalidade> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.di.uminho.pt/prc2021/condominios#mês
+<http://www.di.uminho.pt/prc2021/condominios#mês> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.di.uminho.pt/prc2021/condominios#número
+<http://www.di.uminho.pt/prc2021/condominios#número> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.di.uminho.pt/prc2021/condominios#permilagem
+<http://www.di.uminho.pt/prc2021/condominios#permilagem> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.di.uminho.pt/prc2021/condominios#tipo
+<http://www.di.uminho.pt/prc2021/condominios#tipo> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.di.uminho.pt/prc2021/condominios#valor
+<http://www.di.uminho.pt/prc2021/condominios#valor> rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.di.uminho.pt/prc2021/condominios#Apartamento
+<http://www.di.uminho.pt/prc2021/condominios#Apartamento> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.di.uminho.pt/prc2021/condominios#Fração> .
+
+
+###  http://www.di.uminho.pt/prc2021/condominios#Arrendatário
+<http://www.di.uminho.pt/prc2021/condominios#Arrendatário> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <http://www.di.uminho.pt/prc2021/condominios#Dono> .
+
+
+###  http://www.di.uminho.pt/prc2021/condominios#Dono
+<http://www.di.uminho.pt/prc2021/condominios#Dono> rdf:type owl:Class .
+
+
+###  http://www.di.uminho.pt/prc2021/condominios#Fração
+<http://www.di.uminho.pt/prc2021/condominios#Fração> rdf:type owl:Class .
+
+
+###  http://www.di.uminho.pt/prc2021/condominios#Garagem
+<http://www.di.uminho.pt/prc2021/condominios#Garagem> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://www.di.uminho.pt/prc2021/condominios#Fração> .
+
+
+###  http://www.di.uminho.pt/prc2021/condominios#Loja
+<http://www.di.uminho.pt/prc2021/condominios#Loja> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://www.di.uminho.pt/prc2021/condominios#Fração> .
+
+
+###  http://www.di.uminho.pt/prc2021/condominios#Proprietário
+<http://www.di.uminho.pt/prc2021/condominios#Proprietário> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <http://www.di.uminho.pt/prc2021/condominios#Dono> .
+
+
+###  http://www.di.uminho.pt/prc2021/condominios#entradaRec-Des
+<http://www.di.uminho.pt/prc2021/condominios#entradaRec-Des> rdf:type owl:Class .
+
+
+###  http://www.di.uminho.pt/prc2021/condominios#pagamento
+<http://www.di.uminho.pt/prc2021/condominios#pagamento> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.di.uminho.pt/prc2021/condominios#Loja
+<http://www.di.uminho.pt/prc2021/condominios#Loja> rdf:type owl:NamedIndividual ,
+                                                            <http://www.di.uminho.pt/prc2021/condominios#Fração> ,
+                                                            owl:Class ,
+                                                            <http://www.di.uminho.pt/prc2021/condominios#Loja> ;
+                                                   <http://www.di.uminho.pt/prc2021/condominios#descrição> "Loja"^^xsd:string ;
+                                                   <http://www.di.uminho.pt/prc2021/condominios#fração> "A"^^xsd:string ;
+                                                   <http://www.di.uminho.pt/prc2021/condominios#mensalidade> 6.06 ;
+                                                   <http://www.di.uminho.pt/prc2021/condominios#permilagem> 50 .
+
+
+###  http://www.di.uminho.pt/prc2021/condominios#entrada1
+<http://www.di.uminho.pt/prc2021/condominios#entrada1> rdf:type owl:NamedIndividual ,
+                                                                <http://www.di.uminho.pt/prc2021/condominios#entradaRec-Des> ;
+                                                       <http://www.di.uminho.pt/prc2021/condominios#data> "2020-01-04" ;
+                                                       <http://www.di.uminho.pt/prc2021/condominios#descrição> "Manutenção de conta" ;
+                                                       <http://www.di.uminho.pt/prc2021/condominios#entidade> "CGD" ;
+                                                       <http://www.di.uminho.pt/prc2021/condominios#número> "2020/001" ;
+                                                       <http://www.di.uminho.pt/prc2021/condominios#tipo> "Despesa" ;
+                                                       <http://www.di.uminho.pt/prc2021/condominios#valor> 7.28 .
+
+
+###  http://www.di.uminho.pt/prc2021/condominios#pagamento1
+<http://www.di.uminho.pt/prc2021/condominios#pagamento1> rdf:type owl:NamedIndividual ,
+                                                                  <http://www.di.uminho.pt/prc2021/condominios#pagamento> ;
+                                                         <http://www.di.uminho.pt/prc2021/condominios#descrição> "1Dto" ;
+                                                         <http://www.di.uminho.pt/prc2021/condominios#mês> "Jan" .
+
+
+###  http://www.di.uminho.pt/prc2021/condominios#1Dto
+<http://www.di.uminho.pt/prc2021/condominios#1Dto> rdf:type owl:NamedIndividual ,
+                                                            <http://www.di.uminho.pt/prc2021/condominios#Apartamento> ,
+                                                            <http://www.di.uminho.pt/prc2021/condominios#Fração> ;
+                                                   <http://www.di.uminho.pt/prc2021/condominios#pagou> <http://www.di.uminho.pt/prc2021/condominios#pagamento1> ;
+                                                   <http://www.di.uminho.pt/prc2021/condominios#descrição> "1º Dto"^^xsd:string ;
+                                                   <http://www.di.uminho.pt/prc2021/condominios#fração> "F"^^xsd:string ;
+                                                   <http://www.di.uminho.pt/prc2021/condominios#mensalidade> 36.45 ;
+                                                   <http://www.di.uminho.pt/prc2021/condominios#permilagem> 24 .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
