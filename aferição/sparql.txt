@@ -1,0 +1,12 @@
+PREFIX : <http://www.di.uminho.pt/prc2021/condominios#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+select DISTINCT ?entidade where {
+    ?s rdf:type :entradaRec-Des.
+	?s :entidade ?entidade.
+} order by  desc (?entidade)
+
+
+-----------------------------------------------------------------------------------
+
