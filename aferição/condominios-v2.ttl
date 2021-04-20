@@ -105,41 +105,598 @@
 #    Individuals
 #################################################################
 
+###  http://www.di.uminho.pt/prc2021/condominios#entrada001
+        :entrada001 rdf:type owl:NamedIndividual ,
+                :entradaRec-Des ;
+        :data "2020-01-04"^^xsd:string ;       
+        :descrição "Manutenção da conta"^^xsd:string ;
+        :entidade "CGD"^^xsd:string ;
+        :numero "2020/001"^^xsd:string ;
+        :tipo "Despesa"^^xsd:string ;
+        :val 7.28.  
+        ###  http://www.di.uminho.pt/prc2021/condominios#entrada002
+        :entrada002 rdf:type owl:NamedIndividual ,
+                :entradaRec-Des ;
+        :data "2020-01-06"^^xsd:string ;       
+        :descrição "Janeiro"^^xsd:string ;
+        :entidade "7º Esq"^^xsd:string ;
+        :numero "2020/002"^^xsd:string ;
+        :tipo "Receita"^^xsd:string ;
+        :val 64.00.  
+        ###  http://www.di.uminho.pt/prc2021/condominios#entrada003
+        :entrada003 rdf:type owl:NamedIndividual ,
+                :entradaRec-Des ;
+        :data "2020-01-06"^^xsd:string ;       
+        :descrição "Abril a Dezembro de 2019"^^xsd:string ;
+        :entidade "2º Dto"^^xsd:string ;
+        :numero "2020/003"^^xsd:string ;
+        :tipo "Receita"^^xsd:string ;
+        :val 406.62.  
+        ###  http://www.di.uminho.pt/prc2021/condominios#entrada004
+        :entrada004 rdf:type owl:NamedIndividual ,
+                :entradaRec-Des ;
+        :data "2020-01-08"^^xsd:string ;       
+        :descrição "Luz"^^xsd:string ;
+        :entidade "EDP"^^xsd:string ;
+        :numero "2020/004"^^xsd:string ;
+        :tipo "Despesa"^^xsd:string ;
+        :val 222.65.  
+        ###  http://www.di.uminho.pt/prc2021/condominios#entrada005
+        :entrada005 rdf:type owl:NamedIndividual ,
+                :entradaRec-Des ;
+        :data "2020-01-16"^^xsd:string ;       
+        :descrição "Janeiro"^^xsd:string ;
+        :entidade "7º Dto"^^xsd:string ;
+        :numero "2020/005"^^xsd:string ;
+        :tipo "Receita"^^xsd:string ;
+        :val 45.18.  
+        ###  http://www.di.uminho.pt/prc2021/condominios#entrada006
+        :entrada006 rdf:type owl:NamedIndividual ,
+                :entradaRec-Des ;
+        :data "2020-02-01"^^xsd:string ;       
+        :descrição "Manutenção da conta"^^xsd:string ;
+        :entidade "CGD"^^xsd:string ;
+        :numero "2020/006"^^xsd:string ;
+        :tipo "Despesa"^^xsd:string ;
+        :val 7.28.  
+        ###  http://www.di.uminho.pt/prc2021/condominios#entrada007
+        :entrada007 rdf:type owl:NamedIndividual ,
+                :entradaRec-Des ;
+        :data "2020-02-04"^^xsd:string ;       
+        :descrição "Fevereiro"^^xsd:string ;
+        :entidade "5º Esq"^^xsd:string ;
+        :numero "2020/007"^^xsd:string ;
+        :tipo "Receita"^^xsd:string ;
+        :val 64.00.  
+        ###  http://www.di.uminho.pt/prc2021/condominios#entrada008
+        :entrada008 rdf:type owl:NamedIndividual ,
+                :entradaRec-Des ;
+        :data "2020-02-06"^^xsd:string ;       
+        :descrição "Fevereiro"^^xsd:string ;
+        :entidade "7º Esq"^^xsd:string ;
+        :numero "2020/008"^^xsd:string ;
+        :tipo "Receita"^^xsd:string ;
+        :val 64.00.  
+        ###  http://www.di.uminho.pt/prc2021/condominios#entrada009
+        :entrada009 rdf:type owl:NamedIndividual ,
+                :entradaRec-Des ;
+        :data "2020-01-20"^^xsd:string ;       
+        :descrição "Manutenção dos elevadores: 1º trimestre"^^xsd:string ;
+        :entidade "Kone"^^xsd:string ;
+        :numero "2020/009"^^xsd:string ;
+        :tipo "Despesa"^^xsd:string ;
+        :val 439.77.  
+        ###  http://www.di.uminho.pt/prc2021/condominios#entrada010
+        :entrada010 rdf:type owl:NamedIndividual ,
+                :entradaRec-Des ;
+        :data "2020-02-12"^^xsd:string ;       
+        :descrição "Janeiro"^^xsd:string ;
+        :entidade "1º e 3º Esq"^^xsd:string ;
+        :numero "2020/010"^^xsd:string ;
+        :tipo "Receita"^^xsd:string ;
+        :val 384.00.  
+        ###  http://www.di.uminho.pt/prc2021/condominios#entrada011
+        :entrada011 rdf:type owl:NamedIndividual ,
+                :entradaRec-Des ;
+        :data "2020-02-20"^^xsd:string ;       
+        :descrição "Fevereiro"^^xsd:string ;
+        :entidade "7º Dto"^^xsd:string ;
+        :numero "2020/011"^^xsd:string ;
+        :tipo "Receita"^^xsd:string ;
+        :val 45.18.  
+        ###  http://www.di.uminho.pt/prc2021/condominios#entrada012
+        :entrada012 rdf:type owl:NamedIndividual ,
+                :entradaRec-Des ;
+        :data "2020-02-24"^^xsd:string ;       
+        :descrição "Concerto do trinco da porta"^^xsd:string ;
+        :entidade "Serralheiro"^^xsd:string ;
+        :numero "2020/012"^^xsd:string ;
+        :tipo "Despesa"^^xsd:string ;
+        :val 20.00.  
+        ###  http://www.di.uminho.pt/prc2021/condominios#entrada013
+        :entrada013 rdf:type owl:NamedIndividual ,
+                :entradaRec-Des ;
+        :data "2020-02-24"^^xsd:string ;       
+        :descrição "Inspeção dos elevadores"^^xsd:string ;
+        :entidade "CMB"^^xsd:string ;
+        :numero "2020/013"^^xsd:string ;
+        :tipo "Despesa"^^xsd:string ;
+        :val 174.30.  
+        ###  http://www.di.uminho.pt/prc2021/condominios#entrada014
+        :entrada014 rdf:type owl:NamedIndividual ,
+                :entradaRec-Des ;
+        :data "2020-02-24"^^xsd:string ;       
+        :descrição "Acertos: Janeiro"^^xsd:string ;
+        :entidade "1º Dto"^^xsd:string ;
+        :numero "2020/014"^^xsd:string ;
+        :tipo "Receita"^^xsd:string ;
+        :val 194.30.  
+        ###  http://www.di.uminho.pt/prc2021/condominios#entrada015
+        :entrada015 rdf:type owl:NamedIndividual ,
+                :entradaRec-Des ;
+        :data "2020-03-11"^^xsd:string ;       
+        :descrição "Janeiro a Junho"^^xsd:string ;
+        :entidade "5º Dto"^^xsd:string ;
+        :numero "2020/015"^^xsd:string ;
+        :tipo "Receita"^^xsd:string ;
+        :val 271.08.  
+        ###  http://www.di.uminho.pt/prc2021/condominios#entrada016
+        :entrada016 rdf:type owl:NamedIndividual ,
+                :entradaRec-Des ;
+        :data "2020-03-11"^^xsd:string ;       
+        :descrição "Reparação das fachadas"^^xsd:string ;
+        :entidade "PluriRapel"^^xsd:string ;
+        :numero "2020/016"^^xsd:string ;
+        :tipo "Despesa"^^xsd:string ;
+        :val 1655.00.  
+        ###  http://www.di.uminho.pt/prc2021/condominios#entrada017
+        :entrada017 rdf:type owl:NamedIndividual ,
+                :entradaRec-Des ;
+        :data "2020-02-26"^^xsd:string ;       
+        :descrição "Março"^^xsd:string ;
+        :entidade "5º Esq"^^xsd:string ;
+        :numero "2020/017"^^xsd:string ;
+        :tipo "Receita"^^xsd:string ;
+        :val 64.00.  
+        ###  http://www.di.uminho.pt/prc2021/condominios#entrada018
+        :entrada018 rdf:type owl:NamedIndividual ,
+                :entradaRec-Des ;
+        :data "2020-02-29"^^xsd:string ;       
+        :descrição "Janeiro a Dezembro"^^xsd:string ;
+        :entidade "3º Dto"^^xsd:string ;
+        :numero "2020/018"^^xsd:string ;
+        :tipo "Receita"^^xsd:string ;
+        :val 542.16.  
+        ###  http://www.di.uminho.pt/prc2021/condominios#entrada019
+        :entrada019 rdf:type owl:NamedIndividual ,
+                :entradaRec-Des ;
+        :data "2020-03-04"^^xsd:string ;       
+        :descrição "Luz"^^xsd:string ;
+        :entidade "EDP"^^xsd:string ;
+        :numero "2020/019"^^xsd:string ;
+        :tipo "Despesa"^^xsd:string ;
+        :val 236.59.  
+        ###  http://www.di.uminho.pt/prc2021/condominios#entrada020
+        :entrada020 rdf:type owl:NamedIndividual ,
+                :entradaRec-Des ;
+        :data "2020-03-06"^^xsd:string ;       
+        :descrição "Março"^^xsd:string ;
+        :entidade "7º Esq"^^xsd:string ;
+        :numero "2020/020"^^xsd:string ;
+        :tipo "Receita"^^xsd:string ;
+        :val 64.00.  
+        ###  http://www.di.uminho.pt/prc2021/condominios#entrada021
+        :entrada021 rdf:type owl:NamedIndividual ,
+                :entradaRec-Des ;
+        :data "2020-03-07"^^xsd:string ;       
+        :descrição "Manutenção da conta"^^xsd:string ;
+        :entidade "CGD"^^xsd:string ;
+        :numero "2020/021"^^xsd:string ;
+        :tipo "Despesa"^^xsd:string ;
+        :val 7.28.  
+        ###  http://www.di.uminho.pt/prc2021/condominios#entrada022
+        :entrada022 rdf:type owl:NamedIndividual ,
+                :entradaRec-Des ;
+        :data "2020-03-15"^^xsd:string ;       
+        :descrição "Março"^^xsd:string ;
+        :entidade "7º Dto"^^xsd:string ;
+        :numero "2020/022"^^xsd:string ;
+        :tipo "Receita"^^xsd:string ;
+        :val 45.18.  
+        ###  http://www.di.uminho.pt/prc2021/condominios#entrada023
+        :entrada023 rdf:type owl:NamedIndividual ,
+                :entradaRec-Des ;
+        :data "2020-03-30"^^xsd:string ;       
+        :descrição "Abril "^^xsd:string ;
+        :entidade "5º Esq"^^xsd:string ;
+        :numero "2020/023"^^xsd:string ;
+        :tipo "Receita"^^xsd:string ;
+        :val 64.00.  
+        ###  http://www.di.uminho.pt/prc2021/condominios#entrada024
+        :entrada024 rdf:type owl:NamedIndividual ,
+                :entradaRec-Des ;
+        :data "2020-04-04"^^xsd:string ;       
+        :descrição "Manutenção da conta"^^xsd:string ;
+        :entidade "CGD"^^xsd:string ;
+        :numero "2020/024"^^xsd:string ;
+        :tipo "Despesa"^^xsd:string ;
+        :val 7.28.  
+        ###  http://www.di.uminho.pt/prc2021/condominios#entrada025
+        :entrada025 rdf:type owl:NamedIndividual ,
+                :entradaRec-Des ;
+        :data "2020-04-06"^^xsd:string ;       
+        :descrição "Abril"^^xsd:string ;
+        :entidade "7º Esq"^^xsd:string ;
+        :numero "2020/025"^^xsd:string ;
+        :tipo "Receita"^^xsd:string ;
+        :val 64.00.  
+        ###  http://www.di.uminho.pt/prc2021/condominios#entrada026
+        :entrada026 rdf:type owl:NamedIndividual ,
+                :entradaRec-Des ;
+        :data "2020-04-07"^^xsd:string ;       
+        :descrição "Abril a Agosto"^^xsd:string ;
+        :entidade "6º Dto"^^xsd:string ;
+        :numero "2020/026"^^xsd:string ;
+        :tipo "Receita"^^xsd:string ;
+        :val 225.90.  
+        ###  http://www.di.uminho.pt/prc2021/condominios#entrada027
+        :entrada027 rdf:type owl:NamedIndividual ,
+                :entradaRec-Des ;
+        :data "2020-04-14"^^xsd:string ;       
+        :descrição "Abril"^^xsd:string ;
+        :entidade "7º Dto"^^xsd:string ;
+        :numero "2020/027"^^xsd:string ;
+        :tipo "Receita"^^xsd:string ;
+        :val 45.18.  
+        ###  http://www.di.uminho.pt/prc2021/condominios#entrada028
+        :entrada028 rdf:type owl:NamedIndividual ,
+                :entradaRec-Des ;
+        :data "2020-04-15"^^xsd:string ;       
+        :descrição "Luz Comum"^^xsd:string ;
+        :entidade "Vizinhos"^^xsd:string ;
+        :numero "2020/028"^^xsd:string ;
+        :tipo "Despesa"^^xsd:string ;
+        :val 207.98.  
+        ###  http://www.di.uminho.pt/prc2021/condominios#entrada029
+        :entrada029 rdf:type owl:NamedIndividual ,
+                :entradaRec-Des ;
+        :data "2020-04-15"^^xsd:string ;       
+        :descrição "Limpeza 2020"^^xsd:string ;
+        :entidade "Limpeza"^^xsd:string ;
+        :numero "2020/029"^^xsd:string ;
+        :tipo "Despesa"^^xsd:string ;
+        :val 1080.00.  
+        ###  http://www.di.uminho.pt/prc2021/condominios#entrada030
+        :entrada030 rdf:type owl:NamedIndividual ,
+                :entradaRec-Des ;
+        :data "2020-04-15"^^xsd:string ;       
+        :descrição "Janeiro a Dezembro"^^xsd:string ;
+        :entidade "4º Dto"^^xsd:string ;
+        :numero "2020/030"^^xsd:string ;
+        :tipo "Receita"^^xsd:string ;
+        :val 542.16.  
+        ###  http://www.di.uminho.pt/prc2021/condominios#entrada031
+        :entrada031 rdf:type owl:NamedIndividual ,
+                :entradaRec-Des ;
+        :data "2020-04-01"^^xsd:string ;       
+        :descrição "Manutenção dos elevadores: 2º trimestre"^^xsd:string ;
+        :entidade "Kone"^^xsd:string ;
+        :numero "2020/031"^^xsd:string ;
+        :tipo "Despesa"^^xsd:string ;
+        :val 439.77.  
+
+###  http://www.di.uminho.pt/prc2021/condominios#pagamento1
+        :pagamento1 rdf:type owl:NamedIndividual ,
+               :Pagamento ;
+        :descrição "1Dto"^^xsd:string ;
+        :mês "1", 
+"1", 
+"1", 
+"1", 
+"", 
+"", 
+"", 
+"", 
+"", 
+"", 
+"" 
+ .
+        ###  http://www.di.uminho.pt/prc2021/condominios#pagamento2
+        :pagamento2 rdf:type owl:NamedIndividual ,
+               :Pagamento ;
+        :descrição "2Dto"^^xsd:string ;
+        :mês "", 
+"", 
+"", 
+"", 
+"", 
+"", 
+"", 
+"", 
+"", 
+"", 
+""
+ .
+        ###  http://www.di.uminho.pt/prc2021/condominios#pagamento3
+        :pagamento3 rdf:type owl:NamedIndividual ,
+               :Pagamento ;
+        :descrição "3Dto"^^xsd:string ;
+        :mês "1", 
+"1", 
+"1", 
+"1", 
+"1", 
+"1", 
+"1", 
+"1", 
+"1", 
+"1", 
+"1" 
+ .
+        ###  http://www.di.uminho.pt/prc2021/condominios#pagamento4
+        :pagamento4 rdf:type owl:NamedIndividual ,
+               :Pagamento ;
+        :descrição "4Dto"^^xsd:string ;
+        :mês "1", 
+"1", 
+"1", 
+"1", 
+"1", 
+"1", 
+"1", 
+"1", 
+"1", 
+"1", 
+"1" 
+ .
+        ###  http://www.di.uminho.pt/prc2021/condominios#pagamento5
+        :pagamento5 rdf:type owl:NamedIndividual ,
+               :Pagamento ;
+        :descrição "5Dto"^^xsd:string ;
+        :mês "1", 
+"1", 
+"1", 
+"1", 
+"1", 
+"1", 
+"", 
+"", 
+"", 
+"", 
+"" 
+ .
+        ###  http://www.di.uminho.pt/prc2021/condominios#pagamento6
+        :pagamento6 rdf:type owl:NamedIndividual ,
+               :Pagamento ;
+        :descrição "6Dto"^^xsd:string ;
+        :mês "1", 
+"1", 
+"1", 
+"1", 
+"1", 
+"1", 
+"1", 
+"1", 
+"", 
+"", 
+"" 
+ .
+        ###  http://www.di.uminho.pt/prc2021/condominios#pagamento7
+        :pagamento7 rdf:type owl:NamedIndividual ,
+               :Pagamento ;
+        :descrição "7Dto"^^xsd:string ;
+        :mês "1", 
+"1", 
+"1", 
+"1", 
+"", 
+"", 
+"", 
+"", 
+"", 
+"", 
+"" 
+ .
+        ###  http://www.di.uminho.pt/prc2021/condominios#pagamento8
+        :pagamento8 rdf:type owl:NamedIndividual ,
+               :Pagamento ;
+        :descrição "8Dto"^^xsd:string ;
+        :mês "", 
+"", 
+"", 
+"", 
+"", 
+"", 
+"", 
+"", 
+"", 
+"", 
+"" 
+ .
+        ###  http://www.di.uminho.pt/prc2021/condominios#pagamento9
+        :pagamento9 rdf:type owl:NamedIndividual ,
+               :Pagamento ;
+        :descrição "1Esq"^^xsd:string ;
+        :mês "1", 
+"1", 
+"1", 
+"", 
+"", 
+"", 
+"", 
+"", 
+"", 
+"", 
+"" 
+ .
+        ###  http://www.di.uminho.pt/prc2021/condominios#pagamento10
+        :pagamento10 rdf:type owl:NamedIndividual ,
+               :Pagamento ;
+        :descrição "3Esq"^^xsd:string ;
+        :mês "1", 
+"1", 
+"1", 
+"", 
+"", 
+"", 
+"", 
+"", 
+"", 
+"", 
+"" 
+ .
+        ###  http://www.di.uminho.pt/prc2021/condominios#pagamento11
+        :pagamento11 rdf:type owl:NamedIndividual ,
+               :Pagamento ;
+        :descrição "5Esq"^^xsd:string ;
+        :mês "1", 
+"1", 
+"1", 
+"1", 
+"", 
+"", 
+"", 
+"", 
+"", 
+"", 
+"" 
+ .
+        ###  http://www.di.uminho.pt/prc2021/condominios#pagamento12
+        :pagamento12 rdf:type owl:NamedIndividual ,
+               :Pagamento ;
+        :descrição "7Esq"^^xsd:string ;
+        :mês "1", 
+"1", 
+"1", 
+"1", 
+"", 
+"", 
+"", 
+"", 
+"", 
+"", 
+"" 
+ .
+        ###  http://www.di.uminho.pt/prc2021/condominios#pagamento13
+        :pagamento13 rdf:type owl:NamedIndividual ,
+               :Pagamento ;
+        :descrição "Loja"^^xsd:string ;
+        :mês "", 
+"", 
+"", 
+"", 
+"", 
+"", 
+"", 
+"", 
+"", 
+"", 
+"" 
+ .
+
 ###  http://www.di.uminho.pt/prc2021/condominios#Loja
-:Loja rdf:type owl:NamedIndividual ,
+        :Loja rdf:type owl:NamedIndividual ,
                :Fração ;
       :descrição "Loja"^^xsd:string ;
       :fração "A"^^xsd:string ;
-      :mensalidade 6.06 ;
-      :permilagem 50 .
-
-
-###  http://www.di.uminho.pt/prc2021/condominios#entrada1
-:entrada1 rdf:type owl:NamedIndividual ,
-                   :entradaRec-Des ;
-          :data "2020-01-04" ;
-          :descrição "Manutenção de conta" ;
-          :entidade "CGD" ;
-          :número "2020/001" ;
-          :tipo "Despesa" ;
-          :valor 7.28 .
-
-
-###  http://www.di.uminho.pt/prc2021/condominios#pagamento1
-:pagamento1 rdf:type owl:NamedIndividual ,
-                     :pagamento ;
-            :descrição "1Dto" ;
-            :mês "Jan" .
-
-
-###  http://www.di.uminho.pt/prc2021/condominios#1Dto
-<http://www.di.uminho.pt/prc2021/condominios#1Dto> rdf:type owl:NamedIndividual ,
-                                                            :Fração ;
-                                                   :pagou :pagamento1 ;
-                                                   :descrição "1º Dto"^^xsd:string ;
-                                                   :fração "F"^^xsd:string ;
-                                                   :mensalidade 36.45 ;
-                                                   :permilagem 24 .
-
+      :mensalidade 6.06
+ ; 
+      :permilagem 50.   
+    ###  http://www.di.uminho.pt/prc2021/condominios#1Dto
+        :1Dto rdf:type owl:NamedIndividual ,
+               :Fração ;
+      :descrição "1Dto"^^xsd:string ;
+      :fração "F"^^xsd:string ;
+      :mensalidade 36.45
+ ; 
+      :permilagem 24.   
+    ###  http://www.di.uminho.pt/prc2021/condominios#1Esq
+        :1Esq rdf:type owl:NamedIndividual ,
+               :Fração ;
+      :descrição "1Esq"^^xsd:string ;
+      :fração "G"^^xsd:string ;
+      :mensalidade 51.63
+ ; 
+      :permilagem 34.   
+    ###  http://www.di.uminho.pt/prc2021/condominios#2Dto
+        :2Dto rdf:type owl:NamedIndividual ,
+               :Fração ;
+      :descrição "2Dto"^^xsd:string ;
+      :fração "H"^^xsd:string ;
+      :mensalidade 36.45
+ ; 
+      :permilagem 24.   
+    ###  http://www.di.uminho.pt/prc2021/condominios#3Dto
+        :3Dto rdf:type owl:NamedIndividual ,
+               :Fração ;
+      :descrição "3Dto"^^xsd:string ;
+      :fração "I"^^xsd:string ;
+      :mensalidade 36.45
+ ; 
+      :permilagem 24.   
+    ###  http://www.di.uminho.pt/prc2021/condominios#3Esq
+        :3Esq rdf:type owl:NamedIndividual ,
+               :Fração ;
+      :descrição "3Esq"^^xsd:string ;
+      :fração "J"^^xsd:string ;
+      :mensalidade 51.63
+ ; 
+      :permilagem 34.   
+    ###  http://www.di.uminho.pt/prc2021/condominios#4Dto
+        :4Dto rdf:type owl:NamedIndividual ,
+               :Fração ;
+      :descrição "4Dto"^^xsd:string ;
+      :fração "L"^^xsd:string ;
+      :mensalidade 36.45
+ ; 
+      :permilagem 24.   
+    ###  http://www.di.uminho.pt/prc2021/condominios#5Dto
+        :5Dto rdf:type owl:NamedIndividual ,
+               :Fração ;
+      :descrição "5Dto"^^xsd:string ;
+      :fração "M"^^xsd:string ;
+      :mensalidade 36.45
+ ; 
+      :permilagem 24.   
+    ###  http://www.di.uminho.pt/prc2021/condominios#5Esq
+        :5Esq rdf:type owl:NamedIndividual ,
+               :Fração ;
+      :descrição "5Esq"^^xsd:string ;
+      :fração "N"^^xsd:string ;
+      :mensalidade 51.63
+ ; 
+      :permilagem 34.   
+    ###  http://www.di.uminho.pt/prc2021/condominios#6Dto
+        :6Dto rdf:type owl:NamedIndividual ,
+               :Fração ;
+      :descrição "6Dto"^^xsd:string ;
+      :fração "O"^^xsd:string ;
+      :mensalidade 36.45
+ ; 
+      :permilagem 24.   
+    ###  http://www.di.uminho.pt/prc2021/condominios#7Dto
+        :7Dto rdf:type owl:NamedIndividual ,
+               :Fração ;
+      :descrição "7Dto"^^xsd:string ;
+      :fração "P"^^xsd:string ;
+      :mensalidade 36.45
+ ; 
+      :permilagem 24.   
+    ###  http://www.di.uminho.pt/prc2021/condominios#7Esq
+        :7Esq rdf:type owl:NamedIndividual ,
+               :Fração ;
+      :descrição "7Esq"^^xsd:string ;
+      :fração "Q"^^xsd:string ;
+      :mensalidade 51.63
+ ; 
+      :permilagem 34.   
+    ###  http://www.di.uminho.pt/prc2021/condominios#8Dto
+        :8Dto rdf:type owl:NamedIndividual ,
+               :Fração ;
+      :descrição "8Dto"^^xsd:string ;
+      :fração "R"^^xsd:string ;
+      :mensalidade 36.45 ; 
+      :permilagem 24.   
+            
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
