@@ -1,0 +1,62 @@
+Quantos exames estão registados?
+PREFIX : <http://www.di.uminho.pt/prc2021/gestaoEMD#>
+
+
+select (count(?s) as ?numeroExames) where { 
+	?s a :EMD.
+}
+
+
+Quantos exames tiveram um resultado válido?
+PREFIX : <http://www.di.uminho.pt/prc2021/gestaoEMD#>
+
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+select (count(?s) as ?validos) where { 
+	?s a :EMD;
+    	
+    	:resultado "true"^^xsd:boolean
+    	
+}
+
+
+Qual a distribuição dos exames por género?
+PREFIX : <http://www.di.uminho.pt/prc2021/gestaoEMD#>
+select ?genero (count(?s) as ?total) where {
+    ?s a :EMD;
+    :realizadoPor ?a.
+    
+    ?a :genero ?genero.
+} group by ?genero
+
+
+Qual a distribuição dos exames por modalidade?
+PREFIX : <http://www.di.uminho.pt/prc2021/gestaoEMD#>
+select ?modalidade (count(?s) as ?total) where {
+    ?s a :EMD;
+    :realizadoPor ?a.
+    
+    ?a :pratica ?modalidade.
+} group by ?modalidade
+
+
+
+Quantos atletas federados do "GDGoma" fizeram EMD?
+
+PREFIX : <http://www.di.uminho.pt/prc2021/gestaoEMD#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+select  (count(?s) as ?total) where {
+    ?s a :Atleta;
+    :genero "F";   
+    :federado "true"^^xsd:boolean ;
+                      
+    :pertenceA :GDGoma
+}
+
+Quantos atletas do género feminino que praticam Triatlo fizeram EMD?
+PREFIX : <http://www.di.uminho.pt/prc2021/gestaoEMD#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+select  (count(?s) as ?total) where {
+    ?s a :Atleta;
+    :genero "F";
+    :pratica :Triatlo
+}

@@ -1,0 +1,5622 @@
+@prefix : <http://www.di.uminho.pt/prc2021/gestaoEMD#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.di.uminho.pt/prc2021/gestaoEMD> .
+
+<http://www.di.uminho.pt/prc2021/gestaoEMD> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#clubeDe
+:clubeDe rdf:type owl:ObjectProperty ;
+         owl:inverseOf :pertenceA .
+
+
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#pertenceA
+:pertenceA rdf:type owl:ObjectProperty ;
+           rdfs:domain :Atleta ;
+           rdfs:range :Clube .
+
+
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#pratica
+:pratica rdf:type owl:ObjectProperty ;
+         owl:inverseOf :praticadoPor ;
+         rdfs:domain :Atleta ;
+         rdfs:range :Modalidade .
+
+
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#praticadoPor
+:praticadoPor rdf:type owl:ObjectProperty .
+
+
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#realizadoPor
+:realizadoPor rdf:type owl:ObjectProperty ;
+              owl:inverseOf :realizou ;
+              rdfs:domain :EMD ;
+              rdfs:range :Atleta .
+
+
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#realizou
+:realizou rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#clube
+:clube rdf:type owl:DatatypeProperty .
+
+
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#dataEMD
+:dataEMD rdf:type owl:DatatypeProperty .
+
+
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#email
+:email rdf:type owl:DatatypeProperty .
+
+
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#federado
+:federado rdf:type owl:DatatypeProperty .
+
+
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#genero
+:genero rdf:type owl:DatatypeProperty .
+
+
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#id
+:id rdf:type owl:DatatypeProperty .
+
+
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#idade
+:idade rdf:type owl:DatatypeProperty .
+
+
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#modalidade
+:modalidade rdf:type owl:DatatypeProperty .
+
+
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#morada
+:morada rdf:type owl:DatatypeProperty .
+
+
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#nome
+:nome rdf:type owl:DatatypeProperty .
+
+
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#resultado
+:resultado rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#Atleta
+:Atleta rdf:type owl:Class .
+
+
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#Clube
+:Clube rdf:type owl:Class .
+
+
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD
+:EMD rdf:type owl:Class .
+
+
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#Modalidade
+:Modalidade rdf:type owl:Class .
+
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0ee00725274024d5a2
+:EMD_60b3ee0ee00725274024d5a2 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Emily_Terrell;
+		 :dataEMD "2020-07-27" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e62b59d062f2018a3
+:EMD_60b3ee0e62b59d062f2018a3 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Medina_Hartman;
+		 :dataEMD "2019-01-17" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e01ada8b23fc63b31
+:EMD_60b3ee0e01ada8b23fc63b31 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Andrews_Rivas;
+		 :dataEMD "2020-04-09" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e6ab8471af29e2014
+:EMD_60b3ee0e6ab8471af29e2014 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Marcella_Combs;
+		 :dataEMD "2020-06-12" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0ed16d4695ffdf5f17
+:EMD_60b3ee0ed16d4695ffdf5f17 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Mendoza_Buckner;
+		 :dataEMD "2019-09-13" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e2707c21708cc3418
+:EMD_60b3ee0e2707c21708cc3418 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Sellers_Copeland;
+		 :dataEMD "2021-04-25" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e4a1e0233af16ac8c
+:EMD_60b3ee0e4a1e0233af16ac8c rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Bernard_Stokes;
+		 :dataEMD "2020-12-29" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0ed5225a2a93a69c3a
+:EMD_60b3ee0ed5225a2a93a69c3a rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Alfreda_Raymond;
+		 :dataEMD "2021-03-04" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e9488e742d1600f58
+:EMD_60b3ee0e9488e742d1600f58 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Alston_Green;
+		 :dataEMD "2021-05-29" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0ef8b2c3b732bc0d82
+:EMD_60b3ee0ef8b2c3b732bc0d82 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Paige_Mccarthy;
+		 :dataEMD "2019-10-27" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0ec14a4ad7e917ed36
+:EMD_60b3ee0ec14a4ad7e917ed36 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Claudine_Gill;
+		 :dataEMD "2020-08-09" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0ecf1638e25755912c
+:EMD_60b3ee0ecf1638e25755912c rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Summer_Calhoun;
+		 :dataEMD "2019-12-03" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e2fac3611c3cd7291
+:EMD_60b3ee0e2fac3611c3cd7291 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Slater_David;
+		 :dataEMD "2020-01-22" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e1f3d25c518678bd7
+:EMD_60b3ee0e1f3d25c518678bd7 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Ophelia_Boyd;
+		 :dataEMD "2020-09-03" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0ee62c8f8a846459ea
+:EMD_60b3ee0ee62c8f8a846459ea rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Evans_Singleton;
+		 :dataEMD "2019-08-02" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e0539642b38645cb3
+:EMD_60b3ee0e0539642b38645cb3 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Church_Bishop;
+		 :dataEMD "2020-08-07" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e3f327a6ba71f77b0
+:EMD_60b3ee0e3f327a6ba71f77b0 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Woodard_Bennett;
+		 :dataEMD "2019-07-13" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e30fc3c2042f955eb
+:EMD_60b3ee0e30fc3c2042f955eb rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Vasquez_Michael;
+		 :dataEMD "2019-09-15" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0ee90bdefcc8703185
+:EMD_60b3ee0ee90bdefcc8703185 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Holloway_Maxwell;
+		 :dataEMD "2019-09-04" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e559fb2fd0142f64c
+:EMD_60b3ee0e559fb2fd0142f64c rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Michele_Barber;
+		 :dataEMD "2020-02-04" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0eb2087f8cccef830d
+:EMD_60b3ee0eb2087f8cccef830d rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Chambers_Burton;
+		 :dataEMD "2020-03-01" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0ea0dc6768a6ca7192
+:EMD_60b3ee0ea0dc6768a6ca7192 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Massey_Goodman;
+		 :dataEMD "2021-03-26" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0ee3d27702cac0b7cd
+:EMD_60b3ee0ee3d27702cac0b7cd rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Klein_Cameron;
+		 :dataEMD "2021-02-26" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e23a38b2da3f0a76e
+:EMD_60b3ee0e23a38b2da3f0a76e rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Lambert_Mueller;
+		 :dataEMD "2020-07-11" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e172e761f8d52c213
+:EMD_60b3ee0e172e761f8d52c213 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Ewing_Drake;
+		 :dataEMD "2021-02-15" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e2573d42d411cc591
+:EMD_60b3ee0e2573d42d411cc591 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Lester_Manning;
+		 :dataEMD "2019-01-04" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0ee95a95d0c9bc3e5f
+:EMD_60b3ee0ee95a95d0c9bc3e5f rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Nina_Fowler;
+		 :dataEMD "2020-04-16" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0effaf9b013df4203d
+:EMD_60b3ee0effaf9b013df4203d rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Lynn_Shaw;
+		 :dataEMD "2020-07-25" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0ee3f58fda00f17cc6
+:EMD_60b3ee0ee3f58fda00f17cc6 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Betty_Blake;
+		 :dataEMD "2021-01-13" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0ee7cb2701483df2c9
+:EMD_60b3ee0ee7cb2701483df2c9 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Oneill_Roth;
+		 :dataEMD "2020-10-23" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e74703dea724376f8
+:EMD_60b3ee0e74703dea724376f8 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Roxanne_Miles;
+		 :dataEMD "2019-06-03" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0ef3bfaf77b4e67849
+:EMD_60b3ee0ef3bfaf77b4e67849 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Cecelia_Adams;
+		 :dataEMD "2019-04-20" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e54b12900f5e6c314
+:EMD_60b3ee0e54b12900f5e6c314 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Irma_Jacobs;
+		 :dataEMD "2019-12-12" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0ef050e91efe68a668
+:EMD_60b3ee0ef050e91efe68a668 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Angelia_Noel;
+		 :dataEMD "2020-12-23" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e536b83d9d562f9c8
+:EMD_60b3ee0e536b83d9d562f9c8 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Sallie_Shaffer;
+		 :dataEMD "2020-06-02" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e6dbcbe60effe125d
+:EMD_60b3ee0e6dbcbe60effe125d rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Jordan_Bonner;
+		 :dataEMD "2020-06-22" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e8b4f7dca2601ddfc
+:EMD_60b3ee0e8b4f7dca2601ddfc rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Bartlett_Sexton;
+		 :dataEMD "2019-12-17" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e59411e4e9d97d70a
+:EMD_60b3ee0e59411e4e9d97d70a rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Opal_Stewart;
+		 :dataEMD "2019-07-27" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0ee78616dd040e4dca
+:EMD_60b3ee0ee78616dd040e4dca rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Ola_Glover;
+		 :dataEMD "2020-11-26" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0ea3043984230726fc
+:EMD_60b3ee0ea3043984230726fc rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Shelia_York;
+		 :dataEMD "2019-11-21" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e242cedae88a5f12c
+:EMD_60b3ee0e242cedae88a5f12c rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Raquel_Ratliff;
+		 :dataEMD "2019-07-31" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e846df12b8f8e750d
+:EMD_60b3ee0e846df12b8f8e750d rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Burke_Weeks;
+		 :dataEMD "2019-09-14" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e3f165afa6f23a0eb
+:EMD_60b3ee0e3f165afa6f23a0eb rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Best_French;
+		 :dataEMD "2019-04-30" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e0ee0185da196c9ab
+:EMD_60b3ee0e0ee0185da196c9ab rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Fowler_Alvarez;
+		 :dataEMD "2019-10-08" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0ecfbe9bf6149ba53b
+:EMD_60b3ee0ecfbe9bf6149ba53b rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Terri_Avila;
+		 :dataEMD "2020-03-16" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e84beb8fe0be593a5
+:EMD_60b3ee0e84beb8fe0be593a5 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Alford_Small;
+		 :dataEMD "2019-10-14" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0ebab436c1d23c2a84
+:EMD_60b3ee0ebab436c1d23c2a84 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Key_Arnold;
+		 :dataEMD "2020-03-01" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e20e993d5010857a4
+:EMD_60b3ee0e20e993d5010857a4 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Nguyen_Diaz;
+		 :dataEMD "2021-04-16" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0ee409ac878ba9b99b
+:EMD_60b3ee0ee409ac878ba9b99b rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Sherry_Morales;
+		 :dataEMD "2021-04-04" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0ed7a60ecd07dadb9e
+:EMD_60b3ee0ed7a60ecd07dadb9e rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Crane_Ballard;
+		 :dataEMD "2019-09-11" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e07cb41f968328e60
+:EMD_60b3ee0e07cb41f968328e60 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Terry_Chaney;
+		 :dataEMD "2020-07-11" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0ee48920a886a461e2
+:EMD_60b3ee0ee48920a886a461e2 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Sheppard_Bryant;
+		 :dataEMD "2019-03-04" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e79c5349b29557a62
+:EMD_60b3ee0e79c5349b29557a62 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Janis_Mckinney;
+		 :dataEMD "2020-11-03" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e3bffb9b3df6f5ea4
+:EMD_60b3ee0e3bffb9b3df6f5ea4 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Sue_Waters;
+		 :dataEMD "2020-05-10" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e03c621784bf7b2eb
+:EMD_60b3ee0e03c621784bf7b2eb rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Cynthia_Page;
+		 :dataEMD "2019-05-30" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0ea96d47b79642735d
+:EMD_60b3ee0ea96d47b79642735d rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Montgomery_Rhodes;
+		 :dataEMD "2019-10-14" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e63cc2530b136daef
+:EMD_60b3ee0e63cc2530b136daef rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Claire_Joyce;
+		 :dataEMD "2021-03-22" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e8a311b08fca3541b
+:EMD_60b3ee0e8a311b08fca3541b rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Evangelina_Key;
+		 :dataEMD "2021-04-16" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0ea9b4c2114abcf6d7
+:EMD_60b3ee0ea9b4c2114abcf6d7 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Effie_Gibson;
+		 :dataEMD "2020-11-24" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e16fc834f28234ef4
+:EMD_60b3ee0e16fc834f28234ef4 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Maureen_Cobb;
+		 :dataEMD "2021-03-16" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0efe55045feaaea0d0
+:EMD_60b3ee0efe55045feaaea0d0 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Dee_Holman;
+		 :dataEMD "2020-11-22" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e53dad18808565be7
+:EMD_60b3ee0e53dad18808565be7 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Larson_Morin;
+		 :dataEMD "2019-02-13" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e25015995bacd5bed
+:EMD_60b3ee0e25015995bacd5bed rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Ursula_Martinez;
+		 :dataEMD "2021-01-29" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0ed8819374df399b72
+:EMD_60b3ee0ed8819374df399b72 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_English_Clemons;
+		 :dataEMD "2020-10-10" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e47a5478e9b66110d
+:EMD_60b3ee0e47a5478e9b66110d rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Stella_Jackson;
+		 :dataEMD "2020-10-28" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0eddf26117e9d32bcb
+:EMD_60b3ee0eddf26117e9d32bcb rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Haley_Joseph;
+		 :dataEMD "2019-05-01" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0ebc5f8bcac6a4b89d
+:EMD_60b3ee0ebc5f8bcac6a4b89d rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Kelsey_Roberts;
+		 :dataEMD "2020-04-09" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e9f0c3dbf2ecc854f
+:EMD_60b3ee0e9f0c3dbf2ecc854f rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Watson_Lynch;
+		 :dataEMD "2019-06-26" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e6cb88f8d26691e15
+:EMD_60b3ee0e6cb88f8d26691e15 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Chasity_Coffey;
+		 :dataEMD "2021-05-14" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e0797a9f03b138d18
+:EMD_60b3ee0e0797a9f03b138d18 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Paula_Delaney;
+		 :dataEMD "2021-02-26" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e769aecb50db619f2
+:EMD_60b3ee0e769aecb50db619f2 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Galloway_Sanders;
+		 :dataEMD "2019-06-27" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e553355b77862ea98
+:EMD_60b3ee0e553355b77862ea98 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Tina_Blankenship;
+		 :dataEMD "2021-04-12" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0ee3bb3fd71f515d88
+:EMD_60b3ee0ee3bb3fd71f515d88 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Whitehead_Montgomery;
+		 :dataEMD "2021-04-11" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0ed5dd8522cc53e7b0
+:EMD_60b3ee0ed5dd8522cc53e7b0 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Dominguez_Chambers;
+		 :dataEMD "2021-04-22" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e28ab1329e2ed0888
+:EMD_60b3ee0e28ab1329e2ed0888 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Booth_Eaton;
+		 :dataEMD "2019-05-23" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e7524108bf9936414
+:EMD_60b3ee0e7524108bf9936414 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Joanna_Grant;
+		 :dataEMD "2019-07-14" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e59e86eaf9b9a5372
+:EMD_60b3ee0e59e86eaf9b9a5372 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Jeri_Pearson;
+		 :dataEMD "2019-03-28" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e13085dc64e17e4b0
+:EMD_60b3ee0e13085dc64e17e4b0 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Sanchez_Mcgee;
+		 :dataEMD "2021-05-13" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e3d4f8a3a439f8b7a
+:EMD_60b3ee0e3d4f8a3a439f8b7a rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Magdalena_Francis;
+		 :dataEMD "2019-12-02" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e6edaad4b8a63efae
+:EMD_60b3ee0e6edaad4b8a63efae rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Morris_Poole;
+		 :dataEMD "2021-05-19" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e538d62e10eba66b6
+:EMD_60b3ee0e538d62e10eba66b6 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Rodriguez_Gonzalez;
+		 :dataEMD "2021-02-16" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0eca6dd1525f201090
+:EMD_60b3ee0eca6dd1525f201090 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Christine_Rice;
+		 :dataEMD "2021-05-18" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e472001f8e05a40ee
+:EMD_60b3ee0e472001f8e05a40ee rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Valdez_Harper;
+		 :dataEMD "2020-11-10" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e3b279f45e79cd6fa
+:EMD_60b3ee0e3b279f45e79cd6fa rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Berta_Clay;
+		 :dataEMD "2021-04-24" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0eee4b8338800e6003
+:EMD_60b3ee0eee4b8338800e6003 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Bonnie_Sandoval;
+		 :dataEMD "2019-10-18" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e66f3d4c3cc778b1e
+:EMD_60b3ee0e66f3d4c3cc778b1e rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Stein_Wiggins;
+		 :dataEMD "2020-11-24" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e278b7161e71d9ceb
+:EMD_60b3ee0e278b7161e71d9ceb rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Tanya_Mcclain;
+		 :dataEMD "2020-12-08" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e7ded570068dce1d9
+:EMD_60b3ee0e7ded570068dce1d9 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Perry_Sanford;
+		 :dataEMD "2021-02-23" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e94c479068389f5e3
+:EMD_60b3ee0e94c479068389f5e3 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Maxine_Rutledge;
+		 :dataEMD "2019-10-10" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e7ac2f667ececc242
+:EMD_60b3ee0e7ac2f667ececc242 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Tucker_Morse;
+		 :dataEMD "2020-07-01" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0eabfeddd7f84fd275
+:EMD_60b3ee0eabfeddd7f84fd275 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Thelma_Schmidt;
+		 :dataEMD "2020-05-17" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e3d51473e1b41004b
+:EMD_60b3ee0e3d51473e1b41004b rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Charles_Kim;
+		 :dataEMD "2020-03-24" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e926c1d538dfaabd3
+:EMD_60b3ee0e926c1d538dfaabd3 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Duncan_Davidson;
+		 :dataEMD "2020-01-27" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0ea6339abf19460649
+:EMD_60b3ee0ea6339abf19460649 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Gertrude_Dillon;
+		 :dataEMD "2019-04-07" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e059b32a47b518e93
+:EMD_60b3ee0e059b32a47b518e93 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Brennan_Santana;
+		 :dataEMD "2019-02-06" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e57b3659681466acf
+:EMD_60b3ee0e57b3659681466acf rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Ball_Barlow;
+		 :dataEMD "2020-11-09" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e651ec286b869976d
+:EMD_60b3ee0e651ec286b869976d rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Oneil_Baxter;
+		 :dataEMD "2020-05-10" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e67043c92ce84a97c
+:EMD_60b3ee0e67043c92ce84a97c rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Helena_Mayo;
+		 :dataEMD "2020-10-09" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0ea5d75fed720e4820
+:EMD_60b3ee0ea5d75fed720e4820 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Martin_Brewer;
+		 :dataEMD "2021-05-10" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee0e9dc10b681d5212b5
+:EMD_60b3ee0e9dc10b681d5212b5 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Wilder_Greene;
+		 :dataEMD "2019-10-13" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee817af5fb3fb1e153ef
+:EMD_60b3ee817af5fb3fb1e153ef rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Harrison_Finch;
+		 :dataEMD "2019-06-23" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81145de55fffb7bdfa
+:EMD_60b3ee81145de55fffb7bdfa rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Jordan_Alvarez;
+		 :dataEMD "2019-01-01" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee811a4429c17e036357
+:EMD_60b3ee811a4429c17e036357 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Lane_Norton;
+		 :dataEMD "2020-04-27" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee8115745fe4ce8dbc5a
+:EMD_60b3ee8115745fe4ce8dbc5a rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Carrillo_Munoz;
+		 :dataEMD "2020-07-06" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee8128adc82a45f8023d
+:EMD_60b3ee8128adc82a45f8023d rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Barrett_Frederick;
+		 :dataEMD "2020-06-18" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81525963fc4fd2cf9d
+:EMD_60b3ee81525963fc4fd2cf9d rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Harmon_Stone;
+		 :dataEMD "2019-06-12" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81e69c16cc6108e7ad
+:EMD_60b3ee81e69c16cc6108e7ad rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Chandra_Potts;
+		 :dataEMD "2021-01-18" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81ec958ef30a9daa8d
+:EMD_60b3ee81ec958ef30a9daa8d rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_John_Warner;
+		 :dataEMD "2021-01-12" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee813905ebb273d5d9a0
+:EMD_60b3ee813905ebb273d5d9a0 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Casey_Bowman;
+		 :dataEMD "2019-03-09" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee8106e9b44af3270a40
+:EMD_60b3ee8106e9b44af3270a40 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Mccullough_Pena;
+		 :dataEMD "2020-04-23" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee812f35f4ff3c2edecf
+:EMD_60b3ee812f35f4ff3c2edecf rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Brianna_Bentley;
+		 :dataEMD "2019-06-27" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee819d5bb33e21ff7e16
+:EMD_60b3ee819d5bb33e21ff7e16 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Nixon_Hendrix;
+		 :dataEMD "2021-02-26" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81ce306eb25d963bb0
+:EMD_60b3ee81ce306eb25d963bb0 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Buckner_Luna;
+		 :dataEMD "2019-07-11" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee8138f5b0173e1bc637
+:EMD_60b3ee8138f5b0173e1bc637 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Britt_Zamora;
+		 :dataEMD "2019-08-25" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81f5035e13f1db0069
+:EMD_60b3ee81f5035e13f1db0069 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Hendrix_Bauer;
+		 :dataEMD "2020-11-14" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee8131597dae8f73a11b
+:EMD_60b3ee8131597dae8f73a11b rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Travis_Sampson;
+		 :dataEMD "2019-10-30" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81e32abefb2a9e8629
+:EMD_60b3ee81e32abefb2a9e8629 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Darla_Ware;
+		 :dataEMD "2019-11-22" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee815852d8fc2dc33e8a
+:EMD_60b3ee815852d8fc2dc33e8a rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Peters_Vaughn;
+		 :dataEMD "2020-01-17" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee815e7f792d741f2228
+:EMD_60b3ee815e7f792d741f2228 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Lawrence_Herman;
+		 :dataEMD "2020-10-25" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee815b7d9a126c47165d
+:EMD_60b3ee815b7d9a126c47165d rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Chang_Oneill;
+		 :dataEMD "2019-07-26" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81e769b6603a6525c6
+:EMD_60b3ee81e769b6603a6525c6 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Patrick_Mcintyre;
+		 :dataEMD "2020-12-20" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee815cb65367e6de0b3c
+:EMD_60b3ee815cb65367e6de0b3c rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Joyce_Evans;
+		 :dataEMD "2020-01-11" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee813bd664873721a6a1
+:EMD_60b3ee813bd664873721a6a1 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Larsen_Villarreal;
+		 :dataEMD "2019-07-03" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81e901a8c787b38008
+:EMD_60b3ee81e901a8c787b38008 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Morrow_Yang;
+		 :dataEMD "2020-03-09" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81874f8871966eedd1
+:EMD_60b3ee81874f8871966eedd1 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Dunn_Horn;
+		 :dataEMD "2021-02-04" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81146b3cd8954b7256
+:EMD_60b3ee81146b3cd8954b7256 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Viola_Medina;
+		 :dataEMD "2019-09-04" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81e02e5fb35760bec3
+:EMD_60b3ee81e02e5fb35760bec3 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Valdez_Barnes;
+		 :dataEMD "2021-05-14" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee8162c5de4569ccfe2f
+:EMD_60b3ee8162c5de4569ccfe2f rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Sweet_Gibbs;
+		 :dataEMD "2019-08-29" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81034e5cb2050e882a
+:EMD_60b3ee81034e5cb2050e882a rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Addie_Hayes;
+		 :dataEMD "2019-07-17" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81a545dd3ccaea41b0
+:EMD_60b3ee81a545dd3ccaea41b0 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_May_Holt;
+		 :dataEMD "2021-04-25" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee817c1ce5b6cb67302a
+:EMD_60b3ee817c1ce5b6cb67302a rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Christensen_Boyd;
+		 :dataEMD "2019-12-31" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81cdbf91a4db1113eb
+:EMD_60b3ee81cdbf91a4db1113eb rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Workman_Franks;
+		 :dataEMD "2019-03-18" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81ed581129ff3b2087
+:EMD_60b3ee81ed581129ff3b2087 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Lucile_Underwood;
+		 :dataEMD "2020-01-05" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81e62094c1d0bfca5c
+:EMD_60b3ee81e62094c1d0bfca5c rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Heath_Bishop;
+		 :dataEMD "2019-08-09" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81bc1a4f4c3bc26de1
+:EMD_60b3ee81bc1a4f4c3bc26de1 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Rosales_Mejia;
+		 :dataEMD "2019-04-12" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81e20d4412bdf4f468
+:EMD_60b3ee81e20d4412bdf4f468 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Ray_Howe;
+		 :dataEMD "2019-02-02" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81956a3fcc57d06c8c
+:EMD_60b3ee81956a3fcc57d06c8c rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Suarez_Campbell;
+		 :dataEMD "2019-07-05" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee8125e3c7f8ae2daa67
+:EMD_60b3ee8125e3c7f8ae2daa67 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Shaffer_Le;
+		 :dataEMD "2020-01-20" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81c0d4102a9f396149
+:EMD_60b3ee81c0d4102a9f396149 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Justine_Wise;
+		 :dataEMD "2019-02-08" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81b5064ca4e9536d3c
+:EMD_60b3ee81b5064ca4e9536d3c rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Villarreal_Tucker;
+		 :dataEMD "2019-10-14" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee8195bd88f9e936aca7
+:EMD_60b3ee8195bd88f9e936aca7 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Monica_Neal;
+		 :dataEMD "2021-04-05" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81864959e7fb8bc864
+:EMD_60b3ee81864959e7fb8bc864 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Lloyd_Dotson;
+		 :dataEMD "2019-05-11" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee8187b3e7d863bbaf97
+:EMD_60b3ee8187b3e7d863bbaf97 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Mccray_Barker;
+		 :dataEMD "2019-01-29" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81afbc52a666850b8c
+:EMD_60b3ee81afbc52a666850b8c rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Sellers_Hunter;
+		 :dataEMD "2019-02-14" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81d74bfab7c22b5eaa
+:EMD_60b3ee81d74bfab7c22b5eaa rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Cathryn_Fletcher;
+		 :dataEMD "2021-01-31" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee810078ab3f7321a731
+:EMD_60b3ee810078ab3f7321a731 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Dee_Lowery;
+		 :dataEMD "2020-02-29" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81a40cc7fc63be65ad
+:EMD_60b3ee81a40cc7fc63be65ad rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Freeman_Wyatt;
+		 :dataEMD "2019-04-25" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81efda597f9d074638
+:EMD_60b3ee81efda597f9d074638 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Guy_Drake;
+		 :dataEMD "2020-01-09" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81d9e0e05421b4d08e
+:EMD_60b3ee81d9e0e05421b4d08e rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Mendez_Good;
+		 :dataEMD "2019-07-01" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee813611a9e67c3546a3
+:EMD_60b3ee813611a9e67c3546a3 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Burnett_Hogan;
+		 :dataEMD "2019-03-03" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee816e416ff33c21634a
+:EMD_60b3ee816e416ff33c21634a rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Jamie_Cherry;
+		 :dataEMD "2020-08-03" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81858e8c650b8d992f
+:EMD_60b3ee81858e8c650b8d992f rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Bird_Noble;
+		 :dataEMD "2019-09-06" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee817468bb467a39e2f8
+:EMD_60b3ee817468bb467a39e2f8 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Burgess_Bradshaw;
+		 :dataEMD "2020-08-11" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee8117de88dc519ae9d3
+:EMD_60b3ee8117de88dc519ae9d3 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Laura_Jacobson;
+		 :dataEMD "2020-10-22" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee8160bf5c46dcb3cfa7
+:EMD_60b3ee8160bf5c46dcb3cfa7 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Blair_Sherman;
+		 :dataEMD "2020-09-06" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81ea2bed08bf81e861
+:EMD_60b3ee81ea2bed08bf81e861 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Bobbi_Hawkins;
+		 :dataEMD "2020-09-01" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81051fe3467036095a
+:EMD_60b3ee81051fe3467036095a rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Montoya_Anthony;
+		 :dataEMD "2019-12-21" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee8152ddb1911c44b96a
+:EMD_60b3ee8152ddb1911c44b96a rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Hooper_Kirby;
+		 :dataEMD "2021-01-29" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81839f04840d199de9
+:EMD_60b3ee81839f04840d199de9 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Wolfe_Baird;
+		 :dataEMD "2020-12-30" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81375cc4e9aba8bc6e
+:EMD_60b3ee81375cc4e9aba8bc6e rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Lamb_Graham;
+		 :dataEMD "2019-01-03" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81422fd173977583e5
+:EMD_60b3ee81422fd173977583e5 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Valentine_Fitzgerald;
+		 :dataEMD "2021-04-22" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee813c7547937e764cab
+:EMD_60b3ee813c7547937e764cab rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Herminia_Mooney;
+		 :dataEMD "2020-06-26" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee818db2661d700d6ea3
+:EMD_60b3ee818db2661d700d6ea3 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Golden_Hopkins;
+		 :dataEMD "2019-09-08" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee811426bce48b453191
+:EMD_60b3ee811426bce48b453191 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Lancaster_Andrews;
+		 :dataEMD "2020-12-22" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81d13fde44c2e74aab
+:EMD_60b3ee81d13fde44c2e74aab rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Elena_Sullivan;
+		 :dataEMD "2019-08-15" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81ef9b6d894223a9fd
+:EMD_60b3ee81ef9b6d894223a9fd rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Deana_Ramsey;
+		 :dataEMD "2020-04-26" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee8154161dd7358b2e65
+:EMD_60b3ee8154161dd7358b2e65 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Mayra_Rose;
+		 :dataEMD "2019-12-01" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81fcb5c8f9970e2899
+:EMD_60b3ee81fcb5c8f9970e2899 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Tina_Salinas;
+		 :dataEMD "2020-07-27" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81e97e332884e1299a
+:EMD_60b3ee81e97e332884e1299a rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Sheila_Caldwell;
+		 :dataEMD "2020-05-24" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee8151ebf5ddaa5ca13c
+:EMD_60b3ee8151ebf5ddaa5ca13c rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Hudson_Duffy;
+		 :dataEMD "2020-01-02" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee818e25f41f67491f02
+:EMD_60b3ee818e25f41f67491f02 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Guzman_Douglas;
+		 :dataEMD "2021-04-22" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee817ca74f6cb607c6f9
+:EMD_60b3ee817ca74f6cb607c6f9 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Ethel_Bartlett;
+		 :dataEMD "2019-12-09" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee818cd611e6bf56f2f1
+:EMD_60b3ee818cd611e6bf56f2f1 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Doyle_Odom;
+		 :dataEMD "2021-04-13" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81c1515414ac1fb549
+:EMD_60b3ee81c1515414ac1fb549 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Araceli_Castaneda;
+		 :dataEMD "2020-06-02" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81d15fe413bd86d938
+:EMD_60b3ee81d15fe413bd86d938 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Fuentes_Walker;
+		 :dataEMD "2020-06-04" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81e2dc932e4e6f7e51
+:EMD_60b3ee81e2dc932e4e6f7e51 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Sarah_Moore;
+		 :dataEMD "2019-01-09" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81f9666482a5c13406
+:EMD_60b3ee81f9666482a5c13406 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Cheryl_Watson;
+		 :dataEMD "2019-10-25" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81d7dbdba97369e927
+:EMD_60b3ee81d7dbdba97369e927 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Langley_Velez;
+		 :dataEMD "2019-04-12" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81e024b81dde892dd6
+:EMD_60b3ee81e024b81dde892dd6 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Alisa_Morrison;
+		 :dataEMD "2019-06-30" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81c5073acaa4febef6
+:EMD_60b3ee81c5073acaa4febef6 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Malinda_Merritt;
+		 :dataEMD "2019-12-29" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81963e6ecf70e3d586
+:EMD_60b3ee81963e6ecf70e3d586 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Lenora_Kane;
+		 :dataEMD "2020-07-30" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee8122f33125935e59d3
+:EMD_60b3ee8122f33125935e59d3 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Cabrera_Curtis;
+		 :dataEMD "2021-02-25" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81828ee0dba6850475
+:EMD_60b3ee81828ee0dba6850475 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Roseann_Benjamin;
+		 :dataEMD "2020-05-28" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee8152b3f05331a47645
+:EMD_60b3ee8152b3f05331a47645 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Stafford_Ray;
+		 :dataEMD "2020-04-29" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81411e7acd216d0bf0
+:EMD_60b3ee81411e7acd216d0bf0 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Jewel_Trevino;
+		 :dataEMD "2019-09-18" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee8103ed6d19e90ce9f7
+:EMD_60b3ee8103ed6d19e90ce9f7 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Mckenzie_Woods;
+		 :dataEMD "2020-09-04" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee8182b8712a2f15e41a
+:EMD_60b3ee8182b8712a2f15e41a rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Jean_Conley;
+		 :dataEMD "2020-12-10" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee811a2021b6b24ffbc2
+:EMD_60b3ee811a2021b6b24ffbc2 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Conway_Alexander;
+		 :dataEMD "2020-09-14" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81c44446a9eceefd87
+:EMD_60b3ee81c44446a9eceefd87 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Maryann_Joyce;
+		 :dataEMD "2020-04-08" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee812d50aad901e7e243
+:EMD_60b3ee812d50aad901e7e243 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Ayers_Carroll;
+		 :dataEMD "2019-07-31" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee816b42d22ea075aba7
+:EMD_60b3ee816b42d22ea075aba7 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Bonita_Mccormick;
+		 :dataEMD "2019-01-29" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee812a4b8125a96689a0
+:EMD_60b3ee812a4b8125a96689a0 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Kathy_Kramer;
+		 :dataEMD "2019-04-28" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81b71a63346d0243e7
+:EMD_60b3ee81b71a63346d0243e7 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Tonia_Bryan;
+		 :dataEMD "2020-10-10" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81559385200672594d
+:EMD_60b3ee81559385200672594d rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Barker_Mercer;
+		 :dataEMD "2020-02-02" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81a113b4cb68ef5906
+:EMD_60b3ee81a113b4cb68ef5906 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Mcfarland_Tyson;
+		 :dataEMD "2019-05-19" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81655cc723f988a62d
+:EMD_60b3ee81655cc723f988a62d rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Meagan_Carter;
+		 :dataEMD "2021-02-19" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee8186fff74d432c9259
+:EMD_60b3ee8186fff74d432c9259 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Catalina_Webb;
+		 :dataEMD "2019-06-25" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81051bf4a2138bb141
+:EMD_60b3ee81051bf4a2138bb141 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Moses_Sargent;
+		 :dataEMD "2020-10-31" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81c4345661feac7a9a
+:EMD_60b3ee81c4345661feac7a9a rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Preston_Mccall;
+		 :dataEMD "2021-02-19" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3ee81451b811209c3deef
+:EMD_60b3ee81451b811209c3deef rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Christian_Clements;
+		 :dataEMD "2019-06-30" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb933e50bd455af89a9
+:EMD_60b3eeb933e50bd455af89a9 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Jeanine_Hester;
+		 :dataEMD "2020-08-30" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9b701a941937c0dd8
+:EMD_60b3eeb9b701a941937c0dd8 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Tonia_Espinoza;
+		 :dataEMD "2020-08-12" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9fc87ff10010ae517
+:EMD_60b3eeb9fc87ff10010ae517 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Alyssa_Howard;
+		 :dataEMD "2019-08-25" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9e966a3cf1239840a
+:EMD_60b3eeb9e966a3cf1239840a rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Merrill_Fulton;
+		 :dataEMD "2020-06-29" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9dbbc9f23e5c888ac
+:EMD_60b3eeb9dbbc9f23e5c888ac rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Jaime_Erickson;
+		 :dataEMD "2020-11-01" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9425c872217db611e
+:EMD_60b3eeb9425c872217db611e rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Felicia_Skinner;
+		 :dataEMD "2019-09-09" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb967d2dd4be3e2c87d
+:EMD_60b3eeb967d2dd4be3e2c87d rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Margaret_Bray;
+		 :dataEMD "2020-07-12" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb944e8f43647ed05f2
+:EMD_60b3eeb944e8f43647ed05f2 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Etta_Cotton;
+		 :dataEMD "2021-03-04" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9bc3d74e0cb400631
+:EMD_60b3eeb9bc3d74e0cb400631 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Kelley_Davidson;
+		 :dataEMD "2020-10-18" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb934a2174ec11d92a6
+:EMD_60b3eeb934a2174ec11d92a6 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Crawford_Merritt;
+		 :dataEMD "2019-08-18" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9fa4e587712a640d4
+:EMD_60b3eeb9fa4e587712a640d4 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Kim_Buck;
+		 :dataEMD "2020-11-04" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb948dd398953308f2d
+:EMD_60b3eeb948dd398953308f2d rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Gilda_Schmidt;
+		 :dataEMD "2019-07-01" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9a2085e98659a2f5b
+:EMD_60b3eeb9a2085e98659a2f5b rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Mcintosh_Aguirre;
+		 :dataEMD "2019-04-09" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9bfd86db079523f51
+:EMD_60b3eeb9bfd86db079523f51 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Ida_Bradshaw;
+		 :dataEMD "2020-11-25" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb98614ea36f88963ba
+:EMD_60b3eeb98614ea36f88963ba rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Jefferson_Pacheco;
+		 :dataEMD "2020-04-08" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb910808af364c63729
+:EMD_60b3eeb910808af364c63729 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Olson_Hickman;
+		 :dataEMD "2020-12-14" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb939a5cb2da478d86c
+:EMD_60b3eeb939a5cb2da478d86c rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Malinda_Mccall;
+		 :dataEMD "2020-06-09" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb92b1debc068c42080
+:EMD_60b3eeb92b1debc068c42080 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Raquel_Dejesus;
+		 :dataEMD "2020-10-06" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9ec44aba1040d2e1e
+:EMD_60b3eeb9ec44aba1040d2e1e rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Daniel_Chambers;
+		 :dataEMD "2020-02-06" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9a9f081f26deada43
+:EMD_60b3eeb9a9f081f26deada43 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Samantha_Sharp;
+		 :dataEMD "2019-12-21" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9468961b15e8e1277
+:EMD_60b3eeb9468961b15e8e1277 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Robert_Herman;
+		 :dataEMD "2021-01-09" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9edcbd2a0befa0a74
+:EMD_60b3eeb9edcbd2a0befa0a74 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Olive_Chapman;
+		 :dataEMD "2021-02-20" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb97aecf09da8650e19
+:EMD_60b3eeb97aecf09da8650e19 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Mccoy_Blackburn;
+		 :dataEMD "2019-04-30" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9d7265f5ab15e4fed
+:EMD_60b3eeb9d7265f5ab15e4fed rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Lambert_Ferrell;
+		 :dataEMD "2020-12-10" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9217c0274b8a1022b
+:EMD_60b3eeb9217c0274b8a1022b rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Small_Coffey;
+		 :dataEMD "2019-03-12" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9cc832d080dd2c0e0
+:EMD_60b3eeb9cc832d080dd2c0e0 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Hicks_Daniels;
+		 :dataEMD "2019-05-03" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9bc920eef418c62ac
+:EMD_60b3eeb9bc920eef418c62ac rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Meghan_Cabrera;
+		 :dataEMD "2019-03-23" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9cf9c078af09a7b74
+:EMD_60b3eeb9cf9c078af09a7b74 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Hubbard_Hart;
+		 :dataEMD "2019-01-12" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb968346da5d651b20d
+:EMD_60b3eeb968346da5d651b20d rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Chelsea_Gallegos;
+		 :dataEMD "2020-07-25" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb91afe89807606d176
+:EMD_60b3eeb91afe89807606d176 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Natalie_Figueroa;
+		 :dataEMD "2020-03-16" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9080c70a07ef5c4ac
+:EMD_60b3eeb9080c70a07ef5c4ac rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Hayes_Ward;
+		 :dataEMD "2020-11-20" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb96f9b421618f39954
+:EMD_60b3eeb96f9b421618f39954 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Graves_Mccray;
+		 :dataEMD "2019-10-13" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb90afb40019dea8a64
+:EMD_60b3eeb90afb40019dea8a64 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Mavis_Riley;
+		 :dataEMD "2020-09-27" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb90fc3f9678fed0903
+:EMD_60b3eeb90fc3f9678fed0903 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Salas_Joseph;
+		 :dataEMD "2019-09-09" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9f0342bd19d6a5a39
+:EMD_60b3eeb9f0342bd19d6a5a39 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Carly_Peck;
+		 :dataEMD "2020-10-22" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb966fd425e94c59395
+:EMD_60b3eeb966fd425e94c59395 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Ramirez_Blevins;
+		 :dataEMD "2019-02-16" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb91977642e615c41e3
+:EMD_60b3eeb91977642e615c41e3 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Parks_Saunders;
+		 :dataEMD "2020-12-31" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb93a24ff700a3928d5
+:EMD_60b3eeb93a24ff700a3928d5 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Leanne_Armstrong;
+		 :dataEMD "2021-01-13" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb99c434fb1a7c7c633
+:EMD_60b3eeb99c434fb1a7c7c633 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Kline_Stark;
+		 :dataEMD "2020-03-22" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9f430b0e9e81165c4
+:EMD_60b3eeb9f430b0e9e81165c4 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Elliott_Guzman;
+		 :dataEMD "2019-02-18" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb94d27b52fe1b15f19
+:EMD_60b3eeb94d27b52fe1b15f19 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Liz_Baldwin;
+		 :dataEMD "2019-08-06" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb91ab516aa15e1199a
+:EMD_60b3eeb91ab516aa15e1199a rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Warner_Bullock;
+		 :dataEMD "2020-10-16" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb97b17e786bdf88e29
+:EMD_60b3eeb97b17e786bdf88e29 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Santana_Harper;
+		 :dataEMD "2019-12-18" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb95762eb38f4ae9a22
+:EMD_60b3eeb95762eb38f4ae9a22 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Imelda_Odonnell;
+		 :dataEMD "2019-01-18" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9c05f073a238c4aa6
+:EMD_60b3eeb9c05f073a238c4aa6 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Lila_Curry;
+		 :dataEMD "2020-09-24" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9c82e74bc1831a3be
+:EMD_60b3eeb9c82e74bc1831a3be rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Milagros_Ellis;
+		 :dataEMD "2020-02-06" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9e81cdbbee14cab97
+:EMD_60b3eeb9e81cdbbee14cab97 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Stafford_Hale;
+		 :dataEMD "2019-07-15" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb983fb3181e8f43d12
+:EMD_60b3eeb983fb3181e8f43d12 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Blevins_Cline;
+		 :dataEMD "2021-05-05" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9817b6dc6e2848304
+:EMD_60b3eeb9817b6dc6e2848304 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Marisol_Owen;
+		 :dataEMD "2020-07-15" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9ab56338f42cdaf13
+:EMD_60b3eeb9ab56338f42cdaf13 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Mcintyre_Walsh;
+		 :dataEMD "2020-07-02" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9de8d709dd3fd086f
+:EMD_60b3eeb9de8d709dd3fd086f rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Valarie_Silva;
+		 :dataEMD "2020-11-06" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9077997c0e212f286
+:EMD_60b3eeb9077997c0e212f286 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Jimmie_Beck;
+		 :dataEMD "2020-01-06" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb916caa13610b8cadf
+:EMD_60b3eeb916caa13610b8cadf rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Amparo_Price;
+		 :dataEMD "2019-08-30" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9c65ee38149a83dfc
+:EMD_60b3eeb9c65ee38149a83dfc rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Susanna_Lowery;
+		 :dataEMD "2021-01-24" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb97c9c1d91087c47a4
+:EMD_60b3eeb97c9c1d91087c47a4 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Flynn_Huber;
+		 :dataEMD "2020-08-23" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb97aabcddbffca43f3
+:EMD_60b3eeb97aabcddbffca43f3 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Elaine_Allen;
+		 :dataEMD "2019-03-29" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb935b59a6c217af521
+:EMD_60b3eeb935b59a6c217af521 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Gwen_Pate;
+		 :dataEMD "2020-09-24" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb972a330700a58a10a
+:EMD_60b3eeb972a330700a58a10a rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Leila_Solis;
+		 :dataEMD "2020-08-19" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9a78530cac96a3f79
+:EMD_60b3eeb9a78530cac96a3f79 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Mercedes_Heath;
+		 :dataEMD "2021-04-17" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9235de1538781611d
+:EMD_60b3eeb9235de1538781611d rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Althea_Fitzpatrick;
+		 :dataEMD "2019-05-03" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9f7311f86c6a33646
+:EMD_60b3eeb9f7311f86c6a33646 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Arlene_Morton;
+		 :dataEMD "2019-12-09" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9354e8a0e1817c201
+:EMD_60b3eeb9354e8a0e1817c201 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Mosley_Gonzales;
+		 :dataEMD "2020-09-26" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9e6ca114d8ab96bc4
+:EMD_60b3eeb9e6ca114d8ab96bc4 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Torres_Hardy;
+		 :dataEMD "2019-08-31" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb945accec6f3eb9c3d
+:EMD_60b3eeb945accec6f3eb9c3d rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Annmarie_Petersen;
+		 :dataEMD "2020-12-13" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb92a2f391cda5b305e
+:EMD_60b3eeb92a2f391cda5b305e rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Osborn_Green;
+		 :dataEMD "2020-12-03" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9a57cc0f98a998c9a
+:EMD_60b3eeb9a57cc0f98a998c9a rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Davenport_Dominguez;
+		 :dataEMD "2020-08-26" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb94b33eaa274778def
+:EMD_60b3eeb94b33eaa274778def rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Barton_Massey;
+		 :dataEMD "2019-12-20" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9a78fd4bfe9e36453
+:EMD_60b3eeb9a78fd4bfe9e36453 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Holly_Bowen;
+		 :dataEMD "2019-06-09" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9868c63b27774163f
+:EMD_60b3eeb9868c63b27774163f rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Dennis_Crawford;
+		 :dataEMD "2020-06-28" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9a857578bd25302db
+:EMD_60b3eeb9a857578bd25302db rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Oliver_Mcleod;
+		 :dataEMD "2019-05-25" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9abbaec58aed568da
+:EMD_60b3eeb9abbaec58aed568da rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Tameka_Orr;
+		 :dataEMD "2019-03-01" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb90d885cf3327fe6bd
+:EMD_60b3eeb90d885cf3327fe6bd rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Foster_Strickland;
+		 :dataEMD "2020-05-28" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb91ded4fa3db5fdf8e
+:EMD_60b3eeb91ded4fa3db5fdf8e rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Marlene_Rodgers;
+		 :dataEMD "2019-10-26" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb909f2540c651ec8ff
+:EMD_60b3eeb909f2540c651ec8ff rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Shari_Mathews;
+		 :dataEMD "2020-04-12" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb91c3038d321c60bb3
+:EMD_60b3eeb91c3038d321c60bb3 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Josie_Rasmussen;
+		 :dataEMD "2021-05-07" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9c4b1d5f4d4a0099b
+:EMD_60b3eeb9c4b1d5f4d4a0099b rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Shelton_Walton;
+		 :dataEMD "2020-06-22" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9cded7ae5d2724d52
+:EMD_60b3eeb9cded7ae5d2724d52 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Odonnell_Russell;
+		 :dataEMD "2020-11-21" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb91485796dedd2444b
+:EMD_60b3eeb91485796dedd2444b rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Elba_Le;
+		 :dataEMD "2021-02-04" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9fbb0206c040aa4f1
+:EMD_60b3eeb9fbb0206c040aa4f1 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Sweet_Woodward;
+		 :dataEMD "2019-10-20" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9ef81456a2178baca
+:EMD_60b3eeb9ef81456a2178baca rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Wilkins_Cummings;
+		 :dataEMD "2020-02-24" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb929306aeaff7f31a0
+:EMD_60b3eeb929306aeaff7f31a0 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Rogers_Noel;
+		 :dataEMD "2021-02-04" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb99d4b85092734ded4
+:EMD_60b3eeb99d4b85092734ded4 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Hodges_Ashley;
+		 :dataEMD "2021-03-08" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb96b4950f33f42c5b6
+:EMD_60b3eeb96b4950f33f42c5b6 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Curtis_Dillon;
+		 :dataEMD "2020-12-19" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9c4c935218799831f
+:EMD_60b3eeb9c4c935218799831f rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Lelia_Oliver;
+		 :dataEMD "2021-02-08" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb91dbe172db8fd8f61
+:EMD_60b3eeb91dbe172db8fd8f61 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Fuentes_Rogers;
+		 :dataEMD "2019-02-07" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9c7550e5dc5a5ddb1
+:EMD_60b3eeb9c7550e5dc5a5ddb1 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Carole_Lindsey;
+		 :dataEMD "2020-05-28" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb95632a2a2915ae72b
+:EMD_60b3eeb95632a2a2915ae72b rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Martinez_Johns;
+		 :dataEMD "2019-07-27" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9af56ea737b79ac30
+:EMD_60b3eeb9af56ea737b79ac30 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Kellie_Holland;
+		 :dataEMD "2020-07-21" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9e387855b0de81d09
+:EMD_60b3eeb9e387855b0de81d09 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Mathis_Kirk;
+		 :dataEMD "2019-06-27" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb93bfe7ecd8361f659
+:EMD_60b3eeb93bfe7ecd8361f659 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Bertha_Shelton;
+		 :dataEMD "2019-10-22" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9860033876d65f5f7
+:EMD_60b3eeb9860033876d65f5f7 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Bonnie_Diaz;
+		 :dataEMD "2020-01-08" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb97a2511a770990f0f
+:EMD_60b3eeb97a2511a770990f0f rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Becker_Talley;
+		 :dataEMD "2020-08-23" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9080a93e404ab974a
+:EMD_60b3eeb9080a93e404ab974a rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Zelma_Bell;
+		 :dataEMD "2019-08-11" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb96e988bb711c0c940
+:EMD_60b3eeb96e988bb711c0c940 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Stanton_Cox;
+		 :dataEMD "2019-09-29" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb97d329fb5b3d7379b
+:EMD_60b3eeb97d329fb5b3d7379b rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Cindy_Shepherd;
+		 :dataEMD "2020-07-15" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb95b00f32d469ef4b2
+:EMD_60b3eeb95b00f32d469ef4b2 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Knapp_Buckner;
+		 :dataEMD "2020-09-20" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb91accf4bd8b426245
+:EMD_60b3eeb91accf4bd8b426245 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Callahan_Mitchell;
+		 :dataEMD "2020-11-27" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9dd4dc919156890ee
+:EMD_60b3eeb9dd4dc919156890ee rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Allie_Lyons;
+		 :dataEMD "2021-01-10" ;
+		 :resultado false.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9d9f01093dc14973f
+:EMD_60b3eeb9d9f01093dc14973f rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Tammy_Bryant;
+		 :dataEMD "2020-05-08" ;
+		 :resultado true.
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EMD_60b3eeb9d027f625a1b63723
+:EMD_60b3eeb9d027f625a1b63723 rdf:type owl:NamedIndividual , 
+		 :EMD;
+		 :realizadoPor :A_Carissa_Rosario;
+		 :dataEMD "2021-01-02" ;
+		 :resultado true.
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Emily Terrell
+:A_Emily_Terrell rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :GDGoma;
+		 :pratica :Futebol;
+		 :email "emily.terrell@gdgoma.org" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_0" ;
+		 :idade 28 ;
+		 :morada "Clay" ;
+		 :nome "Emily Terrell".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Medina Hartman
+:A_Medina_Hartman rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AVCfamalicão;
+		 :pratica :Triatlo;
+		 :email "medina.hartman@avcfamalicão.name" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_1" ;
+		 :idade 34 ;
+		 :morada "Orick" ;
+		 :nome "Medina Hartman".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Andrews Rivas
+:A_Andrews_Rivas rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ABCbraga;
+		 :pratica :Badminton;
+		 :email "andrews.rivas@abcbraga.us" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_2" ;
+		 :idade 24 ;
+		 :morada "Saticoy" ;
+		 :nome "Andrews Rivas".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Marcella Combs
+:A_Marcella_Combs rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ClubedeOrientaçãodoMinho;
+		 :pratica :Ciclismo;
+		 :email "marcella.combs@clube de orientação do minho.com" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_3" ;
+		 :idade 24 ;
+		 :morada "Manila" ;
+		 :nome "Marcella Combs".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Mendoza Buckner
+:A_Mendoza_Buckner rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :SCBraga;
+		 :pratica :Patinagem;
+		 :email "mendoza.buckner@scbraga.ca" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_4" ;
+		 :idade 23 ;
+		 :morada "Brogan" ;
+		 :nome "Mendoza Buckner".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Sellers Copeland
+:A_Sellers_Copeland rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ClubedeOrientaçãodoMinho;
+		 :pratica :Triatlo;
+		 :email "sellers.copeland@clube de orientação do minho.net" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_5" ;
+		 :idade 28 ;
+		 :morada "Spelter" ;
+		 :nome "Sellers Copeland".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Bernard Stokes
+:A_Bernard_Stokes rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AVCfamalicão;
+		 :pratica :Badminton;
+		 :email "bernard.stokes@avcfamalicão.biz" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_6" ;
+		 :idade 34 ;
+		 :morada "Sussex" ;
+		 :nome "Bernard Stokes".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Alfreda Raymond
+:A_Alfreda_Raymond rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ABCbraga;
+		 :pratica :Triatlo;
+		 :email "alfreda.raymond@abcbraga.tv" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_7" ;
+		 :idade 30 ;
+		 :morada "Sultana" ;
+		 :nome "Alfreda Raymond".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Alston Green
+:A_Alston_Green rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :SCBraga;
+		 :pratica :Triatlo;
+		 :email "alston.green@scbraga.biz" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_8" ;
+		 :idade 29 ;
+		 :morada "Thornport" ;
+		 :nome "Alston Green".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Paige Mccarthy
+:A_Paige_Mccarthy rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACDRcrespos;
+		 :pratica :Parapente;
+		 :email "paige.mccarthy@acdrcrespos.co.uk" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_9" ;
+		 :idade 32 ;
+		 :morada "Brandywine" ;
+		 :nome "Paige Mccarthy".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Claudine Gill
+:A_Claudine_Gill rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACRroriz;
+		 :pratica :Orientação;
+		 :email "claudine.gill@acrroriz.me" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_10" ;
+		 :idade 33 ;
+		 :morada "Katonah" ;
+		 :nome "Claudine Gill".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Summer Calhoun
+:A_Summer_Calhoun rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ClubedeOrientaçãodoMinho;
+		 :pratica :Esgrima;
+		 :email "summer.calhoun@clube de orientação do minho.info" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_11" ;
+		 :idade 26 ;
+		 :morada "National" ;
+		 :nome "Summer Calhoun".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Slater David
+:A_Slater_David rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :Vitoria;
+		 :pratica :BTT;
+		 :email "slater.david@vitoria.org" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_12" ;
+		 :idade 25 ;
+		 :morada "Chicopee" ;
+		 :nome "Slater David".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Ophelia Boyd
+:A_Ophelia_Boyd rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AmigosMontanha;
+		 :pratica :Atletismo;
+		 :email "ophelia.boyd@amigosmontanha.name" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_13" ;
+		 :idade 21 ;
+		 :morada "Chaparrito" ;
+		 :nome "Ophelia Boyd".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Evans Singleton
+:A_Evans_Singleton rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ClubedeOrientaçãodoMinho;
+		 :pratica :Orientação;
+		 :email "evans.singleton@clube de orientação do minho.us" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_14" ;
+		 :idade 25 ;
+		 :morada "Sunwest" ;
+		 :nome "Evans Singleton".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Church Bishop
+:A_Church_Bishop rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :Vitoria;
+		 :pratica :Orientação;
+		 :email "church.bishop@vitoria.com" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_15" ;
+		 :idade 28 ;
+		 :morada "Vallonia" ;
+		 :nome "Church Bishop".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Woodard Bennett
+:A_Woodard_Bennett rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :EDViana;
+		 :pratica :SUP;
+		 :email "woodard.bennett@edviana.ca" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_16" ;
+		 :idade 33 ;
+		 :morada "Ruckersville" ;
+		 :nome "Woodard Bennett".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Vasquez Michael
+:A_Vasquez_Michael rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :Vitoria;
+		 :pratica :Basquetebol;
+		 :email "vasquez.michael@vitoria.net" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_17" ;
+		 :idade 27 ;
+		 :morada "Munjor" ;
+		 :nome "Vasquez Michael".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Holloway Maxwell
+:A_Holloway_Maxwell rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AVCfamalicão;
+		 :pratica :Ciclismo;
+		 :email "holloway.maxwell@avcfamalicão.biz" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_18" ;
+		 :idade 30 ;
+		 :morada "Waikele" ;
+		 :nome "Holloway Maxwell".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Michele Barber
+:A_Michele_Barber rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ClubedeOrientaçãodoMinho;
+		 :pratica :Karaté;
+		 :email "michele.barber@clube de orientação do minho.tv" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_19" ;
+		 :idade 27 ;
+		 :morada "Oberlin" ;
+		 :nome "Michele Barber".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Chambers Burton
+:A_Chambers_Burton rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :Vitoria;
+		 :pratica :SUP;
+		 :email "chambers.burton@vitoria.biz" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_20" ;
+		 :idade 25 ;
+		 :morada "Boling" ;
+		 :nome "Chambers Burton".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Massey Goodman
+:A_Massey_Goodman rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AmigosMontanha;
+		 :pratica :BTT;
+		 :email "massey.goodman@amigosmontanha.co.uk" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_21" ;
+		 :idade 32 ;
+		 :morada "Garfield" ;
+		 :nome "Massey Goodman".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Klein Cameron
+:A_Klein_Cameron rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :SCBraga;
+		 :pratica :Futebol;
+		 :email "klein.cameron@scbraga.me" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_22" ;
+		 :idade 30 ;
+		 :morada "Twilight" ;
+		 :nome "Klein Cameron".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Lambert Mueller
+:A_Lambert_Mueller rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACDRcrespos;
+		 :pratica :Basquetebol;
+		 :email "lambert.mueller@acdrcrespos.info" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_23" ;
+		 :idade 25 ;
+		 :morada "Oretta" ;
+		 :nome "Lambert Mueller".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Ewing Drake
+:A_Ewing_Drake rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACDRcrespos;
+		 :pratica :Ciclismo;
+		 :email "ewing.drake@acdrcrespos.org" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_24" ;
+		 :idade 21 ;
+		 :morada "Nanafalia" ;
+		 :nome "Ewing Drake".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Lester Manning
+:A_Lester_Manning rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACDRcrespos;
+		 :pratica :Dança;
+		 :email "lester.manning@acdrcrespos.name" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_25" ;
+		 :idade 35 ;
+		 :morada "Grandview" ;
+		 :nome "Lester Manning".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Nina Fowler
+:A_Nina_Fowler rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AmigosMontanha;
+		 :pratica :Futebol;
+		 :email "nina.fowler@amigosmontanha.us" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_26" ;
+		 :idade 30 ;
+		 :morada "Turah" ;
+		 :nome "Nina Fowler".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Lynn Shaw
+:A_Lynn_Shaw rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ClubedeOrientaçãodoMinho;
+		 :pratica :SUP;
+		 :email "lynn.shaw@clube de orientação do minho.com" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_27" ;
+		 :idade 26 ;
+		 :morada "Cutter" ;
+		 :nome "Lynn Shaw".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Betty Blake
+:A_Betty_Blake rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ABCbraga;
+		 :pratica :Badminton;
+		 :email "betty.blake@abcbraga.ca" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_28" ;
+		 :idade 25 ;
+		 :morada "Teasdale" ;
+		 :nome "Betty Blake".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Oneill Roth
+:A_Oneill_Roth rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :EDViana;
+		 :pratica :Andebol;
+		 :email "oneill.roth@edviana.net" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_29" ;
+		 :idade 25 ;
+		 :morada "Graball" ;
+		 :nome "Oneill Roth".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Roxanne Miles
+:A_Roxanne_Miles rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :Vitoria;
+		 :pratica :Badminton;
+		 :email "roxanne.miles@vitoria.biz" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_30" ;
+		 :idade 26 ;
+		 :morada "Haring" ;
+		 :nome "Roxanne Miles".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Cecelia Adams
+:A_Cecelia_Adams rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AmigosMontanha;
+		 :pratica :Futebol;
+		 :email "cecelia.adams@amigosmontanha.tv" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_31" ;
+		 :idade 28 ;
+		 :morada "Fairlee" ;
+		 :nome "Cecelia Adams".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Irma Jacobs
+:A_Irma_Jacobs rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :EDViana;
+		 :pratica :Atletismo;
+		 :email "irma.jacobs@edviana.biz" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_32" ;
+		 :idade 27 ;
+		 :morada "Driftwood" ;
+		 :nome "Irma Jacobs".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Angelia Noel
+:A_Angelia_Noel rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :EDViana;
+		 :pratica :Orientação;
+		 :email "angelia.noel@edviana.co.uk" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_33" ;
+		 :idade 34 ;
+		 :morada "Martell" ;
+		 :nome "Angelia Noel".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Sallie Shaffer
+:A_Sallie_Shaffer rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ClubedeOrientaçãodoMinho;
+		 :pratica :Ciclismo;
+		 :email "sallie.shaffer@clube de orientação do minho.me" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_34" ;
+		 :idade 24 ;
+		 :morada "Brownlee" ;
+		 :nome "Sallie Shaffer".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Jordan Bonner
+:A_Jordan_Bonner rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :Vitoria;
+		 :pratica :SUP;
+		 :email "jordan.bonner@vitoria.info" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_35" ;
+		 :idade 33 ;
+		 :morada "Northchase" ;
+		 :nome "Jordan Bonner".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Bartlett Sexton
+:A_Bartlett_Sexton rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :GDGoma;
+		 :pratica :Atletismo;
+		 :email "bartlett.sexton@gdgoma.org" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_36" ;
+		 :idade 33 ;
+		 :morada "Rehrersburg" ;
+		 :nome "Bartlett Sexton".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Opal Stewart
+:A_Opal_Stewart rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AVCfamalicão;
+		 :pratica :Basquetebol;
+		 :email "opal.stewart@avcfamalicão.name" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_37" ;
+		 :idade 30 ;
+		 :morada "Dola" ;
+		 :nome "Opal Stewart".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Ola Glover
+:A_Ola_Glover rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ClubedeOrientaçãodoMinho;
+		 :pratica :Equitação;
+		 :email "ola.glover@clube de orientação do minho.us" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_38" ;
+		 :idade 34 ;
+		 :morada "Barronett" ;
+		 :nome "Ola Glover".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Shelia York
+:A_Shelia_York rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :SCBraga;
+		 :pratica :Orientação;
+		 :email "shelia.york@scbraga.com" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_39" ;
+		 :idade 21 ;
+		 :morada "Escondida" ;
+		 :nome "Shelia York".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Raquel Ratliff
+:A_Raquel_Ratliff rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ABCbraga;
+		 :pratica :Patinagem;
+		 :email "raquel.ratliff@abcbraga.ca" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_40" ;
+		 :idade 33 ;
+		 :morada "Goldfield" ;
+		 :nome "Raquel Ratliff".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Burke Weeks
+:A_Burke_Weeks rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AmigosMontanha;
+		 :pratica :Parapente;
+		 :email "burke.weeks@amigosmontanha.net" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_41" ;
+		 :idade 29 ;
+		 :morada "Mapletown" ;
+		 :nome "Burke Weeks".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Best French
+:A_Best_French rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :GDGoma;
+		 :pratica :Ciclismo;
+		 :email "best.french@gdgoma.biz" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_42" ;
+		 :idade 33 ;
+		 :morada "Longbranch" ;
+		 :nome "Best French".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Fowler Alvarez
+:A_Fowler_Alvarez rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AmigosMontanha;
+		 :pratica :Esgrima;
+		 :email "fowler.alvarez@amigosmontanha.tv" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_43" ;
+		 :idade 31 ;
+		 :morada "Choctaw" ;
+		 :nome "Fowler Alvarez".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Terri Avila
+:A_Terri_Avila rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AVCfamalicão;
+		 :pratica :Esgrima;
+		 :email "terri.avila@avcfamalicão.biz" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_44" ;
+		 :idade 22 ;
+		 :morada "Crown" ;
+		 :nome "Terri Avila".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Alford Small
+:A_Alford_Small rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AVCfamalicão;
+		 :pratica :Badminton;
+		 :email "alford.small@avcfamalicão.co.uk" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_45" ;
+		 :idade 32 ;
+		 :morada "Alamo" ;
+		 :nome "Alford Small".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Key Arnold
+:A_Key_Arnold rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AmigosMontanha;
+		 :pratica :Ciclismo;
+		 :email "key.arnold@amigosmontanha.me" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_46" ;
+		 :idade 27 ;
+		 :morada "Orason" ;
+		 :nome "Key Arnold".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Nguyen Diaz
+:A_Nguyen_Diaz rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AmigosMontanha;
+		 :pratica :BTT;
+		 :email "nguyen.diaz@amigosmontanha.info" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_47" ;
+		 :idade 35 ;
+		 :morada "Watchtower" ;
+		 :nome "Nguyen Diaz".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Sherry Morales
+:A_Sherry_Morales rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AVCfamalicão;
+		 :pratica :Atletismo;
+		 :email "sherry.morales@avcfamalicão.org" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_48" ;
+		 :idade 26 ;
+		 :morada "Waukeenah" ;
+		 :nome "Sherry Morales".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Crane Ballard
+:A_Crane_Ballard rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :Vitoria;
+		 :pratica :BTT;
+		 :email "crane.ballard@vitoria.name" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_49" ;
+		 :idade 25 ;
+		 :morada "Fedora" ;
+		 :nome "Crane Ballard".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Terry Chaney
+:A_Terry_Chaney rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :SCBraga;
+		 :pratica :Karaté;
+		 :email "terry.chaney@scbraga.us" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_50" ;
+		 :idade 23 ;
+		 :morada "Blanco" ;
+		 :nome "Terry Chaney".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Sheppard Bryant
+:A_Sheppard_Bryant rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AVCfamalicão;
+		 :pratica :Karaté;
+		 :email "sheppard.bryant@avcfamalicão.com" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_51" ;
+		 :idade 23 ;
+		 :morada "Brandermill" ;
+		 :nome "Sheppard Bryant".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Janis Mckinney
+:A_Janis_Mckinney rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ABCbraga;
+		 :pratica :BTT;
+		 :email "janis.mckinney@abcbraga.ca" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_52" ;
+		 :idade 28 ;
+		 :morada "Osage" ;
+		 :nome "Janis Mckinney".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Sue Waters
+:A_Sue_Waters rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :Vitoria;
+		 :pratica :Andebol;
+		 :email "sue.waters@vitoria.net" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_53" ;
+		 :idade 32 ;
+		 :morada "Carrizo" ;
+		 :nome "Sue Waters".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Cynthia Page
+:A_Cynthia_Page rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACRroriz;
+		 :pratica :Equitação;
+		 :email "cynthia.page@acrroriz.biz" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_54" ;
+		 :idade 22 ;
+		 :morada "Forestburg" ;
+		 :nome "Cynthia Page".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Montgomery Rhodes
+:A_Montgomery_Rhodes rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :Vitoria;
+		 :pratica :Atletismo;
+		 :email "montgomery.rhodes@vitoria.tv" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_55" ;
+		 :idade 31 ;
+		 :morada "Rivers" ;
+		 :nome "Montgomery Rhodes".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Claire Joyce
+:A_Claire_Joyce rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACDRcrespos;
+		 :pratica :Basquetebol;
+		 :email "claire.joyce@acdrcrespos.biz" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_56" ;
+		 :idade 25 ;
+		 :morada "Belgreen" ;
+		 :nome "Claire Joyce".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Evangelina Key
+:A_Evangelina_Key rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACDRcrespos;
+		 :pratica :Ciclismo;
+		 :email "evangelina.key@acdrcrespos.co.uk" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_57" ;
+		 :idade 26 ;
+		 :morada "Whitewater" ;
+		 :nome "Evangelina Key".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Effie Gibson
+:A_Effie_Gibson rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACRroriz;
+		 :pratica :Andebol;
+		 :email "effie.gibson@acrroriz.me" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_58" ;
+		 :idade 33 ;
+		 :morada "Virgie" ;
+		 :nome "Effie Gibson".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Maureen Cobb
+:A_Maureen_Cobb rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AmigosMontanha;
+		 :pratica :Patinagem;
+		 :email "maureen.cobb@amigosmontanha.info" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_59" ;
+		 :idade 24 ;
+		 :morada "Venice" ;
+		 :nome "Maureen Cobb".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Dee Holman
+:A_Dee_Holman rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AVCfamalicão;
+		 :pratica :Parapente;
+		 :email "dee.holman@avcfamalicão.org" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_60" ;
+		 :idade 35 ;
+		 :morada "Brenton" ;
+		 :nome "Dee Holman".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Larson Morin
+:A_Larson_Morin rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :GDGoma;
+		 :pratica :Andebol;
+		 :email "larson.morin@gdgoma.name" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_61" ;
+		 :idade 26 ;
+		 :morada "Summerset" ;
+		 :nome "Larson Morin".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Ursula Martinez
+:A_Ursula_Martinez rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AmigosMontanha;
+		 :pratica :Dança;
+		 :email "ursula.martinez@amigosmontanha.us" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_62" ;
+		 :idade 32 ;
+		 :morada "Lorraine" ;
+		 :nome "Ursula Martinez".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_English Clemons
+:A_English_Clemons rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :GDGoma;
+		 :pratica :Basquetebol;
+		 :email "english.clemons@gdgoma.com" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_63" ;
+		 :idade 30 ;
+		 :morada "Ticonderoga" ;
+		 :nome "English Clemons".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Stella Jackson
+:A_Stella_Jackson rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACDRcrespos;
+		 :pratica :Badminton;
+		 :email "stella.jackson@acdrcrespos.ca" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_64" ;
+		 :idade 31 ;
+		 :morada "Kaka" ;
+		 :nome "Stella Jackson".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Haley Joseph
+:A_Haley_Joseph rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AVCfamalicão;
+		 :pratica :Ciclismo;
+		 :email "haley.joseph@avcfamalicão.net" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_65" ;
+		 :idade 28 ;
+		 :morada "Brantleyville" ;
+		 :nome "Haley Joseph".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Kelsey Roberts
+:A_Kelsey_Roberts rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :Vitoria;
+		 :pratica :Patinagem;
+		 :email "kelsey.roberts@vitoria.biz" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_66" ;
+		 :idade 28 ;
+		 :morada "Morgandale" ;
+		 :nome "Kelsey Roberts".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Watson Lynch
+:A_Watson_Lynch rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :GDGoma;
+		 :pratica :Dança;
+		 :email "watson.lynch@gdgoma.tv" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_67" ;
+		 :idade 33 ;
+		 :morada "Fillmore" ;
+		 :nome "Watson Lynch".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Chasity Coffey
+:A_Chasity_Coffey rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :EDViana;
+		 :pratica :Karaté;
+		 :email "chasity.coffey@edviana.biz" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_68" ;
+		 :idade 23 ;
+		 :morada "Kersey" ;
+		 :nome "Chasity Coffey".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Paula Delaney
+:A_Paula_Delaney rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :EDViana;
+		 :pratica :Dança;
+		 :email "paula.delaney@edviana.co.uk" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_69" ;
+		 :idade 29 ;
+		 :morada "Disautel" ;
+		 :nome "Paula Delaney".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Galloway Sanders
+:A_Galloway_Sanders rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACRroriz;
+		 :pratica :Futebol;
+		 :email "galloway.sanders@acrroriz.me" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_70" ;
+		 :idade 33 ;
+		 :morada "Allendale" ;
+		 :nome "Galloway Sanders".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Tina Blankenship
+:A_Tina_Blankenship rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACDRcrespos;
+		 :pratica :SUP;
+		 :email "tina.blankenship@acdrcrespos.info" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_71" ;
+		 :idade 33 ;
+		 :morada "Longoria" ;
+		 :nome "Tina Blankenship".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Whitehead Montgomery
+:A_Whitehead_Montgomery rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AVCfamalicão;
+		 :pratica :Parapente;
+		 :email "whitehead.montgomery@avcfamalicão.org" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_72" ;
+		 :idade 34 ;
+		 :morada "Fairview" ;
+		 :nome "Whitehead Montgomery".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Dominguez Chambers
+:A_Dominguez_Chambers rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ABCbraga;
+		 :pratica :Equitação;
+		 :email "dominguez.chambers@abcbraga.name" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_73" ;
+		 :idade 35 ;
+		 :morada "Malott" ;
+		 :nome "Dominguez Chambers".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Booth Eaton
+:A_Booth_Eaton rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :SCBraga;
+		 :pratica :Triatlo;
+		 :email "booth.eaton@scbraga.us" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_74" ;
+		 :idade 33 ;
+		 :morada "Terlingua" ;
+		 :nome "Booth Eaton".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Joanna Grant
+:A_Joanna_Grant rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AmigosMontanha;
+		 :pratica :Parapente;
+		 :email "joanna.grant@amigosmontanha.com" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_75" ;
+		 :idade 33 ;
+		 :morada "Noblestown" ;
+		 :nome "Joanna Grant".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Jeri Pearson
+:A_Jeri_Pearson rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACRroriz;
+		 :pratica :Orientação;
+		 :email "jeri.pearson@acrroriz.ca" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_76" ;
+		 :idade 29 ;
+		 :morada "Falmouth" ;
+		 :nome "Jeri Pearson".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Sanchez Mcgee
+:A_Sanchez_Mcgee rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACDRcrespos;
+		 :pratica :Ciclismo;
+		 :email "sanchez.mcgee@acdrcrespos.net" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_77" ;
+		 :idade 31 ;
+		 :morada "Bascom" ;
+		 :nome "Sanchez Mcgee".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Magdalena Francis
+:A_Magdalena_Francis rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACDRcrespos;
+		 :pratica :Esgrima;
+		 :email "magdalena.francis@acdrcrespos.biz" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_78" ;
+		 :idade 27 ;
+		 :morada "Fostoria" ;
+		 :nome "Magdalena Francis".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Morris Poole
+:A_Morris_Poole rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AVCfamalicão;
+		 :pratica :Badminton;
+		 :email "morris.poole@avcfamalicão.tv" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_79" ;
+		 :idade 34 ;
+		 :morada "Steinhatchee" ;
+		 :nome "Morris Poole".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Rodriguez Gonzalez
+:A_Rodriguez_Gonzalez rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :GDGoma;
+		 :pratica :Triatlo;
+		 :email "rodriguez.gonzalez@gdgoma.biz" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_80" ;
+		 :idade 25 ;
+		 :morada "Coaldale" ;
+		 :nome "Rodriguez Gonzalez".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Christine Rice
+:A_Christine_Rice rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :GDGoma;
+		 :pratica :Orientação;
+		 :email "christine.rice@gdgoma.co.uk" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_81" ;
+		 :idade 33 ;
+		 :morada "Hayes" ;
+		 :nome "Christine Rice".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Valdez Harper
+:A_Valdez_Harper rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AmigosMontanha;
+		 :pratica :Karaté;
+		 :email "valdez.harper@amigosmontanha.me" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_82" ;
+		 :idade 33 ;
+		 :morada "Jacksonwald" ;
+		 :nome "Valdez Harper".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Berta Clay
+:A_Berta_Clay rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ClubedeOrientaçãodoMinho;
+		 :pratica :Atletismo;
+		 :email "berta.clay@clube de orientação do minho.info" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_83" ;
+		 :idade 29 ;
+		 :morada "Barclay" ;
+		 :nome "Berta Clay".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Bonnie Sandoval
+:A_Bonnie_Sandoval rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ClubedeOrientaçãodoMinho;
+		 :pratica :Equitação;
+		 :email "bonnie.sandoval@clube de orientação do minho.org" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_84" ;
+		 :idade 22 ;
+		 :morada "Shaft" ;
+		 :nome "Bonnie Sandoval".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Stein Wiggins
+:A_Stein_Wiggins rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :EDViana;
+		 :pratica :Atletismo;
+		 :email "stein.wiggins@edviana.name" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_85" ;
+		 :idade 35 ;
+		 :morada "Rosine" ;
+		 :nome "Stein Wiggins".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Tanya Mcclain
+:A_Tanya_Mcclain rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :GDGoma;
+		 :pratica :SUP;
+		 :email "tanya.mcclain@gdgoma.us" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_86" ;
+		 :idade 26 ;
+		 :morada "Fivepointville" ;
+		 :nome "Tanya Mcclain".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Perry Sanford
+:A_Perry_Sanford rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :Vitoria;
+		 :pratica :Atletismo;
+		 :email "perry.sanford@vitoria.com" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_87" ;
+		 :idade 32 ;
+		 :morada "Albany" ;
+		 :nome "Perry Sanford".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Maxine Rutledge
+:A_Maxine_Rutledge rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AmigosMontanha;
+		 :pratica :Badminton;
+		 :email "maxine.rutledge@amigosmontanha.ca" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_88" ;
+		 :idade 33 ;
+		 :morada "Caberfae" ;
+		 :nome "Maxine Rutledge".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Tucker Morse
+:A_Tucker_Morse rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :SCBraga;
+		 :pratica :Badminton;
+		 :email "tucker.morse@scbraga.net" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_89" ;
+		 :idade 26 ;
+		 :morada "Tyhee" ;
+		 :nome "Tucker Morse".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Thelma Schmidt
+:A_Thelma_Schmidt rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACRroriz;
+		 :pratica :Badminton;
+		 :email "thelma.schmidt@acrroriz.biz" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_90" ;
+		 :idade 23 ;
+		 :morada "Greenfields" ;
+		 :nome "Thelma Schmidt".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Charles Kim
+:A_Charles_Kim rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACDRcrespos;
+		 :pratica :BTT;
+		 :email "charles.kim@acdrcrespos.tv" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_91" ;
+		 :idade 24 ;
+		 :morada "Bennett" ;
+		 :nome "Charles Kim".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Duncan Davidson
+:A_Duncan_Davidson rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AmigosMontanha;
+		 :pratica :Karaté;
+		 :email "duncan.davidson@amigosmontanha.biz" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_92" ;
+		 :idade 35 ;
+		 :morada "Cedarville" ;
+		 :nome "Duncan Davidson".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Gertrude Dillon
+:A_Gertrude_Dillon rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACRroriz;
+		 :pratica :Badminton;
+		 :email "gertrude.dillon@acrroriz.co.uk" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_93" ;
+		 :idade 27 ;
+		 :morada "Oneida" ;
+		 :nome "Gertrude Dillon".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Brennan Santana
+:A_Brennan_Santana rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :Vitoria;
+		 :pratica :BTT;
+		 :email "brennan.santana@vitoria.me" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_94" ;
+		 :idade 29 ;
+		 :morada "Villarreal" ;
+		 :nome "Brennan Santana".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Ball Barlow
+:A_Ball_Barlow rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AmigosMontanha;
+		 :pratica :Parapente;
+		 :email "ball.barlow@amigosmontanha.info" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_95" ;
+		 :idade 28 ;
+		 :morada "Hobucken" ;
+		 :nome "Ball Barlow".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Oneil Baxter
+:A_Oneil_Baxter rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ClubedeOrientaçãodoMinho;
+		 :pratica :Triatlo;
+		 :email "oneil.baxter@clube de orientação do minho.org" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_96" ;
+		 :idade 24 ;
+		 :morada "Sanders" ;
+		 :nome "Oneil Baxter".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Helena Mayo
+:A_Helena_Mayo rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :Vitoria;
+		 :pratica :Andebol;
+		 :email "helena.mayo@vitoria.name" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_97" ;
+		 :idade 25 ;
+		 :morada "Bend" ;
+		 :nome "Helena Mayo".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Martin Brewer
+:A_Martin_Brewer rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACRroriz;
+		 :pratica :Patinagem;
+		 :email "martin.brewer@acrroriz.us" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_98" ;
+		 :idade 31 ;
+		 :morada "Taycheedah" ;
+		 :nome "Martin Brewer".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Wilder Greene
+:A_Wilder_Greene rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :Vitoria;
+		 :pratica :Badminton;
+		 :email "wilder.greene@vitoria.com" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_99" ;
+		 :idade 34 ;
+		 :morada "Heil" ;
+		 :nome "Wilder Greene".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Harrison Finch
+:A_Harrison_Finch rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :EDViana;
+		 :pratica :Esgrima;
+		 :email "harrison.finch@edviana.us" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_0" ;
+		 :idade 21 ;
+		 :morada "Harrison" ;
+		 :nome "Harrison Finch".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Jordan Alvarez
+:A_Jordan_Alvarez rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :EDViana;
+		 :pratica :Atletismo;
+		 :email "jordan.alvarez@edviana.biz" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_1" ;
+		 :idade 25 ;
+		 :morada "Riviera" ;
+		 :nome "Jordan Alvarez".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Lane Norton
+:A_Lane_Norton rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ABCbraga;
+		 :pratica :Patinagem;
+		 :email "lane.norton@abcbraga.io" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_2" ;
+		 :idade 22 ;
+		 :morada "Homestead" ;
+		 :nome "Lane Norton".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Carrillo Munoz
+:A_Carrillo_Munoz rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :SCBraga;
+		 :pratica :Esgrima;
+		 :email "carrillo.munoz@scbraga.biz" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_3" ;
+		 :idade 32 ;
+		 :morada "Bordelonville" ;
+		 :nome "Carrillo Munoz".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Barrett Frederick
+:A_Barrett_Frederick rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AVCfamalicão;
+		 :pratica :BTT;
+		 :email "barrett.frederick@avcfamalicão.net" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_4" ;
+		 :idade 29 ;
+		 :morada "Stollings" ;
+		 :nome "Barrett Frederick".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Harmon Stone
+:A_Harmon_Stone rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AmigosMontanha;
+		 :pratica :Badminton;
+		 :email "harmon.stone@amigosmontanha.com" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_5" ;
+		 :idade 21 ;
+		 :morada "Idledale" ;
+		 :nome "Harmon Stone".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Chandra Potts
+:A_Chandra_Potts rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AmigosMontanha;
+		 :pratica :Patinagem;
+		 :email "chandra.potts@amigosmontanha.tv" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_6" ;
+		 :idade 32 ;
+		 :morada "Albany" ;
+		 :nome "Chandra Potts".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_John Warner
+:A_John_Warner rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ClubedeOrientaçãodoMinho;
+		 :pratica :Badminton;
+		 :email "john.warner@clube de orientação do minho.co.uk" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_7" ;
+		 :idade 22 ;
+		 :morada "Veyo" ;
+		 :nome "John Warner".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Casey Bowman
+:A_Casey_Bowman rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ABCbraga;
+		 :pratica :Patinagem;
+		 :email "casey.bowman@abcbraga.ca" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_8" ;
+		 :idade 22 ;
+		 :morada "Tryon" ;
+		 :nome "Casey Bowman".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Mccullough Pena
+:A_Mccullough_Pena rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ClubedeOrientaçãodoMinho;
+		 :pratica :Triatlo;
+		 :email "mccullough.pena@clube de orientação do minho.name" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_9" ;
+		 :idade 27 ;
+		 :morada "Sunwest" ;
+		 :nome "Mccullough Pena".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Brianna Bentley
+:A_Brianna_Bentley rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACDRcrespos;
+		 :pratica :Triatlo;
+		 :email "brianna.bentley@acdrcrespos.org" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_10" ;
+		 :idade 28 ;
+		 :morada "Ypsilanti" ;
+		 :nome "Brianna Bentley".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Nixon Hendrix
+:A_Nixon_Hendrix rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AVCfamalicão;
+		 :pratica :Ténis;
+		 :email "nixon.hendrix@avcfamalicão.info" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_11" ;
+		 :idade 31 ;
+		 :morada "Bethpage" ;
+		 :nome "Nixon Hendrix".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Buckner Luna
+:A_Buckner_Luna rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :EDViana;
+		 :pratica :Esgrima;
+		 :email "buckner.luna@edviana.us" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_12" ;
+		 :idade 22 ;
+		 :morada "Veguita" ;
+		 :nome "Buckner Luna".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Britt Zamora
+:A_Britt_Zamora rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ClubedeOrientaçãodoMinho;
+		 :pratica :Ténis;
+		 :email "britt.zamora@clube de orientação do minho.biz" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_13" ;
+		 :idade 23 ;
+		 :morada "Rutherford" ;
+		 :nome "Britt Zamora".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Hendrix Bauer
+:A_Hendrix_Bauer rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :SCBraga;
+		 :pratica :Karaté;
+		 :email "hendrix.bauer@scbraga.io" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_14" ;
+		 :idade 30 ;
+		 :morada "Ryderwood" ;
+		 :nome "Hendrix Bauer".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Travis Sampson
+:A_Travis_Sampson rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :EDViana;
+		 :pratica :Ténis;
+		 :email "travis.sampson@edviana.biz" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_15" ;
+		 :idade 29 ;
+		 :morada "Dotsero" ;
+		 :nome "Travis Sampson".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Darla Ware
+:A_Darla_Ware rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :GDGoma;
+		 :pratica :Triatlo;
+		 :email "darla.ware@gdgoma.net" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_16" ;
+		 :idade 21 ;
+		 :morada "Villarreal" ;
+		 :nome "Darla Ware".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Peters Vaughn
+:A_Peters_Vaughn rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACRroriz;
+		 :pratica :Ténis;
+		 :email "peters.vaughn@acrroriz.com" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_17" ;
+		 :idade 21 ;
+		 :morada "Brandermill" ;
+		 :nome "Peters Vaughn".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Lawrence Herman
+:A_Lawrence_Herman rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :GDGoma;
+		 :pratica :Futebol;
+		 :email "lawrence.herman@gdgoma.tv" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_18" ;
+		 :idade 31 ;
+		 :morada "Wakulla" ;
+		 :nome "Lawrence Herman".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Chang Oneill
+:A_Chang_Oneill rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :EDViana;
+		 :pratica :Triatlo;
+		 :email "chang.oneill@edviana.co.uk" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_19" ;
+		 :idade 24 ;
+		 :morada "Falconaire" ;
+		 :nome "Chang Oneill".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Patrick Mcintyre
+:A_Patrick_Mcintyre rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :EDViana;
+		 :pratica :BTT;
+		 :email "patrick.mcintyre@edviana.ca" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_20" ;
+		 :idade 21 ;
+		 :morada "Emory" ;
+		 :nome "Patrick Mcintyre".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Joyce Evans
+:A_Joyce_Evans rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AmigosMontanha;
+		 :pratica :Andebol;
+		 :email "joyce.evans@amigosmontanha.name" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_21" ;
+		 :idade 27 ;
+		 :morada "Rivers" ;
+		 :nome "Joyce Evans".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Larsen Villarreal
+:A_Larsen_Villarreal rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :SCBraga;
+		 :pratica :Triatlo;
+		 :email "larsen.villarreal@scbraga.org" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_22" ;
+		 :idade 25 ;
+		 :morada "Dawn" ;
+		 :nome "Larsen Villarreal".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Morrow Yang
+:A_Morrow_Yang rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACDRcrespos;
+		 :pratica :Basquetebol;
+		 :email "morrow.yang@acdrcrespos.info" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_23" ;
+		 :idade 24 ;
+		 :morada "Tibbie" ;
+		 :nome "Morrow Yang".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Dunn Horn
+:A_Dunn_Horn rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ClubedeOrientaçãodoMinho;
+		 :pratica :Andebol;
+		 :email "dunn.horn@clube de orientação do minho.us" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_24" ;
+		 :idade 31 ;
+		 :morada "Ripley" ;
+		 :nome "Dunn Horn".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Viola Medina
+:A_Viola_Medina rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :EDViana;
+		 :pratica :Esgrima;
+		 :email "viola.medina@edviana.biz" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_25" ;
+		 :idade 24 ;
+		 :morada "Nipinnawasee" ;
+		 :nome "Viola Medina".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Valdez Barnes
+:A_Valdez_Barnes rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACDRcrespos;
+		 :pratica :Parapente;
+		 :email "valdez.barnes@acdrcrespos.io" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_26" ;
+		 :idade 22 ;
+		 :morada "Islandia" ;
+		 :nome "Valdez Barnes".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Sweet Gibbs
+:A_Sweet_Gibbs rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AVCfamalicão;
+		 :pratica :Esgrima;
+		 :email "sweet.gibbs@avcfamalicão.biz" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_27" ;
+		 :idade 35 ;
+		 :morada "Stagecoach" ;
+		 :nome "Sweet Gibbs".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Addie Hayes
+:A_Addie_Hayes rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACRroriz;
+		 :pratica :Ténis;
+		 :email "addie.hayes@acrroriz.net" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_28" ;
+		 :idade 23 ;
+		 :morada "Bennett" ;
+		 :nome "Addie Hayes".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_May Holt
+:A_May_Holt rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AmigosMontanha;
+		 :pratica :SUP;
+		 :email "may.holt@amigosmontanha.com" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_29" ;
+		 :idade 34 ;
+		 :morada "Springdale" ;
+		 :nome "May Holt".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Christensen Boyd
+:A_Christensen_Boyd rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ABCbraga;
+		 :pratica :Esgrima;
+		 :email "christensen.boyd@abcbraga.tv" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_30" ;
+		 :idade 34 ;
+		 :morada "Wells" ;
+		 :nome "Christensen Boyd".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Workman Franks
+:A_Workman_Franks rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AmigosMontanha;
+		 :pratica :Andebol;
+		 :email "workman.franks@amigosmontanha.co.uk" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_31" ;
+		 :idade 31 ;
+		 :morada "Greenfields" ;
+		 :nome "Workman Franks".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Lucile Underwood
+:A_Lucile_Underwood rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AVCfamalicão;
+		 :pratica :Andebol;
+		 :email "lucile.underwood@avcfamalicão.ca" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_32" ;
+		 :idade 34 ;
+		 :morada "Innsbrook" ;
+		 :nome "Lucile Underwood".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Heath Bishop
+:A_Heath_Bishop rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AmigosMontanha;
+		 :pratica :Esgrima;
+		 :email "heath.bishop@amigosmontanha.name" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_33" ;
+		 :idade 32 ;
+		 :morada "Grantville" ;
+		 :nome "Heath Bishop".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Rosales Mejia
+:A_Rosales_Mejia rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ClubedeOrientaçãodoMinho;
+		 :pratica :Badminton;
+		 :email "rosales.mejia@clube de orientação do minho.org" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_34" ;
+		 :idade 23 ;
+		 :morada "Dale" ;
+		 :nome "Rosales Mejia".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Ray Howe
+:A_Ray_Howe rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :Vitoria;
+		 :pratica :Atletismo;
+		 :email "ray.howe@vitoria.info" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_35" ;
+		 :idade 25 ;
+		 :morada "Nicut" ;
+		 :nome "Ray Howe".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Suarez Campbell
+:A_Suarez_Campbell rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACDRcrespos;
+		 :pratica :Atletismo;
+		 :email "suarez.campbell@acdrcrespos.us" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_36" ;
+		 :idade 34 ;
+		 :morada "Hamilton" ;
+		 :nome "Suarez Campbell".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Shaffer Le
+:A_Shaffer_Le rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AVCfamalicão;
+		 :pratica :Ciclismo;
+		 :email "shaffer.le@avcfamalicão.biz" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_37" ;
+		 :idade 32 ;
+		 :morada "Shepardsville" ;
+		 :nome "Shaffer Le".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Justine Wise
+:A_Justine_Wise rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AVCfamalicão;
+		 :pratica :Ciclismo;
+		 :email "justine.wise@avcfamalicão.io" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_38" ;
+		 :idade 31 ;
+		 :morada "Hondah" ;
+		 :nome "Justine Wise".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Villarreal Tucker
+:A_Villarreal_Tucker rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AVCfamalicão;
+		 :pratica :Triatlo;
+		 :email "villarreal.tucker@avcfamalicão.biz" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_39" ;
+		 :idade 23 ;
+		 :morada "Tecolotito" ;
+		 :nome "Villarreal Tucker".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Monica Neal
+:A_Monica_Neal rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACRroriz;
+		 :pratica :Badminton;
+		 :email "monica.neal@acrroriz.net" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_40" ;
+		 :idade 30 ;
+		 :morada "Roberts" ;
+		 :nome "Monica Neal".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Lloyd Dotson
+:A_Lloyd_Dotson rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ABCbraga;
+		 :pratica :Patinagem;
+		 :email "lloyd.dotson@abcbraga.com" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_41" ;
+		 :idade 21 ;
+		 :morada "Winesburg" ;
+		 :nome "Lloyd Dotson".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Mccray Barker
+:A_Mccray_Barker rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :Vitoria;
+		 :pratica :Dança;
+		 :email "mccray.barker@vitoria.tv" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_42" ;
+		 :idade 35 ;
+		 :morada "Blairstown" ;
+		 :nome "Mccray Barker".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Sellers Hunter
+:A_Sellers_Hunter rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :SCBraga;
+		 :pratica :Parapente;
+		 :email "sellers.hunter@scbraga.co.uk" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_43" ;
+		 :idade 23 ;
+		 :morada "Omar" ;
+		 :nome "Sellers Hunter".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Cathryn Fletcher
+:A_Cathryn_Fletcher rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ClubedeOrientaçãodoMinho;
+		 :pratica :Patinagem;
+		 :email "cathryn.fletcher@clube de orientação do minho.ca" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_44" ;
+		 :idade 29 ;
+		 :morada "Oasis" ;
+		 :nome "Cathryn Fletcher".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Dee Lowery
+:A_Dee_Lowery rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :Vitoria;
+		 :pratica :Basquetebol;
+		 :email "dee.lowery@vitoria.name" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_45" ;
+		 :idade 21 ;
+		 :morada "Rodman" ;
+		 :nome "Dee Lowery".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Freeman Wyatt
+:A_Freeman_Wyatt rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACRroriz;
+		 :pratica :Triatlo;
+		 :email "freeman.wyatt@acrroriz.org" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_46" ;
+		 :idade 26 ;
+		 :morada "Bentonville" ;
+		 :nome "Freeman Wyatt".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Guy Drake
+:A_Guy_Drake rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ABCbraga;
+		 :pratica :Karaté;
+		 :email "guy.drake@abcbraga.info" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_47" ;
+		 :idade 25 ;
+		 :morada "Helen" ;
+		 :nome "Guy Drake".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Mendez Good
+:A_Mendez_Good rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ClubedeOrientaçãodoMinho;
+		 :pratica :Triatlo;
+		 :email "mendez.good@clube de orientação do minho.us" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_48" ;
+		 :idade 33 ;
+		 :morada "Westmoreland" ;
+		 :nome "Mendez Good".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Burnett Hogan
+:A_Burnett_Hogan rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACRroriz;
+		 :pratica :Parapente;
+		 :email "burnett.hogan@acrroriz.biz" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_49" ;
+		 :idade 24 ;
+		 :morada "Valmy" ;
+		 :nome "Burnett Hogan".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Jamie Cherry
+:A_Jamie_Cherry rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ABCbraga;
+		 :pratica :Futebol;
+		 :email "jamie.cherry@abcbraga.io" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_50" ;
+		 :idade 23 ;
+		 :morada "Forbestown" ;
+		 :nome "Jamie Cherry".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Bird Noble
+:A_Bird_Noble rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACRroriz;
+		 :pratica :Karaté;
+		 :email "bird.noble@acrroriz.biz" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_51" ;
+		 :idade 21 ;
+		 :morada "Lafferty" ;
+		 :nome "Bird Noble".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Burgess Bradshaw
+:A_Burgess_Bradshaw rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ABCbraga;
+		 :pratica :Patinagem;
+		 :email "burgess.bradshaw@abcbraga.net" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_52" ;
+		 :idade 25 ;
+		 :morada "Bluffview" ;
+		 :nome "Burgess Bradshaw".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Laura Jacobson
+:A_Laura_Jacobson rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACRroriz;
+		 :pratica :Parapente;
+		 :email "laura.jacobson@acrroriz.com" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_53" ;
+		 :idade 27 ;
+		 :morada "Kirk" ;
+		 :nome "Laura Jacobson".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Blair Sherman
+:A_Blair_Sherman rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :SCBraga;
+		 :pratica :Badminton;
+		 :email "blair.sherman@scbraga.tv" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_54" ;
+		 :idade 31 ;
+		 :morada "Waukeenah" ;
+		 :nome "Blair Sherman".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Bobbi Hawkins
+:A_Bobbi_Hawkins rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :SCBraga;
+		 :pratica :Esgrima;
+		 :email "bobbi.hawkins@scbraga.co.uk" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_55" ;
+		 :idade 26 ;
+		 :morada "Takilma" ;
+		 :nome "Bobbi Hawkins".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Montoya Anthony
+:A_Montoya_Anthony rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACRroriz;
+		 :pratica :Basquetebol;
+		 :email "montoya.anthony@acrroriz.ca" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_56" ;
+		 :idade 31 ;
+		 :morada "Clara" ;
+		 :nome "Montoya Anthony".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Hooper Kirby
+:A_Hooper_Kirby rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACRroriz;
+		 :pratica :BTT;
+		 :email "hooper.kirby@acrroriz.name" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_57" ;
+		 :idade 26 ;
+		 :morada "Roosevelt" ;
+		 :nome "Hooper Kirby".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Wolfe Baird
+:A_Wolfe_Baird rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AVCfamalicão;
+		 :pratica :Esgrima;
+		 :email "wolfe.baird@avcfamalicão.org" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_58" ;
+		 :idade 24 ;
+		 :morada "Faxon" ;
+		 :nome "Wolfe Baird".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Lamb Graham
+:A_Lamb_Graham rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AVCfamalicão;
+		 :pratica :SUP;
+		 :email "lamb.graham@avcfamalicão.info" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_59" ;
+		 :idade 33 ;
+		 :morada "Bluetown" ;
+		 :nome "Lamb Graham".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Valentine Fitzgerald
+:A_Valentine_Fitzgerald rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ABCbraga;
+		 :pratica :BTT;
+		 :email "valentine.fitzgerald@abcbraga.us" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_60" ;
+		 :idade 32 ;
+		 :morada "Kersey" ;
+		 :nome "Valentine Fitzgerald".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Herminia Mooney
+:A_Herminia_Mooney rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AmigosMontanha;
+		 :pratica :Andebol;
+		 :email "herminia.mooney@amigosmontanha.biz" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_61" ;
+		 :idade 21 ;
+		 :morada "Matheny" ;
+		 :nome "Herminia Mooney".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Golden Hopkins
+:A_Golden_Hopkins rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AVCfamalicão;
+		 :pratica :Badminton;
+		 :email "golden.hopkins@avcfamalicão.io" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_62" ;
+		 :idade 31 ;
+		 :morada "Courtland" ;
+		 :nome "Golden Hopkins".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Lancaster Andrews
+:A_Lancaster_Andrews rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :Vitoria;
+		 :pratica :Triatlo;
+		 :email "lancaster.andrews@vitoria.biz" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_63" ;
+		 :idade 24 ;
+		 :morada "Longoria" ;
+		 :nome "Lancaster Andrews".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Elena Sullivan
+:A_Elena_Sullivan rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ClubedeOrientaçãodoMinho;
+		 :pratica :Futebol;
+		 :email "elena.sullivan@clube de orientação do minho.net" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_64" ;
+		 :idade 28 ;
+		 :morada "Leola" ;
+		 :nome "Elena Sullivan".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Deana Ramsey
+:A_Deana_Ramsey rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACRroriz;
+		 :pratica :Andebol;
+		 :email "deana.ramsey@acrroriz.com" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_65" ;
+		 :idade 23 ;
+		 :morada "Gila" ;
+		 :nome "Deana Ramsey".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Mayra Rose
+:A_Mayra_Rose rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACDRcrespos;
+		 :pratica :Patinagem;
+		 :email "mayra.rose@acdrcrespos.tv" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_66" ;
+		 :idade 33 ;
+		 :morada "Calpine" ;
+		 :nome "Mayra Rose".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Tina Salinas
+:A_Tina_Salinas rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :Vitoria;
+		 :pratica :SUP;
+		 :email "tina.salinas@vitoria.co.uk" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_67" ;
+		 :idade 29 ;
+		 :morada "Welda" ;
+		 :nome "Tina Salinas".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Sheila Caldwell
+:A_Sheila_Caldwell rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AVCfamalicão;
+		 :pratica :Triatlo;
+		 :email "sheila.caldwell@avcfamalicão.ca" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_68" ;
+		 :idade 22 ;
+		 :morada "Leroy" ;
+		 :nome "Sheila Caldwell".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Hudson Duffy
+:A_Hudson_Duffy rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :EDViana;
+		 :pratica :Orientação;
+		 :email "hudson.duffy@edviana.name" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_69" ;
+		 :idade 22 ;
+		 :morada "Whitestone" ;
+		 :nome "Hudson Duffy".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Guzman Douglas
+:A_Guzman_Douglas rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ABCbraga;
+		 :pratica :Orientação;
+		 :email "guzman.douglas@abcbraga.org" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_70" ;
+		 :idade 21 ;
+		 :morada "Alderpoint" ;
+		 :nome "Guzman Douglas".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Ethel Bartlett
+:A_Ethel_Bartlett rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACRroriz;
+		 :pratica :Orientação;
+		 :email "ethel.bartlett@acrroriz.info" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_71" ;
+		 :idade 26 ;
+		 :morada "Muir" ;
+		 :nome "Ethel Bartlett".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Doyle Odom
+:A_Doyle_Odom rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AmigosMontanha;
+		 :pratica :Esgrima;
+		 :email "doyle.odom@amigosmontanha.us" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_72" ;
+		 :idade 23 ;
+		 :morada "Newry" ;
+		 :nome "Doyle Odom".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Araceli Castaneda
+:A_Araceli_Castaneda rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AVCfamalicão;
+		 :pratica :Ciclismo;
+		 :email "araceli.castaneda@avcfamalicão.biz" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_73" ;
+		 :idade 28 ;
+		 :morada "Magnolia" ;
+		 :nome "Araceli Castaneda".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Fuentes Walker
+:A_Fuentes_Walker rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :SCBraga;
+		 :pratica :Atletismo;
+		 :email "fuentes.walker@scbraga.io" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_74" ;
+		 :idade 25 ;
+		 :morada "Leming" ;
+		 :nome "Fuentes Walker".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Sarah Moore
+:A_Sarah_Moore rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACDRcrespos;
+		 :pratica :Basquetebol;
+		 :email "sarah.moore@acdrcrespos.biz" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_75" ;
+		 :idade 35 ;
+		 :morada "Morgandale" ;
+		 :nome "Sarah Moore".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Cheryl Watson
+:A_Cheryl_Watson rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :GDGoma;
+		 :pratica :Orientação;
+		 :email "cheryl.watson@gdgoma.net" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_76" ;
+		 :idade 31 ;
+		 :morada "Fairview" ;
+		 :nome "Cheryl Watson".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Langley Velez
+:A_Langley_Velez rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACRroriz;
+		 :pratica :Andebol;
+		 :email "langley.velez@acrroriz.com" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_77" ;
+		 :idade 33 ;
+		 :morada "Neahkahnie" ;
+		 :nome "Langley Velez".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Alisa Morrison
+:A_Alisa_Morrison rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :GDGoma;
+		 :pratica :Futebol;
+		 :email "alisa.morrison@gdgoma.tv" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_78" ;
+		 :idade 26 ;
+		 :morada "Kiskimere" ;
+		 :nome "Alisa Morrison".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Malinda Merritt
+:A_Malinda_Merritt rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ABCbraga;
+		 :pratica :Ciclismo;
+		 :email "malinda.merritt@abcbraga.co.uk" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_79" ;
+		 :idade 33 ;
+		 :morada "Cecilia" ;
+		 :nome "Malinda Merritt".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Lenora Kane
+:A_Lenora_Kane rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ABCbraga;
+		 :pratica :Triatlo;
+		 :email "lenora.kane@abcbraga.ca" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_80" ;
+		 :idade 30 ;
+		 :morada "Axis" ;
+		 :nome "Lenora Kane".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Cabrera Curtis
+:A_Cabrera_Curtis rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AVCfamalicão;
+		 :pratica :Futebol;
+		 :email "cabrera.curtis@avcfamalicão.name" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_81" ;
+		 :idade 22 ;
+		 :morada "Beechmont" ;
+		 :nome "Cabrera Curtis".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Roseann Benjamin
+:A_Roseann_Benjamin rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ABCbraga;
+		 :pratica :BTT;
+		 :email "roseann.benjamin@abcbraga.org" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_82" ;
+		 :idade 21 ;
+		 :morada "Stewart" ;
+		 :nome "Roseann Benjamin".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Stafford Ray
+:A_Stafford_Ray rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACDRcrespos;
+		 :pratica :Parapente;
+		 :email "stafford.ray@acdrcrespos.info" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_83" ;
+		 :idade 21 ;
+		 :morada "Zeba" ;
+		 :nome "Stafford Ray".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Jewel Trevino
+:A_Jewel_Trevino rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACRroriz;
+		 :pratica :Patinagem;
+		 :email "jewel.trevino@acrroriz.us" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_84" ;
+		 :idade 29 ;
+		 :morada "Garnet" ;
+		 :nome "Jewel Trevino".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Mckenzie Woods
+:A_Mckenzie_Woods rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACRroriz;
+		 :pratica :Ténis;
+		 :email "mckenzie.woods@acrroriz.biz" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_85" ;
+		 :idade 24 ;
+		 :morada "Craig" ;
+		 :nome "Mckenzie Woods".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Jean Conley
+:A_Jean_Conley rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :GDGoma;
+		 :pratica :Triatlo;
+		 :email "jean.conley@gdgoma.io" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_86" ;
+		 :idade 21 ;
+		 :morada "Tilleda" ;
+		 :nome "Jean Conley".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Conway Alexander
+:A_Conway_Alexander rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :SCBraga;
+		 :pratica :BTT;
+		 :email "conway.alexander@scbraga.biz" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_87" ;
+		 :idade 24 ;
+		 :morada "Darrtown" ;
+		 :nome "Conway Alexander".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Maryann Joyce
+:A_Maryann_Joyce rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACDRcrespos;
+		 :pratica :Andebol;
+		 :email "maryann.joyce@acdrcrespos.net" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_88" ;
+		 :idade 21 ;
+		 :morada "Harmon" ;
+		 :nome "Maryann Joyce".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Ayers Carroll
+:A_Ayers_Carroll rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :GDGoma;
+		 :pratica :Ciclismo;
+		 :email "ayers.carroll@gdgoma.com" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_89" ;
+		 :idade 35 ;
+		 :morada "Sylvanite" ;
+		 :nome "Ayers Carroll".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Bonita Mccormick
+:A_Bonita_Mccormick rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :GDGoma;
+		 :pratica :Esgrima;
+		 :email "bonita.mccormick@gdgoma.tv" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_90" ;
+		 :idade 35 ;
+		 :morada "Marshall" ;
+		 :nome "Bonita Mccormick".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Kathy Kramer
+:A_Kathy_Kramer rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :EDViana;
+		 :pratica :Karaté;
+		 :email "kathy.kramer@edviana.co.uk" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_91" ;
+		 :idade 24 ;
+		 :morada "Williams" ;
+		 :nome "Kathy Kramer".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Tonia Bryan
+:A_Tonia_Bryan rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :EDViana;
+		 :pratica :Basquetebol;
+		 :email "tonia.bryan@edviana.ca" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_92" ;
+		 :idade 35 ;
+		 :morada "Corinne" ;
+		 :nome "Tonia Bryan".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Barker Mercer
+:A_Barker_Mercer rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AVCfamalicão;
+		 :pratica :Triatlo;
+		 :email "barker.mercer@avcfamalicão.name" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_93" ;
+		 :idade 34 ;
+		 :morada "Grayhawk" ;
+		 :nome "Barker Mercer".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Mcfarland Tyson
+:A_Mcfarland_Tyson rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AmigosMontanha;
+		 :pratica :Equitação;
+		 :email "mcfarland.tyson@amigosmontanha.org" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_94" ;
+		 :idade 25 ;
+		 :morada "Kula" ;
+		 :nome "Mcfarland Tyson".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Meagan Carter
+:A_Meagan_Carter rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :SCBraga;
+		 :pratica :SUP;
+		 :email "meagan.carter@scbraga.info" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_95" ;
+		 :idade 35 ;
+		 :morada "Martinsville" ;
+		 :nome "Meagan Carter".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Catalina Webb
+:A_Catalina_Webb rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ABCbraga;
+		 :pratica :Futebol;
+		 :email "catalina.webb@abcbraga.us" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_96" ;
+		 :idade 35 ;
+		 :morada "Aurora" ;
+		 :nome "Catalina Webb".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Moses Sargent
+:A_Moses_Sargent rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ABCbraga;
+		 :pratica :Esgrima;
+		 :email "moses.sargent@abcbraga.biz" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_97" ;
+		 :idade 25 ;
+		 :morada "Wildwood" ;
+		 :nome "Moses Sargent".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Preston Mccall
+:A_Preston_Mccall rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AVCfamalicão;
+		 :pratica :Karaté;
+		 :email "preston.mccall@avcfamalicão.io" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_98" ;
+		 :idade 33 ;
+		 :morada "Mathews" ;
+		 :nome "Preston Mccall".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Christian Clements
+:A_Christian_Clements rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACDRcrespos;
+		 :pratica :Atletismo;
+		 :email "christian.clements@acdrcrespos.biz" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_99" ;
+		 :idade 33 ;
+		 :morada "Cochranville" ;
+		 :nome "Christian Clements".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Jeanine Hester
+:A_Jeanine_Hester rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AVCfamalicão;
+		 :pratica :Patinagem;
+		 :email "jeanine.hester@avcfamalicão.name" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_0" ;
+		 :idade 30 ;
+		 :morada "Baden" ;
+		 :nome "Jeanine Hester".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Tonia Espinoza
+:A_Tonia_Espinoza rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AVCfamalicão;
+		 :pratica :Andebol;
+		 :email "tonia.espinoza@avcfamalicão.ca" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_1" ;
+		 :idade 24 ;
+		 :morada "Fillmore" ;
+		 :nome "Tonia Espinoza".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Alyssa Howard
+:A_Alyssa_Howard rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :SCBraga;
+		 :pratica :SUP;
+		 :email "alyssa.howard@scbraga.info" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_2" ;
+		 :idade 26 ;
+		 :morada "Conestoga" ;
+		 :nome "Alyssa Howard".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Merrill Fulton
+:A_Merrill_Fulton rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AmigosMontanha;
+		 :pratica :Badminton;
+		 :email "merrill.fulton@amigosmontanha.org" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_3" ;
+		 :idade 29 ;
+		 :morada "Berlin" ;
+		 :nome "Merrill Fulton".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Jaime Erickson
+:A_Jaime_Erickson rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ABCbraga;
+		 :pratica :Dança;
+		 :email "jaime.erickson@abcbraga.co.uk" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_4" ;
+		 :idade 25 ;
+		 :morada "Yardville" ;
+		 :nome "Jaime Erickson".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Felicia Skinner
+:A_Felicia_Skinner rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACDRcrespos;
+		 :pratica :Futebol;
+		 :email "felicia.skinner@acdrcrespos.biz" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_5" ;
+		 :idade 31 ;
+		 :morada "Rosburg" ;
+		 :nome "Felicia Skinner".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Margaret Bray
+:A_Margaret_Bray rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ClubedeOrientaçãodoMinho;
+		 :pratica :Karaté;
+		 :email "margaret.bray@clube de orientação do minho.biz" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_6" ;
+		 :idade 22 ;
+		 :morada "Sardis" ;
+		 :nome "Margaret Bray".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Etta Cotton
+:A_Etta_Cotton rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AVCfamalicão;
+		 :pratica :SUP;
+		 :email "etta.cotton@avcfamalicão.us" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_7" ;
+		 :idade 32 ;
+		 :morada "Graniteville" ;
+		 :nome "Etta Cotton".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Kelley Davidson
+:A_Kelley_Davidson rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AVCfamalicão;
+		 :pratica :Equitação;
+		 :email "kelley.davidson@avcfamalicão.com" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_8" ;
+		 :idade 25 ;
+		 :morada "Ruckersville" ;
+		 :nome "Kelley Davidson".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Crawford Merritt
+:A_Crawford_Merritt rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :SCBraga;
+		 :pratica :Ciclismo;
+		 :email "crawford.merritt@scbraga.net" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_9" ;
+		 :idade 27 ;
+		 :morada "Roy" ;
+		 :nome "Crawford Merritt".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Kim Buck
+:A_Kim_Buck rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AVCfamalicão;
+		 :pratica :Badminton;
+		 :email "kim.buck@avcfamalicão.tv" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_10" ;
+		 :idade 25 ;
+		 :morada "Rosine" ;
+		 :nome "Kim Buck".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Gilda Schmidt
+:A_Gilda_Schmidt rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :SCBraga;
+		 :pratica :Dança;
+		 :email "gilda.schmidt@scbraga.me" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_11" ;
+		 :idade 29 ;
+		 :morada "Enoree" ;
+		 :nome "Gilda Schmidt".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Mcintosh Aguirre
+:A_Mcintosh_Aguirre rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :Vitoria;
+		 :pratica :Basquetebol;
+		 :email "mcintosh.aguirre@vitoria.name" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_12" ;
+		 :idade 35 ;
+		 :morada "Emory" ;
+		 :nome "Mcintosh Aguirre".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Ida Bradshaw
+:A_Ida_Bradshaw rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ClubedeOrientaçãodoMinho;
+		 :pratica :Dança;
+		 :email "ida.bradshaw@clube de orientação do minho.ca" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_13" ;
+		 :idade 21 ;
+		 :morada "Lowgap" ;
+		 :nome "Ida Bradshaw".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Jefferson Pacheco
+:A_Jefferson_Pacheco rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :EDViana;
+		 :pratica :Dança;
+		 :email "jefferson.pacheco@edviana.info" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_14" ;
+		 :idade 34 ;
+		 :morada "Strykersville" ;
+		 :nome "Jefferson Pacheco".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Olson Hickman
+:A_Olson_Hickman rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACRroriz;
+		 :pratica :Equitação;
+		 :email "olson.hickman@acrroriz.org" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_15" ;
+		 :idade 35 ;
+		 :morada "Madrid" ;
+		 :nome "Olson Hickman".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Malinda Mccall
+:A_Malinda_Mccall rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :SCBraga;
+		 :pratica :Futebol;
+		 :email "malinda.mccall@scbraga.co.uk" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_16" ;
+		 :idade 23 ;
+		 :morada "Winchester" ;
+		 :nome "Malinda Mccall".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Raquel Dejesus
+:A_Raquel_Dejesus rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACRroriz;
+		 :pratica :Triatlo;
+		 :email "raquel.dejesus@acrroriz.biz" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_17" ;
+		 :idade 31 ;
+		 :morada "Greenfields" ;
+		 :nome "Raquel Dejesus".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Daniel Chambers
+:A_Daniel_Chambers rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :GDGoma;
+		 :pratica :Patinagem;
+		 :email "daniel.chambers@gdgoma.biz" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_18" ;
+		 :idade 22 ;
+		 :morada "Nicholson" ;
+		 :nome "Daniel Chambers".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Samantha Sharp
+:A_Samantha_Sharp rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACRroriz;
+		 :pratica :Triatlo;
+		 :email "samantha.sharp@acrroriz.us" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_19" ;
+		 :idade 23 ;
+		 :morada "Elliott" ;
+		 :nome "Samantha Sharp".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Robert Herman
+:A_Robert_Herman rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ClubedeOrientaçãodoMinho;
+		 :pratica :Basquetebol;
+		 :email "robert.herman@clube de orientação do minho.com" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_20" ;
+		 :idade 33 ;
+		 :morada "Weogufka" ;
+		 :nome "Robert Herman".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Olive Chapman
+:A_Olive_Chapman rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AVCfamalicão;
+		 :pratica :Dança;
+		 :email "olive.chapman@avcfamalicão.net" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_21" ;
+		 :idade 30 ;
+		 :morada "Wikieup" ;
+		 :nome "Olive Chapman".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Mccoy Blackburn
+:A_Mccoy_Blackburn rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AmigosMontanha;
+		 :pratica :SUP;
+		 :email "mccoy.blackburn@amigosmontanha.tv" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_22" ;
+		 :idade 29 ;
+		 :morada "Osmond" ;
+		 :nome "Mccoy Blackburn".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Lambert Ferrell
+:A_Lambert_Ferrell rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :Vitoria;
+		 :pratica :SUP;
+		 :email "lambert.ferrell@vitoria.me" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_23" ;
+		 :idade 30 ;
+		 :morada "Rowe" ;
+		 :nome "Lambert Ferrell".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Small Coffey
+:A_Small_Coffey rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :Vitoria;
+		 :pratica :Dança;
+		 :email "small.coffey@vitoria.name" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_24" ;
+		 :idade 29 ;
+		 :morada "Waumandee" ;
+		 :nome "Small Coffey".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Hicks Daniels
+:A_Hicks_Daniels rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ABCbraga;
+		 :pratica :Ciclismo;
+		 :email "hicks.daniels@abcbraga.ca" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_25" ;
+		 :idade 32 ;
+		 :morada "Frizzleburg" ;
+		 :nome "Hicks Daniels".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Meghan Cabrera
+:A_Meghan_Cabrera rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :EDViana;
+		 :pratica :Andebol;
+		 :email "meghan.cabrera@edviana.info" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_26" ;
+		 :idade 28 ;
+		 :morada "Shawmut" ;
+		 :nome "Meghan Cabrera".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Hubbard Hart
+:A_Hubbard_Hart rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :GDGoma;
+		 :pratica :Esgrima;
+		 :email "hubbard.hart@gdgoma.org" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_27" ;
+		 :idade 22 ;
+		 :morada "Trucksville" ;
+		 :nome "Hubbard Hart".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Chelsea Gallegos
+:A_Chelsea_Gallegos rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AVCfamalicão;
+		 :pratica :Andebol;
+		 :email "chelsea.gallegos@avcfamalicão.co.uk" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_28" ;
+		 :idade 21 ;
+		 :morada "Warren" ;
+		 :nome "Chelsea Gallegos".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Natalie Figueroa
+:A_Natalie_Figueroa rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ClubedeOrientaçãodoMinho;
+		 :pratica :Esgrima;
+		 :email "natalie.figueroa@clube de orientação do minho.biz" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_29" ;
+		 :idade 33 ;
+		 :morada "Jugtown" ;
+		 :nome "Natalie Figueroa".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Hayes Ward
+:A_Hayes_Ward rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :EDViana;
+		 :pratica :Futebol;
+		 :email "hayes.ward@edviana.biz" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_30" ;
+		 :idade 30 ;
+		 :morada "Accoville" ;
+		 :nome "Hayes Ward".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Graves Mccray
+:A_Graves_Mccray rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ABCbraga;
+		 :pratica :Esgrima;
+		 :email "graves.mccray@abcbraga.us" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_31" ;
+		 :idade 22 ;
+		 :morada "Kipp" ;
+		 :nome "Graves Mccray".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Mavis Riley
+:A_Mavis_Riley rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AmigosMontanha;
+		 :pratica :Karaté;
+		 :email "mavis.riley@amigosmontanha.com" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_32" ;
+		 :idade 31 ;
+		 :morada "Nescatunga" ;
+		 :nome "Mavis Riley".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Salas Joseph
+:A_Salas_Joseph rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AmigosMontanha;
+		 :pratica :Parapente;
+		 :email "salas.joseph@amigosmontanha.net" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_33" ;
+		 :idade 30 ;
+		 :morada "Greenwich" ;
+		 :nome "Salas Joseph".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Carly Peck
+:A_Carly_Peck rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :EDViana;
+		 :pratica :Futebol;
+		 :email "carly.peck@edviana.tv" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_34" ;
+		 :idade 33 ;
+		 :morada "Byrnedale" ;
+		 :nome "Carly Peck".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Ramirez Blevins
+:A_Ramirez_Blevins rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :Vitoria;
+		 :pratica :Orientação;
+		 :email "ramirez.blevins@vitoria.me" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_35" ;
+		 :idade 35 ;
+		 :morada "Bluetown" ;
+		 :nome "Ramirez Blevins".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Parks Saunders
+:A_Parks_Saunders rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ClubedeOrientaçãodoMinho;
+		 :pratica :Orientação;
+		 :email "parks.saunders@clube de orientação do minho.name" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_36" ;
+		 :idade 32 ;
+		 :morada "Sheatown" ;
+		 :nome "Parks Saunders".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Leanne Armstrong
+:A_Leanne_Armstrong rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AmigosMontanha;
+		 :pratica :Futebol;
+		 :email "leanne.armstrong@amigosmontanha.ca" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_37" ;
+		 :idade 28 ;
+		 :morada "Cochranville" ;
+		 :nome "Leanne Armstrong".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Kline Stark
+:A_Kline_Stark rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AVCfamalicão;
+		 :pratica :Equitação;
+		 :email "kline.stark@avcfamalicão.info" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_38" ;
+		 :idade 31 ;
+		 :morada "Tedrow" ;
+		 :nome "Kline Stark".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Elliott Guzman
+:A_Elliott_Guzman rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ClubedeOrientaçãodoMinho;
+		 :pratica :Dança;
+		 :email "elliott.guzman@clube de orientação do minho.org" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_39" ;
+		 :idade 29 ;
+		 :morada "Rutherford" ;
+		 :nome "Elliott Guzman".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Liz Baldwin
+:A_Liz_Baldwin rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ABCbraga;
+		 :pratica :Orientação;
+		 :email "liz.baldwin@abcbraga.co.uk" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_40" ;
+		 :idade 23 ;
+		 :morada "Basye" ;
+		 :nome "Liz Baldwin".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Warner Bullock
+:A_Warner_Bullock rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :GDGoma;
+		 :pratica :Parapente;
+		 :email "warner.bullock@gdgoma.biz" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_41" ;
+		 :idade 35 ;
+		 :morada "Valle" ;
+		 :nome "Warner Bullock".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Santana Harper
+:A_Santana_Harper rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :SCBraga;
+		 :pratica :Futebol;
+		 :email "santana.harper@scbraga.biz" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_42" ;
+		 :idade 32 ;
+		 :morada "Malo" ;
+		 :nome "Santana Harper".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Imelda Odonnell
+:A_Imelda_Odonnell rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AVCfamalicão;
+		 :pratica :Atletismo;
+		 :email "imelda.odonnell@avcfamalicão.us" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_43" ;
+		 :idade 31 ;
+		 :morada "Riviera" ;
+		 :nome "Imelda Odonnell".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Lila Curry
+:A_Lila_Curry rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AmigosMontanha;
+		 :pratica :Futebol;
+		 :email "lila.curry@amigosmontanha.com" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_44" ;
+		 :idade 23 ;
+		 :morada "Alden" ;
+		 :nome "Lila Curry".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Milagros Ellis
+:A_Milagros_Ellis rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACDRcrespos;
+		 :pratica :Patinagem;
+		 :email "milagros.ellis@acdrcrespos.net" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_45" ;
+		 :idade 21 ;
+		 :morada "Why" ;
+		 :nome "Milagros Ellis".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Stafford Hale
+:A_Stafford_Hale rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACDRcrespos;
+		 :pratica :Dança;
+		 :email "stafford.hale@acdrcrespos.tv" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_46" ;
+		 :idade 29 ;
+		 :morada "Bowden" ;
+		 :nome "Stafford Hale".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Blevins Cline
+:A_Blevins_Cline rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ClubedeOrientaçãodoMinho;
+		 :pratica :Triatlo;
+		 :email "blevins.cline@clube de orientação do minho.me" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_47" ;
+		 :idade 22 ;
+		 :morada "Delshire" ;
+		 :nome "Blevins Cline".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Marisol Owen
+:A_Marisol_Owen rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACDRcrespos;
+		 :pratica :Parapente;
+		 :email "marisol.owen@acdrcrespos.name" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_48" ;
+		 :idade 23 ;
+		 :morada "Soham" ;
+		 :nome "Marisol Owen".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Mcintyre Walsh
+:A_Mcintyre_Walsh rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ABCbraga;
+		 :pratica :Atletismo;
+		 :email "mcintyre.walsh@abcbraga.ca" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_49" ;
+		 :idade 31 ;
+		 :morada "Beechmont" ;
+		 :nome "Mcintyre Walsh".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Valarie Silva
+:A_Valarie_Silva rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACDRcrespos;
+		 :pratica :Futebol;
+		 :email "valarie.silva@acdrcrespos.info" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_50" ;
+		 :idade 25 ;
+		 :morada "Lynn" ;
+		 :nome "Valarie Silva".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Jimmie Beck
+:A_Jimmie_Beck rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AVCfamalicão;
+		 :pratica :Atletismo;
+		 :email "jimmie.beck@avcfamalicão.org" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_51" ;
+		 :idade 34 ;
+		 :morada "Walker" ;
+		 :nome "Jimmie Beck".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Amparo Price
+:A_Amparo_Price rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACDRcrespos;
+		 :pratica :Futebol;
+		 :email "amparo.price@acdrcrespos.co.uk" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_52" ;
+		 :idade 30 ;
+		 :morada "Townsend" ;
+		 :nome "Amparo Price".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Susanna Lowery
+:A_Susanna_Lowery rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :EDViana;
+		 :pratica :Orientação;
+		 :email "susanna.lowery@edviana.biz" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_53" ;
+		 :idade 33 ;
+		 :morada "Cawood" ;
+		 :nome "Susanna Lowery".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Flynn Huber
+:A_Flynn_Huber rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ClubedeOrientaçãodoMinho;
+		 :pratica :Atletismo;
+		 :email "flynn.huber@clube de orientação do minho.biz" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_54" ;
+		 :idade 26 ;
+		 :morada "Teasdale" ;
+		 :nome "Flynn Huber".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Elaine Allen
+:A_Elaine_Allen rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACDRcrespos;
+		 :pratica :Equitação;
+		 :email "elaine.allen@acdrcrespos.us" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_55" ;
+		 :idade 32 ;
+		 :morada "Kaka" ;
+		 :nome "Elaine Allen".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Gwen Pate
+:A_Gwen_Pate rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AmigosMontanha;
+		 :pratica :Karaté;
+		 :email "gwen.pate@amigosmontanha.com" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_56" ;
+		 :idade 26 ;
+		 :morada "Snelling" ;
+		 :nome "Gwen Pate".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Leila Solis
+:A_Leila_Solis rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACRroriz;
+		 :pratica :Parapente;
+		 :email "leila.solis@acrroriz.net" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_57" ;
+		 :idade 34 ;
+		 :morada "Glenville" ;
+		 :nome "Leila Solis".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Mercedes Heath
+:A_Mercedes_Heath rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :GDGoma;
+		 :pratica :Dança;
+		 :email "mercedes.heath@gdgoma.tv" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_58" ;
+		 :idade 31 ;
+		 :morada "Chaparrito" ;
+		 :nome "Mercedes Heath".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Althea Fitzpatrick
+:A_Althea_Fitzpatrick rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :EDViana;
+		 :pratica :Basquetebol;
+		 :email "althea.fitzpatrick@edviana.me" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_59" ;
+		 :idade 24 ;
+		 :morada "Marne" ;
+		 :nome "Althea Fitzpatrick".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Arlene Morton
+:A_Arlene_Morton rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :Vitoria;
+		 :pratica :Orientação;
+		 :email "arlene.morton@vitoria.name" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_60" ;
+		 :idade 34 ;
+		 :morada "Wiscon" ;
+		 :nome "Arlene Morton".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Mosley Gonzales
+:A_Mosley_Gonzales rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :SCBraga;
+		 :pratica :BTT;
+		 :email "mosley.gonzales@scbraga.ca" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_61" ;
+		 :idade 26 ;
+		 :morada "Driftwood" ;
+		 :nome "Mosley Gonzales".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Torres Hardy
+:A_Torres_Hardy rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ClubedeOrientaçãodoMinho;
+		 :pratica :Dança;
+		 :email "torres.hardy@clube de orientação do minho.info" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_62" ;
+		 :idade 33 ;
+		 :morada "Fairfield" ;
+		 :nome "Torres Hardy".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Annmarie Petersen
+:A_Annmarie_Petersen rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ClubedeOrientaçãodoMinho;
+		 :pratica :Dança;
+		 :email "annmarie.petersen@clube de orientação do minho.org" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_63" ;
+		 :idade 22 ;
+		 :morada "Twilight" ;
+		 :nome "Annmarie Petersen".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Osborn Green
+:A_Osborn_Green rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACRroriz;
+		 :pratica :Karaté;
+		 :email "osborn.green@acrroriz.co.uk" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_64" ;
+		 :idade 32 ;
+		 :morada "Jacksonwald" ;
+		 :nome "Osborn Green".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Davenport Dominguez
+:A_Davenport_Dominguez rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACRroriz;
+		 :pratica :Patinagem;
+		 :email "davenport.dominguez@acrroriz.biz" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_65" ;
+		 :idade 23 ;
+		 :morada "Vallonia" ;
+		 :nome "Davenport Dominguez".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Barton Massey
+:A_Barton_Massey rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AmigosMontanha;
+		 :pratica :Parapente;
+		 :email "barton.massey@amigosmontanha.biz" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_66" ;
+		 :idade 26 ;
+		 :morada "Ribera" ;
+		 :nome "Barton Massey".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Holly Bowen
+:A_Holly_Bowen rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACDRcrespos;
+		 :pratica :Orientação;
+		 :email "holly.bowen@acdrcrespos.us" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_67" ;
+		 :idade 29 ;
+		 :morada "Adamstown" ;
+		 :nome "Holly Bowen".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Dennis Crawford
+:A_Dennis_Crawford rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AmigosMontanha;
+		 :pratica :Atletismo;
+		 :email "dennis.crawford@amigosmontanha.com" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_68" ;
+		 :idade 30 ;
+		 :morada "Wanship" ;
+		 :nome "Dennis Crawford".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Oliver Mcleod
+:A_Oliver_Mcleod rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :SCBraga;
+		 :pratica :Ténis;
+		 :email "oliver.mcleod@scbraga.net" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_69" ;
+		 :idade 25 ;
+		 :morada "Garnet" ;
+		 :nome "Oliver Mcleod".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Tameka Orr
+:A_Tameka_Orr rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :Vitoria;
+		 :pratica :Ciclismo;
+		 :email "tameka.orr@vitoria.tv" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_70" ;
+		 :idade 24 ;
+		 :morada "Klagetoh" ;
+		 :nome "Tameka Orr".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Foster Strickland
+:A_Foster_Strickland rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ClubedeOrientaçãodoMinho;
+		 :pratica :Patinagem;
+		 :email "foster.strickland@clube de orientação do minho.me" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_71" ;
+		 :idade 29 ;
+		 :morada "Holtville" ;
+		 :nome "Foster Strickland".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Marlene Rodgers
+:A_Marlene_Rodgers rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :SCBraga;
+		 :pratica :Ténis;
+		 :email "marlene.rodgers@scbraga.name" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_72" ;
+		 :idade 27 ;
+		 :morada "Levant" ;
+		 :nome "Marlene Rodgers".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Shari Mathews
+:A_Shari_Mathews rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACDRcrespos;
+		 :pratica :Andebol;
+		 :email "shari.mathews@acdrcrespos.ca" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_73" ;
+		 :idade 22 ;
+		 :morada "Joes" ;
+		 :nome "Shari Mathews".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Josie Rasmussen
+:A_Josie_Rasmussen rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACDRcrespos;
+		 :pratica :Badminton;
+		 :email "josie.rasmussen@acdrcrespos.info" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_74" ;
+		 :idade 34 ;
+		 :morada "Riverton" ;
+		 :nome "Josie Rasmussen".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Shelton Walton
+:A_Shelton_Walton rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :EDViana;
+		 :pratica :Parapente;
+		 :email "shelton.walton@edviana.org" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_75" ;
+		 :idade 35 ;
+		 :morada "Williston" ;
+		 :nome "Shelton Walton".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Odonnell Russell
+:A_Odonnell_Russell rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :GDGoma;
+		 :pratica :BTT;
+		 :email "odonnell.russell@gdgoma.co.uk" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_76" ;
+		 :idade 31 ;
+		 :morada "Alderpoint" ;
+		 :nome "Odonnell Russell".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Elba Le
+:A_Elba_Le rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACRroriz;
+		 :pratica :SUP;
+		 :email "elba.le@acrroriz.biz" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_77" ;
+		 :idade 30 ;
+		 :morada "Ebro" ;
+		 :nome "Elba Le".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Sweet Woodward
+:A_Sweet_Woodward rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :GDGoma;
+		 :pratica :Equitação;
+		 :email "sweet.woodward@gdgoma.biz" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_78" ;
+		 :idade 22 ;
+		 :morada "Urie" ;
+		 :nome "Sweet Woodward".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Wilkins Cummings
+:A_Wilkins_Cummings rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACRroriz;
+		 :pratica :Dança;
+		 :email "wilkins.cummings@acrroriz.us" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_79" ;
+		 :idade 33 ;
+		 :morada "Gila" ;
+		 :nome "Wilkins Cummings".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Rogers Noel
+:A_Rogers_Noel rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACDRcrespos;
+		 :pratica :BTT;
+		 :email "rogers.noel@acdrcrespos.com" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_80" ;
+		 :idade 35 ;
+		 :morada "Cresaptown" ;
+		 :nome "Rogers Noel".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Hodges Ashley
+:A_Hodges_Ashley rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ABCbraga;
+		 :pratica :Andebol;
+		 :email "hodges.ashley@abcbraga.net" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_81" ;
+		 :idade 31 ;
+		 :morada "Crawfordsville" ;
+		 :nome "Hodges Ashley".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Curtis Dillon
+:A_Curtis_Dillon rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AmigosMontanha;
+		 :pratica :Parapente;
+		 :email "curtis.dillon@amigosmontanha.tv" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_82" ;
+		 :idade 29 ;
+		 :morada "Beason" ;
+		 :nome "Curtis Dillon".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Lelia Oliver
+:A_Lelia_Oliver rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :GDGoma;
+		 :pratica :Ténis;
+		 :email "lelia.oliver@gdgoma.me" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_83" ;
+		 :idade 30 ;
+		 :morada "Cedarville" ;
+		 :nome "Lelia Oliver".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Fuentes Rogers
+:A_Fuentes_Rogers rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :SCBraga;
+		 :pratica :BTT;
+		 :email "fuentes.rogers@scbraga.name" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_84" ;
+		 :idade 28 ;
+		 :morada "Grazierville" ;
+		 :nome "Fuentes Rogers".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Carole Lindsey
+:A_Carole_Lindsey rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AmigosMontanha;
+		 :pratica :Orientação;
+		 :email "carole.lindsey@amigosmontanha.ca" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_85" ;
+		 :idade 34 ;
+		 :morada "Weedville" ;
+		 :nome "Carole Lindsey".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Martinez Johns
+:A_Martinez_Johns rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ABCbraga;
+		 :pratica :SUP;
+		 :email "martinez.johns@abcbraga.info" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_86" ;
+		 :idade 32 ;
+		 :morada "Hebron" ;
+		 :nome "Martinez Johns".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Kellie Holland
+:A_Kellie_Holland rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :SCBraga;
+		 :pratica :Equitação;
+		 :email "kellie.holland@scbraga.org" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_87" ;
+		 :idade 30 ;
+		 :morada "Bloomington" ;
+		 :nome "Kellie Holland".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Mathis Kirk
+:A_Mathis_Kirk rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :EDViana;
+		 :pratica :Futebol;
+		 :email "mathis.kirk@edviana.co.uk" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_88" ;
+		 :idade 23 ;
+		 :morada "Klondike" ;
+		 :nome "Mathis Kirk".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Bertha Shelton
+:A_Bertha_Shelton rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :GDGoma;
+		 :pratica :Orientação;
+		 :email "bertha.shelton@gdgoma.biz" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_89" ;
+		 :idade 28 ;
+		 :morada "Sedley" ;
+		 :nome "Bertha Shelton".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Bonnie Diaz
+:A_Bonnie_Diaz rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :SCBraga;
+		 :pratica :Ténis;
+		 :email "bonnie.diaz@scbraga.biz" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_90" ;
+		 :idade 31 ;
+		 :morada "Gerton" ;
+		 :nome "Bonnie Diaz".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Becker Talley
+:A_Becker_Talley rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ClubedeOrientaçãodoMinho;
+		 :pratica :Futebol;
+		 :email "becker.talley@clube de orientação do minho.us" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_91" ;
+		 :idade 31 ;
+		 :morada "Valmy" ;
+		 :nome "Becker Talley".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Zelma Bell
+:A_Zelma_Bell rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ClubedeOrientaçãodoMinho;
+		 :pratica :Equitação;
+		 :email "zelma.bell@clube de orientação do minho.com" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_92" ;
+		 :idade 30 ;
+		 :morada "Shasta" ;
+		 :nome "Zelma Bell".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Stanton Cox
+:A_Stanton_Cox rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :EDViana;
+		 :pratica :BTT;
+		 :email "stanton.cox@edviana.net" ;
+		 :federado false ;
+		 :genero "F" ;
+		 :id "A_93" ;
+		 :idade 22 ;
+		 :morada "Foxworth" ;
+		 :nome "Stanton Cox".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Cindy Shepherd
+:A_Cindy_Shepherd rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :AVCfamalicão;
+		 :pratica :Ciclismo;
+		 :email "cindy.shepherd@avcfamalicão.tv" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_94" ;
+		 :idade 23 ;
+		 :morada "Brule" ;
+		 :nome "Cindy Shepherd".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Knapp Buckner
+:A_Knapp_Buckner rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ABCbraga;
+		 :pratica :Futebol;
+		 :email "knapp.buckner@abcbraga.me" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_95" ;
+		 :idade 31 ;
+		 :morada "Rose" ;
+		 :nome "Knapp Buckner".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Callahan Mitchell
+:A_Callahan_Mitchell rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ABCbraga;
+		 :pratica :Parapente;
+		 :email "callahan.mitchell@abcbraga.name" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_96" ;
+		 :idade 24 ;
+		 :morada "Wollochet" ;
+		 :nome "Callahan Mitchell".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Allie Lyons
+:A_Allie_Lyons rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACRroriz;
+		 :pratica :Equitação;
+		 :email "allie.lyons@acrroriz.ca" ;
+		 :federado false ;
+		 :genero "M" ;
+		 :id "A_97" ;
+		 :idade 31 ;
+		 :morada "Welch" ;
+		 :nome "Allie Lyons".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Tammy Bryant
+:A_Tammy_Bryant rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ACDRcrespos;
+		 :pratica :Futebol;
+		 :email "tammy.bryant@acdrcrespos.info" ;
+		 :federado true ;
+		 :genero "M" ;
+		 :id "A_98" ;
+		 :idade 32 ;
+		 :morada "Fidelis" ;
+		 :nome "Tammy Bryant".
+ ###  http://www.di.uminho.pt/prc2021/gestaoEMD#A_Carissa Rosario
+:A_Carissa_Rosario rdf:type owl:NamedIndividual , 
+		 :Atleta;
+		 :pertenceA :ClubedeOrientaçãodoMinho;
+		 :pratica :Esgrima;
+		 :email "carissa.rosario@clube de orientação do minho.org" ;
+		 :federado true ;
+		 :genero "F" ;
+		 :id "A_99" ;
+		 :idade 30 ;
+		 :morada "Brookfield" ;
+		 :nome "Carissa Rosario".
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#GDGoma
+:GDGoma rdf:type owl:NamedIndividual , 
+		 :Clube;
+		 :nome "GDGoma" .
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#AVCfamalicão
+:AVCfamalicão rdf:type owl:NamedIndividual , 
+		 :Clube;
+		 :nome "AVCfamalicão" .
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#ABCbraga
+:ABCbraga rdf:type owl:NamedIndividual , 
+		 :Clube;
+		 :nome "ABCbraga" .
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#ClubedeOrientaçãodoMinho
+:ClubedeOrientaçãodoMinho rdf:type owl:NamedIndividual , 
+		 :Clube;
+		 :nome "Clube de Orientação do Minho" .
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#SCBraga
+:SCBraga rdf:type owl:NamedIndividual , 
+		 :Clube;
+		 :nome "SCBraga" .
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#ACDRcrespos
+:ACDRcrespos rdf:type owl:NamedIndividual , 
+		 :Clube;
+		 :nome "ACDRcrespos" .
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#ACRroriz
+:ACRroriz rdf:type owl:NamedIndividual , 
+		 :Clube;
+		 :nome "ACRroriz" .
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#Vitoria
+:Vitoria rdf:type owl:NamedIndividual , 
+		 :Clube;
+		 :nome "Vitoria" .
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#AmigosMontanha
+:AmigosMontanha rdf:type owl:NamedIndividual , 
+		 :Clube;
+		 :nome "AmigosMontanha" .
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#EDViana
+:EDViana rdf:type owl:NamedIndividual , 
+		 :Clube;
+		 :nome "EDViana" .
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#Futebol
+:Futebol rdf:type owl:NamedIndividual , 
+		 :Modalidade;
+		 :nome "Futebol" .
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#Triatlo
+:Triatlo rdf:type owl:NamedIndividual , 
+		 :Modalidade;
+		 :nome "Triatlo" .
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#Badminton
+:Badminton rdf:type owl:NamedIndividual , 
+		 :Modalidade;
+		 :nome "Badminton" .
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#Ciclismo
+:Ciclismo rdf:type owl:NamedIndividual , 
+		 :Modalidade;
+		 :nome "Ciclismo" .
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#Patinagem
+:Patinagem rdf:type owl:NamedIndividual , 
+		 :Modalidade;
+		 :nome "Patinagem" .
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#Parapente
+:Parapente rdf:type owl:NamedIndividual , 
+		 :Modalidade;
+		 :nome "Parapente" .
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#Orientação
+:Orientação rdf:type owl:NamedIndividual , 
+		 :Modalidade;
+		 :nome "Orientação" .
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#Esgrima
+:Esgrima rdf:type owl:NamedIndividual , 
+		 :Modalidade;
+		 :nome "Esgrima" .
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#BTT
+:BTT rdf:type owl:NamedIndividual , 
+		 :Modalidade;
+		 :nome "BTT" .
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#Atletismo
+:Atletismo rdf:type owl:NamedIndividual , 
+		 :Modalidade;
+		 :nome "Atletismo" .
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#SUP
+:SUP rdf:type owl:NamedIndividual , 
+		 :Modalidade;
+		 :nome "SUP" .
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#Basquetebol
+:Basquetebol rdf:type owl:NamedIndividual , 
+		 :Modalidade;
+		 :nome "Basquetebol" .
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#Karaté
+:Karaté rdf:type owl:NamedIndividual , 
+		 :Modalidade;
+		 :nome "Karaté" .
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#Dança
+:Dança rdf:type owl:NamedIndividual , 
+		 :Modalidade;
+		 :nome "Dança" .
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#Andebol
+:Andebol rdf:type owl:NamedIndividual , 
+		 :Modalidade;
+		 :nome "Andebol" .
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#Equitação
+:Equitação rdf:type owl:NamedIndividual , 
+		 :Modalidade;
+		 :nome "Equitação" .
+###  http://www.di.uminho.pt/prc2021/gestaoEMD#Ténis
+:Ténis rdf:type owl:NamedIndividual , 
+		 :Modalidade;
+		 :nome "Ténis" .

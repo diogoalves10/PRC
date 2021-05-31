@@ -1,0 +1,70 @@
+
+Constrói os triplos da relação Irmão;
+
+CONSTRUCT {
+    ?f :eIrmão ?g.
+ }
+ 
+ WHERE {
+     ?f :temProgenitor ?p .
+     ?g :temProgenitor ?p . 
+    
+    filter (?f != ?g)    
+}
+
+
+Constrói os triplos da relação Bisavô;
+CONSTRUCT {
+    ?p1 :eAvo ?p2.
+ }
+
+ WHERE {
+    ?p1 :temProgenitor ?x.
+    ?p2 :temProgenitor ?y.
+    ?x :eIrmão ?y .
+}
+
+CONSTRUCT {
+    ?p1 :eBisavo ?p2.
+ }
+
+ WHERE {
+    ?x :temProgenitor ?p1.
+    ?p2 :temProgenitor ?x.
+    
+}
+
+Constrói os triplos da relação Descendentes;
+
+CONSTRUCT {
+    ?p1 :descendente ?p2 .
+
+} WHERE {
+    ?p2 :eProgenitorDe ?p1 .
+
+}
+Constrói os triplos da relação Primo;
+
+CONSTRUCT {
+    ?p1 :ePrimo ?p2.
+ }
+
+ WHERE {
+    ?p1 :temProgenitor ?x.
+    ?p2 :temProgenitor ?y.
+    ?x :eIrmão ?y .
+}
+Acrescenta o atributo sexo à tua ontologia, há várias formas de o fazer, escolhe a que entenderes. Constrói os triplos relacionados com esta propriedade usando as propriedades existentes: temPai e temMae;
+
+CONSTRUCT {
+    ?p1 :temSexo ?p2.
+ }
+
+ WHERE {
+    ?p1 :temProgenitor ?x.
+    ?p2 :temProgenitor ?y.
+    ?x :eIrmão ?y .
+}
+
+
+Constrói os triplos das pessoas relacionadas com "José_Carlos_Leite_Ramalho_1967", diretamente ou indiretamente, ou seja, para todas as pessoas com caminho no grafo até ao indivíduo em questão constrói o triplo: :José_Carlos_Leite_Ramalho_1967 :temRelacaoCom :indivíduoX .
